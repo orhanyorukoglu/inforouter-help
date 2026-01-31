@@ -1,22 +1,86 @@
-# Retention & Disposition Schedules / Retention and Disposition Schedules
+# Retention and Disposition Schedules
 
-Retention and Disposition Schedules can only be created and edited by members of a special system user group called RD Managers.
+Create and manage schedules that define how long documents are retained and what happens when retention ends.
 
-To create a new Retention and Disposition Schedule, perform the following steps:
+---
 
-1. Navigate to the infoRouter Control Panel.
-2. Click on the link labeled Retention and Disposition Schedules.
-3. Click New from the left menu to create a new schedule.
-4. Follow the on-screen instructions
-5. Click "OK".
+## Who Can Manage Schedules?
 
-![Retention and Disposition](../images/r-and-d.jpg)
-![Retention and Disposition](../images/r-and-d_2.jpg)
-![Creating a retention and disposition schedule](../images/r-and-d-create.jpg)
+| Role | Access |
+|------|--------|
+| R&D Managers | :material-check: Create and edit schedules |
+| System Administrator | :material-check: Full access |
+| Other Users | :material-close: Cannot manage |
 
-You can assign Retention and Disposition Schedules to documents using the Document Properties Screen by scrolling down to the Retention section.
-Note that simply assigning a Retention Schedule to a document does not automatically take effect. Retention Schedules are either triggered when the document is triggered or they are triggered
-when the document is "Cutoff".
+---
 
-When a document is in a cutoff state, it cannot be checked out for edits. It is similar to being marked as "complete".
-So, depending on the retention schedule, a retention on a document can either start immediately as it is applied or the retention waits until the document is cutoff.
+## Creating a New Schedule
+
+1. Navigate to the **Control Panel**
+2. Click **Retention and Disposition Schedules**
+3. Click **New** in the left menu
+4. Configure schedule settings:
+
+| Setting | Description |
+|---------|-------------|
+| **Schedule Name** | Descriptive name |
+| **Retention Period** | How long to retain |
+| **Trigger** | When retention starts |
+| **Disposition Action** | What happens at end |
+| **Assignee** | Who handles disposition |
+
+5. Click **OK**
+
+---
+
+## Assigning Schedules to Documents
+
+1. Open document **Properties**
+2. Scroll to the **Retention** section
+3. Select a Retention and Disposition Schedule
+4. Save changes
+
+---
+
+## Retention Triggers
+
+| Trigger | When Retention Starts |
+|---------|----------------------|
+| **Immediate** | As soon as schedule is applied |
+| **On Cutoff** | When document enters cutoff state |
+
+!!! info "Cutoff State"
+    When a document is in **cutoff** state, it cannot be checked out for edits. This is similar to being marked as "complete." Retention begins at this point if the schedule uses cutoff triggering.
+
+---
+
+## Schedule Lifecycle
+
+```mermaid
+flowchart LR
+    A[Schedule Applied] --> B{Trigger Type}
+    B -->|Immediate| C[Retention Starts]
+    B -->|On Cutoff| D[Wait for Cutoff]
+    D --> C
+    C --> E[Retention Period]
+    E --> F[Disposition]
+```
+
+---
+
+## Best Practices
+
+!!! tip "Scheduling Guidelines"
+    - Use descriptive schedule names
+    - Match schedules to regulatory requirements
+    - Test schedules before production use
+    - Document disposition procedures
+
+---
+
+## See Also
+
+- [Retention Overview](Retention.md)
+- [Document Retention](DocumentRetention.md)
+- [Folder Retention](FolderRetention.md)
+- [Disposition](Disposition.md)
