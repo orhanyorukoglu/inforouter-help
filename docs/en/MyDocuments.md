@@ -1,5 +1,48 @@
-# My Documents - Documents created or owned by you
+# My Documents
 
-Clicking on the "My Documents" link will display a flat list of your documents (all documents you own), regardless of where they are in the system. Clicking on any document in this list will open the document.
+The **My Documents** view displays all documents you own, regardless of where they are stored in the system.
 
-Use this link to quickly find all your documents without having to navigate to all the folders that contain your documents.
+---
+
+## Overview
+
+This view provides a flat list of all documents where you are the owner, eliminating the need to navigate through multiple folders to find your work.
+
+!!! tip "Quick Access"
+    Use My Documents to quickly locate your files without browsing through the folder structure.
+
+---
+
+## Accessing My Documents
+
+1. Go to your **Personal Dashboard**
+2. Click **My Documents**
+
+---
+
+## What's Included
+
+This view shows:
+
+- Documents you created
+- Documents where ownership was transferred to you
+- All your documents across all libraries
+
+---
+
+## Working with Documents
+
+Click on any document in the list to:
+
+- Open and view the document
+- Access document properties
+- Check out for editing
+
+---
+
+## See Also
+
+- [Personal Dashboard](PersonalDashboard.md)
+- [My Checked Out Documents](MyCheckedOutDocuments.md)
+- [Recent Documents](RecentDocuments.md)
+- [Document Properties](DocumentProperties.md)

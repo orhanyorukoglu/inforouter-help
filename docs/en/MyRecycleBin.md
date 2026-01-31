@@ -1,25 +1,58 @@
-# My Recycle Bin - Recovering deleted documents
+# My Recycle Bin
 
-Deleted documents are placed in a special location in infoRouter called the Recycle Bin.
+Deleted documents are placed in the Recycle Bin, allowing you to recover accidentally deleted files.
 
-Every infoRouter user has a unique recycle bin that keeps the documents that have been deleted by that user.
+---
 
-infoRouter users can only see the contents of their own recycle bin however, the system administrator can search through every recycle bin to recover documents.
+## How It Works
 
-If one of your documents is deleted by another user, only the user who deleted this document or the System Administrator can recover this document.
+Every infoRouter user has their own personal Recycle Bin that contains documents they have deleted.
 
-Depending on the choice of the System Administrator, you may be able to empty your Recycle Bin. If this option is turned on, you will see a button labeled "Empty Recycle Bin".
+!!! info "Privacy"
+    You can only see the contents of **your own** Recycle Bin. The System Administrator can search through all Recycle Bins to recover documents.
 
-If you delete a document and wish to recover it, perform the following:
+---
 
-1. Click on the "My Recycle Bin" link under my profile
-![recycle bin menu](../images/recovering-documents-recyclebin-menu.jpg)2. This will launch the "Recycle Bin" window which will display all the documents you have deleted.
-![recycle bin list](../images/my_recycle_bin_list.jpg)3. Select the document you wish to recover and click on the "Restore" link.
-4. You will be prompted for a folder to restore the deleted document.
-5. Select a folder and confirm your action.
+## Who Can Recover Documents?
 
-The document will be restored with all its original information including its versions.
+| Scenario | Who Can Recover |
+|----------|-----------------|
+| You deleted the document | You or System Administrator |
+| Another user deleted your document | The user who deleted it or System Administrator |
 
-Warning: If you empty your recycle bin, your documents will still be recoverable becuase they will be moved into
-the system recycle bin.
-The system recycle bin can only be accessed by the system administrator or members of the administrators system user group.
+---
+
+## Recovering a Document
+
+1. Click **My Recycle Bin** under your profile
+
+    ![Recycle Bin menu](../images/recovering-documents-recyclebin-menu.jpg)
+
+2. The Recycle Bin window displays all documents you've deleted
+
+    ![Recycle Bin list](../images/my_recycle_bin_list.jpg)
+
+3. Select the document you wish to recover
+4. Click **Restore**
+5. Choose a folder to restore the document to
+6. Confirm your action
+
+!!! success "Full Recovery"
+    Restored documents include all original information, including version history.
+
+---
+
+## Emptying the Recycle Bin
+
+Depending on System Administrator settings, you may see an **"Empty Recycle Bin"** button.
+
+!!! warning "Still Recoverable"
+    Even after emptying your Recycle Bin, documents are moved to the **System Recycle Bin**. The System Administrator or members of the Administrators group can still recover these documents.
+
+---
+
+## See Also
+
+- [Personal Dashboard](PersonalDashboard.md)
+- [Manage Recycle Bin](ManageRecycleBin.md)
+- [Working with Documents](Documents.md)

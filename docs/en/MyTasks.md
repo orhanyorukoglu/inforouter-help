@@ -1,82 +1,82 @@
-# Tasks assigned to or by you
+# My Tasks
 
-Clicking on the "My Tasks" link will open the "Tasks" window.
+The **My Tasks** view displays all tasks assigned to you or by you, with powerful filtering options to help you manage your workload.
 
-The tasks window contains many filters to control the list of tasks displayed. These filters allow you to see the following:
+---
 
-* Tasks that were assigned to you
-* Tasks that were assigned by you to others
-* Tasks that were assigned by others to others
+## Accessing My Tasks
 
-Ordinary users can only see the tasks that they have assigned to others and the tasks that were assigned to them.
+1. Go to your **Personal Dashboard**
+2. Click **My Tasks**
 
-Filtering based on task status:
+---
 
-You can filter the task list by using task status filter. The choices are:
+## Task Views
 
-* Overdue tasks
-* Due tasks
-* Completed task
+| View | Description |
+|------|-------------|
+| **Tasks assigned to me** | Tasks others have assigned to you |
+| **Tasks assigned by me** | Tasks you've assigned to others |
+| **Tasks assigned by others** | Tasks between other users (administrators only) |
 
-Filtering based on dates:
+!!! note "Permissions"
+    Ordinary users can only see tasks they've assigned and tasks assigned to them.
 
-You can filter the task list by using due dates. The choices are:
+---
 
-* Up to next 3 days
-* Up to next 10 days
-* Up to next 20 days
-* Up to next 30 days
-* Last month
-* Last week
-* Yesterday
-* Today
-* Tomorrow
-* This week
-* Next week
-* This month
-* Next month
+## Filter Options
 
-Filtering based on "Assigned by":
+### By Status
 
-You can filter the task list by using assigned by. The choices are:
+| Filter | Description |
+|--------|-------------|
+| **Overdue tasks** | Past due date |
+| **Due tasks** | Approaching or at due date |
+| **Completed tasks** | Already finished |
 
-* Tasks assigned by me
-* Select \*
+### By Date Range
 
-\* The "select" option launches a window to prompt for a user.
+| Filter | Description |
+|--------|-------------|
+| **Today** / **Tomorrow** / **Yesterday** | Single day |
+| **This week** / **Next week** / **Last week** | Week-based |
+| **This month** / **Next month** / **Last month** | Month-based |
+| **Up to next 3/10/20/30 days** | Rolling periods |
 
-Filtering based on "Assigned to":
+### By Assignment
 
-You can filter the task list by using assigned to. The choices are:
+| Filter | Options |
+|--------|---------|
+| **Assigned by** | Tasks assigned by me, or select specific user |
+| **Assigned to** | Tasks assigned to me, or select specific user |
+| **Supervisor** | Supervised tasks, or select supervisor |
 
-* Tasks assigned to me
-* Select \*
+### By Content
 
-\* The "select" option launches a window to prompt for a user.
+| Filter | Description |
+|--------|-------------|
+| **Document type** | Filter by document type |
+| **Library** | Filter by library |
+| **Workflow name** | Filter by workflow |
 
-Filtering based on Supervisor:
+---
 
-You can filter the task list by using supervisor. The choices are:
+## Using Filters
 
-* Supervised tasks
-* Select \*
+1. Open the filter panel
+2. Select your filter criteria
+3. The task list updates automatically
+4. Combine multiple filters to narrow results
 
-When selected, the "Supervised tasks" limits the list of tasks to only those task that are supervied by you.
+!!! tip "Efficient Task Management"
+    Use date filters like "Due tasks" or "Overdue tasks" to prioritize your work and meet deadlines.
 
-\* The "select" option launches a window to prompt for a user. The list will then be limited only to those task that are supervised by you.
+---
 
-Filtering based on Document type:
+## See Also
 
-You can filter the task list by document type. The choices are the defined document types in infoRouter
-
-Filtering based on Library:
-
-You can filter the task list by library. The choices are all the libraries you can access. The list will be limited to only those tasks that have been created in the selected library.
-
-Filtering based on Workflow Name:
-
-You can filter the task list by workflow name. The choices are the defined workflows you can see
-
-See also:
-
-[Tasks](TasksIntro.md)
+- [Introduction to Tasks](TasksIntro.md)
+- [How to Create Tasks](HowtoCreateTasks.md)
+- [How to Complete Tasks](HowtoCompleteTasks.md)
+- [Task Redirection](TaskRedirection.md)
+- [Personal Dashboard](PersonalDashboard.md)
