@@ -1,61 +1,89 @@
-# Documents / Introduction
+# Working with Documents
 
 Whether you work in words, pictures, audio, or video, infoRouter can manage any type of document or file in its **native format**.
 
-infoRouter allows users to create, manage, share and distribute almost any form of electronic document using any desktop software or tool.
+!!! tip "Universal File Support"
+    Word processing documents, reports, forms, audio, video, artwork, photographs, engineering documents, drawings — virtually any file format can be stored and managed in infoRouter.
 
-Word processing documents, reports, forms, audio, video, artwork (any type of graphics), photographs, engineering documents, drawings and virtually any file format can be stored and managed in infoRouter.
+---
 
-There are 6 types of documents in infoRouter:
+## Document Types
 
-Regular Documents
+infoRouter supports six types of documents:
 
-Regular documents are typical files created by desktop applications such as Word, Excel, etc. Once they are created, they are uploaded to infoRouter.
+| Type | Description | Learn More |
+|------|-------------|------------|
+| :material-file-document: **Regular Documents** | Files created by desktop applications (Word, Excel, etc.) and uploaded to infoRouter | [Creating Documents](CreatingDocuments.md) |
+| :material-file-code: **Template Documents** | HTML documents created using infoRouter Templates, can be rendered with other templates | [Form Templates](FormTemplatesIntro.md) |
+| :material-file-link: **Document Shortcuts** | Links to documents in other locations, providing access without navigating to the original | [Document Shortcuts](DocumentShortcuts.md) |
+| :material-link: **URLs** | Links to external or internal websites or pages | [URL Documents](URLs.md) |
+| :material-language-html5: **HTML Documents** | Created using the built-in HTML editor, can be viewed as PDF | — |
+| :material-email: **Email Documents** | Registered emails in EML format | [Office Add-in](OfficeAddin.md) |
 
-For more on this topic, see also: [Creating Documents](CreatingDocuments.md)
+---
 
-Template Documents
+## Regular Documents
 
-Template documents are documents created directly inside of infoRouter by using Templates. Template documents are always of HTML type. These documents can be rendered with other templates making them very powerful.
+Regular documents are typical files created by desktop applications such as Microsoft Word, Excel, PowerPoint, Adobe PDF, and more. These are uploaded to infoRouter where they can be managed, shared, and versioned.
 
-For more on this topic, see also: [Form Templates](FormTemplatesIntro.md)
+:material-arrow-right: [Creating Documents](CreatingDocuments.md)
 
-Document Shortcuts
+---
 
-Shortcuts are also treated as documents. They can be created in any folder and point to any document in infoRouter. The most common use for shortcuts is to provide access to documents to users who cannot navigate to the original location of the document.
+## Template Documents
 
-For more on this topic, see also: [Document Shortcuts](DocumentShortcuts.md)
+Template documents are created directly inside infoRouter using the Templates feature. These documents:
 
-URLs
+- Are always HTML format
+- Can be rendered with other templates
+- Provide powerful form-based document creation
 
-URLs are also treated as documents. They can be created in any folder and they are used to point to external or internal web sites or pages.
+:material-arrow-right: [Form Templates](FormTemplatesIntro.md)
 
-For more on this topic, see also: [URL Documents](URLs.md)
+---
 
-Built-in HTML Editor
+## Document Shortcuts
 
-This tool allows users to create to new HTML documents which can also be viewed in PDF format. The new editor can be launched under the new menu.
+Shortcuts provide access to documents for users who cannot navigate to the original location. They can be created in any folder and point to any document in infoRouter.
 
-E-mail Registration
+:material-arrow-right: [Document Shortcuts](DocumentShortcuts.md)
 
-You may register e-mails in EML format using the new menu and uploading the EML file into infoRouter just like any another document.
+---
 
-EML formats are automatically parsed out to create the different sections of an e-mail and presented in the infoRouter e-mail format.
+## URL Documents
 
-Emails can also be registered into infoRouter by using the MS Office Add-in within MS Outlook.
+URLs are treated as documents and can be created in any folder. They point to external or internal websites or pages.
 
-Remember, only e-mail formats with the EML extension are allowed through the web interface. Outlook (MSG format) e-mails are automatically processed through the MS Office Integration Add-in.
+:material-arrow-right: [URL Documents](URLs.md)
 
-An important point to remember about e-mail documents are that these documents cannot be edited (Checked out).
+---
 
-For more on this topic, see also: MS Office Integration document.
+## Email Registration
 
-Emails are treated as documents, so they can be copied, moved, deleted, searched for, etc. and are subject to security just like other document formats.
+You can register emails in infoRouter through two methods:
 
-Please take the time to review this document
+| Method | Format | Notes |
+|--------|--------|-------|
+| **Web Interface** | EML files only | Upload like any other document |
+| **MS Office Add-in** | MSG and EML | Register directly from Outlook |
 
-[Capturing documents](https://www.infoRouter.com/downloads/V80/Capturing_Documents_with_infoRouter.pdf)
+!!! info "Email Processing"
+    EML files are automatically parsed to extract email sections (sender, recipients, subject, body, attachments) and presented in the infoRouter email format.
 
-See also:
+!!! warning "Email Limitations"
+    Email documents cannot be edited or checked out. They are read-only but can be copied, moved, deleted, and searched like other documents.
 
-[Office Addin](OfficeAddin.md)
+---
+
+## Additional Resources
+
+:material-download: [Capturing Documents with infoRouter (PDF)](https://www.infoRouter.com/downloads/V80/Capturing_Documents_with_infoRouter.pdf)
+
+---
+
+## See Also
+
+- [Viewing Documents](ViewDocument.md)
+- [Uploading Documents](UploadingDocuments.md)
+- [Office Add-in](OfficeAddin.md)
+- [Check In](CheckIn.md) / [Check Out](CheckOut.md)

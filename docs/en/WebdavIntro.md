@@ -1,17 +1,61 @@
-# WebDAV / Introduction to infoRouter WebDAV
+# WebDAV Interface
 
-WebDAV (Web Distributed Authoring and Versioning) is an extension to the HTTP/1.1 protocol that allows clients to perform remote web content authoring operations. *Source:* WebDAV.org
+WebDAV (Web Distributed Authoring and Versioning) is an extension to HTTP that allows clients to perform remote web content authoring operations. infoRouter fully supports WebDAV to provide an alternative way to access documents.
 
-There are a handful of applications that support this protocol. infoRouter fully supports this protocol to provide an alternative interface to access infoRouter.
+---
 
-The WebDAV interface allows users to access infoRouter documents and folders using the Windows File Explorer.
+## What is WebDAV?
 
-There are a few differences worth noting:
+The WebDAV interface allows you to access infoRouter documents and folders using **Windows File Explorer** — treating infoRouter like a network drive.
 
-The "Check In" and "Check Out" operations are automatic and there is no interface to explicitly "Check Out" or "Check In" a document. This is done automatically when you open an infoRouter document for editing in editing tools that are WebDAV compliant. Once again, there are a handful of editing tools that are compliant. Examples of WebDAV compliant client tools are; MS Word, MS Excel, MS PowerPoint etc.
+!!! info "Source"
+    WebDAV is an industry standard protocol. Learn more at [WebDAV.org](https://www.webdav.org)
 
-As of Version 7.5.81 of infoRouter we have introduced many alternatives to WebDAV.
+---
 
-The MS Office integration introduced in earlier versions continues to be a strong alternative to WebDAV. In fact the Office Add-in tool supports many features that WebDAV cannot support.
+## Key Differences from Web Interface
 
-The new Import/Export Tool introduced as a client side GUI application is once again a quick way to pull documents out of or push documents into infoRouter. This tool uses our Web Services API at its foundation and provides fast communications with the infoRouter server.
+| Feature | WebDAV | Web Interface |
+|---------|--------|---------------|
+| **Check In/Out** | Automatic | Manual |
+| **Access Method** | Windows Explorer | Web browser |
+| **Drag & Drop** | :material-check: Yes | Limited |
+| **Advanced Features** | Limited | Full access |
+
+!!! note "Automatic Version Control"
+    In WebDAV, Check In and Check Out operations are automatic — there's no explicit interface to check documents in or out. This happens automatically when you open and save documents.
+
+---
+
+## Compatible Applications
+
+WebDAV works with applications that support the protocol:
+
+- Microsoft Word
+- Microsoft Excel
+- Microsoft PowerPoint
+- Other WebDAV-compliant tools
+
+---
+
+## Alternative Options
+
+As of Version 7.5.81, infoRouter offers several alternatives to WebDAV:
+
+| Option | Description |
+|--------|-------------|
+| **[MS Office Add-in](OfficeAddin.md)** | Direct integration with Office applications, supports more features than WebDAV |
+| **[Import/Export Tool](ImportExport.md)** | GUI application for bulk document transfer using Web Services API |
+| **Web Interface** | Full-featured browser-based access |
+
+!!! tip "Recommended"
+    The MS Office Add-in provides better functionality than WebDAV for most use cases, including support for features that WebDAV cannot provide.
+
+---
+
+## See Also
+
+- [Setting Up WebDAV](WebdavSetup.md)
+- [Using WebDAV](UsingWebdav.md)
+- [MS Office Add-in](OfficeAddin.md)
+- [Import/Export Tool](ImportExport.md)

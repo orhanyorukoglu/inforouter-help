@@ -1,24 +1,58 @@
-# Documents / Viewing Documents
+# Viewing Documents
 
-To view the contents of a document, simply click on the displayed document link. The document will be opened with the associated application on your desktop. So if you click on a PDF document, more than likely the Adobe Acrobat Reader will be launched to display the document. Similarly, if you click on a Microsoft Word document, Microsoft Word will be launched and the document will be shown.
+To view a document, simply click on the document link in the Documents Panel. The document will open with its associated application on your desktop.
 
-![](../images/ViewDocument.jpg)
+![Viewing a document](../images/ViewDocument.jpg)
 
-Downloading a document for offline viewing:
+!!! example "Application Association"
+    - Click a **PDF** → Opens in Adobe Acrobat Reader
+    - Click a **Word document** → Opens in Microsoft Word
+    - Click an **Excel file** → Opens in Microsoft Excel
 
-* To download a document for offline viewing, simply right-click on the displayed document link and choose the "Save Target" option from the browser pop-up menu.
-* The browser will prompt you for a location to download the document.
-* Navigate to the desired location on your workstation and click "Ok" to complete the download.
+---
 
-Downloading Multiple documents for offline viewing:
+## Downloading Documents
 
-If you would like to download multiple documents at one time, perform the following:
+### Download a Single Document
 
-* Navigate to the folder from which you wish to download documents
-* Click on the check boxes to the left of the documents in the document list
-* Click on the "Edit" menu
-* Choose the "Download as Zip" menu item
+To download a document for offline viewing:
 
-infoRouter will compress the selected documents in ZIP format and download the zip file on to your desktop.
+1. **Right-click** on the document link
+2. Select **"Save Target As..."** (or "Save Link As..." depending on browser)
+3. Choose a location on your computer
+4. Click **Save** to complete the download
 
-![](../images/DownloadZip.jpg)
+---
+
+### Download Multiple Documents
+
+To download several documents at once:
+
+1. Navigate to the folder containing the documents
+2. Check the boxes next to the documents you want to download
+3. Click the **Edit** menu
+4. Select **"Download as Zip"**
+
+![Download as Zip option](../images/DownloadZip.jpg)
+
+!!! success "Bulk Download"
+    infoRouter compresses the selected documents into a single ZIP file and downloads it to your desktop. This is much faster than downloading files one at a time.
+
+---
+
+## Quick Reference
+
+| Action | How To |
+|--------|--------|
+| **View document** | Click the document link |
+| **Download single file** | Right-click → Save Target As |
+| **Download multiple files** | Select checkboxes → Edit → Download as Zip |
+
+---
+
+## See Also
+
+- [Working with Documents](Documents.md)
+- [Check Out Documents](CheckOut.md)
+- [Document Versions](DocumentVersions.md)
+- [Uploading Documents](UploadingDocuments.md)

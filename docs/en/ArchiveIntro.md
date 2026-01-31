@@ -1,17 +1,68 @@
-# Archiving / Introduction
+# Archiving
 
-Archiving takes infoRouter documents, folders and libraries offline and provides many optimizations.
+Archiving takes infoRouter documents, folders, and libraries offline while keeping them accessible when needed. This is ideal for managing completed projects, expired documents, and outdated content.
 
-Finished projects, proposals, expired documents, outdated memos and announcements can be archived and still accessed from within infoRouter.
+---
 
-Archived libraries, document and folders do not regularly appear in the infoRouter interface. A user option (Show Archives) has to be set in order for archives to be displayed. When visible, Archive library folders appear in purple so they can be distinguished from other libraries.
+## What Can Be Archived?
 
-One of the benefits of archiving infoRouter libraries, folders and documents is that they remain just as accessible as their online counterparts but they are out of the view.
+| Item | Description |
+|------|-------------|
+| :material-library: **Libraries** | Entire libraries with all their content |
+| :material-folder: **Folders** | Individual folders and their documents |
+| :material-file-document: **Documents** | Individual documents |
 
-Another benefit is that "Search" does not automatically include archived documents. This allows users to be able to limit their searches to "Online Only", "All Documents" and "Archived Only" documents. These settings can be set using the drop down option list in the "Search" window (Search Scope).
+---
 
-See also:
+## Benefits of Archiving
 
-[Archiving Libraries](ArchivingLibraries.md)
+### Clean Interface
 
-[Archiving Documents and Folders](ArchivingDocuments.md)
+Archived items don't appear in the normal infoRouter interface unless you specifically choose to view them.
+
+!!! tip "Identifying Archives"
+    When archives are visible, archived library folders appear in **purple** to distinguish them from online libraries.
+
+### Search Optimization
+
+Search doesn't automatically include archived documents. You can control search scope:
+
+| Search Scope | Description |
+|--------------|-------------|
+| **Online Only** | Search only active documents (default) |
+| **All Documents** | Search both online and archived |
+| **Archived Only** | Search only archived documents |
+
+### Full Accessibility
+
+!!! success "Still Accessible"
+    Archived content remains just as accessible as online content — it's simply hidden from the default view.
+
+---
+
+## Viewing Archives
+
+To view archived content:
+
+1. Go to your user settings
+2. Enable the **"Show Archives"** option
+3. Archived libraries will appear in purple
+
+---
+
+## Common Archiving Scenarios
+
+| Scenario | What to Archive |
+|----------|-----------------|
+| Completed projects | Archive the project folder or library |
+| Expired contracts | Archive individual documents |
+| Outdated policies | Archive superseded policy documents |
+| Year-end cleanup | Archive previous year's libraries |
+
+---
+
+## See Also
+
+- [Archiving Libraries](ArchivingLibraries.md)
+- [Archiving Documents and Folders](ArchivingDocuments.md)
+- [Retention and Disposition](Retention.md)

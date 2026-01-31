@@ -1,41 +1,78 @@
-# Documents / Checking Documents In - Creating new document versions.
+# Checking Documents In
 
-The infoRouter Document Management Software allows you to create multiple versions of documents. Using this feature, you can revert back to prior versions of documents. The Check In - Check Out mechanism built into the core of the software allows you to maintain document integrity. To make changes to documents, you must first check documents out, make changes then check them back in.
+The Check In process creates a new version of a document and releases it back to the repository. This is a core feature of infoRouter's version control system.
 
-To check a document in perform the following:
+!!! success "Version Control"
+    Every time you check in a document, infoRouter creates a new version. You can always revert to any prior version if needed.
 
-1. Click on the "Action" icon and select "Check In" or select the document by clicking on the check box, then choose the "Check In" menu item from the "Edit" menu.
-2. At the "Check In" window, click on the "Browse" button to navigate to the path where you downloaded your local copy and made your changes.
-3. Enter your comments (optional)
-4. Enter "Update Instructions". This information is included in the e-mail notification that goes out to the subscribers of this document (optional).
-5. Update the "Percent Complete" information or set a "Completion Date" if you have completed this document.
-     
-    Note: Marking a document as complete will disallow further edits to this document until the completion date is reset or the percent complete information is set to something other than 100% (optional).
-6. If you wish to release a new version of this document but continue to work on it, click on the check box labeled "Keep checked out" (optional).
-7. Click on the "Check In" button
+---
 
-Notice that by default, the "Send Mail to Subscribers" is checked. If you feel that you have more work to do with this document and would not like to notify users just yet, then uncheck the "Send Mail to Subscribers" check box.
+## How to Check In a Document
 
-Force "Check In" :
+### Step 1: Access Check In
 
-Force "Check In" is a special right that allows a user to "Check In" a document that is checked out to another user.
-This action unlocks the checked out document, allowing other users to check this document out and make changes.
+Use one of these methods:
 
-In order to be able to Force "Check In" a document, one of the following is required:
+- Click the **Action** icon and select **Check In**
+- Select the document checkbox, then go to **Edit** → **Check In**
 
-* You must be the owner of the document
-* You must have Full Control rights to the document
-* You must be the System Administrator.
-* You must be a members of the Administrators system user group.
-* You must be a Library Manager.
+![Check In menu](../images/checkin-document-menu.jpg)
 
-#### To Force "Check In" a document:
+### Step 2: Complete the Check In Form
 
-* Select a checked out document
-* Click on the "Action" icon and choose the "Properties" menu to navigate to the document properties window.
-* Scroll down to the section labeled "Checked out by"
-* Click on the "Check in" icon in this section
-* Confirm that you wish to force check in the document
+![Check In popup](../images/checkin-document-popup.jpg)
 
-![](../images/checkin-document-menu.jpg)
-![](../images/checkin-document-popup.jpg)
+| Field | Description | Required |
+|-------|-------------|----------|
+| **File** | Click Browse to select your modified file | Yes |
+| **Comments** | Notes about changes made to the document | No |
+| **Update Instructions** | Information included in email notifications to subscribers | No |
+| **Percent Complete** | Progress indicator for the document | No |
+| **Completion Date** | Mark when document will be complete | No |
+| **Keep checked out** | Release a new version but continue editing | No |
+| **Send Mail to Subscribers** | Notify subscribers about the update | No (checked by default) |
+
+### Step 3: Submit
+
+Click the **Check In** button to complete the process.
+
+!!! warning "Completion Status"
+    Setting a document to 100% complete or adding a completion date will **prevent further edits** until the completion date is reset or percent complete is changed.
+
+!!! tip "Controlling Notifications"
+    If you have more work to do and don't want to notify subscribers yet, uncheck **"Send Mail to Subscribers"** before checking in.
+
+---
+
+## Force Check In
+
+Force Check In allows authorized users to unlock a document that is checked out to someone else.
+
+### Who Can Force Check In?
+
+| Role | Can Force Check In |
+|------|-------------------|
+| Document Owner | :material-check: Yes |
+| Users with Full Control rights | :material-check: Yes |
+| System Administrator | :material-check: Yes |
+| Administrators group members | :material-check: Yes |
+| Library Manager | :material-check: Yes |
+
+### How to Force Check In
+
+1. Select the checked out document
+2. Click the **Action** icon → **Properties**
+3. Scroll to the **"Checked out by"** section
+4. Click the **Check In** icon
+5. Confirm the force check in action
+
+!!! warning "Use With Caution"
+    Force Check In will discard any changes the original user may have made to their local copy. Use this feature only when necessary.
+
+---
+
+## See Also
+
+- [Check Out Documents](CheckOut.md)
+- [Document Versions](DocumentVersions.md)
+- [Working with Documents](Documents.md)

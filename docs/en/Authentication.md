@@ -1,25 +1,76 @@
-# Security / User Authentication
+# User Authentication
 
-All users must have a valid account in infoRouter before they can access its secure resources. infoRouter accounts are created by the System Administrator and are stored in infoRouter's own security database.
+All users must have a valid account in infoRouter before they can access secure resources. Accounts are created by the System Administrator and stored in infoRouter's security database.
 
-Your account is what identifies you in the infoRouter system. It allows you to check documents in and out, and it allows you to be granted permissions within the document and folder security framework.
+!!! info "Why Authentication Matters"
+    Your account identifies you in the infoRouter system. It allows you to:
 
-LDAP Authentication:
+    - Check documents in and out
+    - Be granted permissions within the security framework
+    - Track your activity and document ownership
 
-In this mode, authentication is carried out by LDAP.
+---
 
-User accounts in LDAP can be imported and synchronized with infoRouter. When a user attempts to log into infoRouter, their credentials are passed on to and authenticated from LDAP not infoRouter. Account passwords are maintained and managed in LDAP so logins to infoRouter is possible as long as they are authenticated by LDAP. Click here to learn more about [Importing LDAP Users and Groups.](ImportingNTUsers.md)
+## Authentication Methods
 
-infoRouter Authentication:
+infoRouter supports three authentication modes:
 
-In this mode, authentication is carried out by infoRouter (even if they have been imported from LDAP). This mode is commonly used in environments that support a number of users who are not a part of an NT domain. (e.g. clients, vendors, etc.). All accounts are maintained inside infoRouter so changes to account passwords must be performed within infoRouter.
+| Mode | Description | Best For |
+|------|-------------|----------|
+| :material-server: **LDAP Authentication** | Credentials verified by LDAP/Active Directory | Organizations with existing directory services |
+| :material-database: **infoRouter Authentication** | Credentials verified by infoRouter's database | External users (clients, vendors, partners) |
+| :material-merge: **Mixed Authentication** | Some users via LDAP, others via infoRouter | Organizations with both internal and external users |
 
-Mixed Security Authentication:
+---
 
-In this mode, some accounts can be authenticated from LDAP while other accounts are authenticated by infoRouter. The "Authentication Type" setting in the "User Properties" window determines whether a user is authenticated from Windows (LDAP) or infoRouter.
+## LDAP Authentication
 
-See also
+In LDAP mode, authentication is handled by your organization's directory service.
 
-[Document Security](DocumentSecurity.md)
+**Key features:**
 
-[Folder Security](FolderSecurity.md)
+- User accounts in LDAP can be imported and synchronized with infoRouter
+- Credentials are passed to LDAP for verification
+- Passwords are maintained and managed in LDAP
+- Login works as long as LDAP authenticates the user
+
+:material-arrow-right: Learn more: [Importing LDAP Users and Groups](ImportingNTUsers.md)
+
+---
+
+## infoRouter Authentication
+
+In this mode, infoRouter handles all authentication internally (even for users imported from LDAP).
+
+**Key features:**
+
+- All accounts are maintained inside infoRouter
+- Password changes must be performed within infoRouter
+- Commonly used for external users not part of an NT domain
+
+!!! tip "When to Use"
+    This mode is ideal for clients, vendors, partners, or anyone who doesn't have an account in your organization's directory.
+
+---
+
+## Mixed Security Authentication
+
+Mixed mode allows different authentication methods for different users.
+
+**Key features:**
+
+- Some accounts authenticate via LDAP
+- Other accounts authenticate via infoRouter
+- The **"Authentication Type"** setting in User Properties determines which method applies to each user
+
+!!! example "Use Case"
+    Internal employees authenticate via Active Directory, while external contractors authenticate via infoRouter accounts.
+
+---
+
+## See Also
+
+- [How to Login](Login.md)
+- [Document Security](DocumentSecurity.md)
+- [Folder Security](FolderSecurity.md)
+- [Importing LDAP Users](ImportingNTUsers.md)

@@ -1,20 +1,89 @@
-# Getting Started / How to Login to infoRouter
+# How to Login to infoRouter
 
-To log in as an authenticated user, click on the link located on your portal labeled "Member Login". If you do not have a User Name and Password, please contact the infoRouter System Administrator.
+This guide explains how to authenticate and access infoRouter as a registered user.
+
+## Logging In
+
+### Step 1: Click Member Login
+
+On the infoRouter portal page, locate and click the **"Member Login"** link.
 
 ![Member Login](../images/MemberLogin.jpg)
 
+### Step 2: Enter Credentials
+
+The login prompt will appear:
+
 ![The login prompt](../images/LoginPrompt.jpg)
 
-At the pop-up login screen, enter the following:
+Enter your credentials:
 
-1. Enter your User Name
-2. Enter your Password
+1. **User Name** — Your infoRouter username
+2. **Password** — Your password
 
-If this is your first time logging into infoRouter, infoRouter may prompt you to change your password.
+### Step 3: Submit
 
-If you would like infoRouter to remember your password, check the "Remember My Password" check box. The next time you use infoRouter, your browser will remember your credentials. You must have the "support for cookies enabled" feature set in your browser settings for this to work.
+Click **Login** to authenticate.
 
-Anonymous Access:
+!!! info "First Time Login"
+    If this is your first time logging in, infoRouter may prompt you to **change your password** for security purposes.
 
-In the Anonymous mode, infoRouter looks quite different and many of the most powerful functions are disabled. However, you can access "Anonymous Libraries" without having to log in.
+## Remember Me Option
+
+Check the **"Remember My Password"** checkbox to have your browser save your credentials.
+
+!!! warning "Requirements"
+    - Cookies must be enabled in your browser
+    - Only use this option on private, secure computers
+    - Do not use on shared or public computers
+
+## Authentication Methods
+
+Depending on your organization's configuration, you may authenticate using:
+
+| Method | Description |
+|--------|-------------|
+| **infoRouter Authentication** | Username and password created in infoRouter |
+| **Windows/LDAP Authentication** | Your network domain credentials (NTLM) |
+| **Single Sign-On** | Automatic login using your Windows session |
+
+!!! tip "Which method do I use?"
+    Contact your system administrator if you're unsure which authentication method your organization uses.
+
+## Anonymous Access
+
+infoRouter also supports **anonymous access** for public content.
+
+In anonymous mode:
+
+- Many advanced features are disabled
+- You can only access **Anonymous Libraries**
+- No login is required
+
+!!! note "Limited Functionality"
+    Anonymous access is designed for public document sharing. For full functionality, log in with your credentials.
+
+## Troubleshooting Login Issues
+
+| Problem | Solution |
+|---------|----------|
+| Forgot password | Contact your system administrator |
+| Account locked | Wait for lockout period or contact admin |
+| Invalid credentials | Verify username and password are correct |
+| Cannot see login link | Check your browser's JavaScript settings |
+
+## After Logging In
+
+Once logged in, you'll have access to:
+
+- Your assigned document libraries
+- Personal dashboard
+- Full search capabilities
+- Document management features
+
+## See Also
+
+- [How to Access infoRouter](AccessingInfoRouter.md)
+- [The Work Area](WorkArea.md)
+- [User Authentication](Authentication.md)
+- [User Profile](UserProfile.md)

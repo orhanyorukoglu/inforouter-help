@@ -1,76 +1,106 @@
-# Users and User Management / User Groups
+# User Groups
 
-A user group is a logical grouping of users. User groups make the distribution of documents and assignment of security easier.
+User groups are logical groupings of users that make security assignment and document distribution easier. Instead of assigning permissions to individual users, you can assign permissions to a group.
 
-There are three types of user groups
+---
 
-1. Global User Groups
-2. System User Groups (roles)
-3. Local User Groups
+## Group Types
 
-Global user groups are defined at the system level and can be applied to or used in all libraries
+infoRouter supports three types of user groups:
 
-Local user groups are defined at the library level and can only be used in the library in which they are created.
+| Type | Scope | Description |
+|------|-------|-------------|
+| :material-earth: **Global User Groups** | System-wide | Can be used in all libraries |
+| :material-shield-account: **System User Groups** | System-wide | Define administrative roles |
+| :material-library: **Local User Groups** | Single library | Only available within one library |
 
-Creating a Global User Group:
+---
 
-1. Click on the "Control Panel" link.
-2. Click on "Global User Groups".
-3. Click on "New" from the left sidebar.
-4. Enter a name for the user group.
-5. Check the "Private user group" checkbox if you wish to keep the members of this local user group private.
-6. Finally click "OK" to create the new global user group.
+## Global User Groups
 
-Adding users to a Global User Group:
+Global groups are defined at the system level and can be applied across all libraries.
 
-1. To add users to the new group, highlight the group name from the list.
-2. Click on the "Add Member" link from the left sidebar.
-3. Select the users you wish to add to this user group by clicking on the check boxes for each user.
-4. Click on the "OK" button.
+### Creating a Global User Group
 
-Creating a Local User Group:
+1. Click **Control Panel**
+2. Click **Global User Groups**
+3. Click **New** in the sidebar
+4. Enter a name for the group
+5. Check **"Private user group"** to hide member list (optional)
+6. Click **OK**
 
-1. Click on the "Control Panel" link.
-2. Click on "Libraries".
-3. Select the library for which you wish to create a Local User Group.
-4. Click on "Local Groups".
-5. Click on "New" from the left sidebar.
-6. Enter a name for the new local user group.
-7. Check the "Private user group" checkbox if you wish to keep the members of this local user group private.
-8. Finally click "OK" to create the new local user group.
+### Adding Users to a Global Group
 
-Adding users to a Local User Group:
+1. Select the group from the list
+2. Click **Add Member** in the sidebar
+3. Check the boxes for users to add
+4. Click **OK**
 
-1. To add users to the new group, select the group name from the list.
-2. Click on the "Add Member" link from the left sidebar.
-3. Select the users you wish to add to this user group by clicking on the check boxes for each user.
-4. Click on the "OK" button.
+---
 
-Deleting a User Group:
+## Local User Groups
 
-1. Navigate to the "User Group" list (either in the "Global User Groups" area, or in the "Local User Groups" area for the library in question).
-2. Select the User Group you wish to delete from the "User Group" list.
-3. Click on the "Delete" link located in the left sidebar.
-4. Click "OK".
+Local groups are defined within a library and can only be used in that library.
 
-System User Groups
+### Creating a Local User Group
 
-System user groups are defined at the system level by the System Administrator.
+1. Click **Control Panel**
+2. Click **Libraries**
+3. Select the library
+4. Click **Local Groups**
+5. Click **New** in the sidebar
+6. Enter a name for the group
+7. Check **"Private user group"** to hide member list (optional)
+8. Click **OK**
 
-Members of system user groups are assigned special priveledges called "Roles" that allow members to perform functions usually reserved for the system administrator.
+### Adding Users to a Local Group
 
-[Audit Managers](AuditManagers.md)
+1. Select the group from the list
+2. Click **Add Member** in the sidebar
+3. Check the boxes for users to add
+4. Click **OK**
 
-[Policy Managers](PolicyManagers.md)
+---
 
-[User Managers](UserManagers.md)
+## System User Groups (Roles)
 
-[Library Managers](LibraryManagers.md)
+System user groups define administrative roles with special privileges:
 
-[Portal Administrators](PortalAdmins.md)
+| Role | Description |
+|------|-------------|
+| [Administrators](Administrators-User-Group.md) | Full system access |
+| [Audit Managers](AuditManagers.md) | Manage audit logs |
+| [Policy Managers](PolicyManagers.md) | Manage retention policies |
+| [User Managers](UserManagers.md) | Create and manage users |
+| [Library Managers](LibraryManagers.md) | Manage specific libraries |
+| [Portal Administrators](PortalAdmins.md) | Manage portal configurations |
+| [Category Administrators](CategoryAdministrators.md) | Manage categories and saved searches |
 
-[Search & Category Administrators](CategoryAdministrators.md)
+---
 
-Security considerations:
+## Deleting a User Group
 
-Only the System Administrator, members of the “administrators” system user group and members of the "User Managers" system user group can create and manage global user groups
+1. Navigate to the User Group list (Global or Local)
+2. Select the group to delete
+3. Click **Delete** in the sidebar
+4. Click **OK** to confirm
+
+---
+
+## Security Considerations
+
+!!! warning "Who Can Manage Groups"
+    Only the following can create and manage **global** user groups:
+
+    - System Administrator
+    - Members of the Administrators system user group
+    - Members of the User Managers system user group
+
+---
+
+## See Also
+
+- [Users](Users.md)
+- [Local User Groups](LocalUserGroups.md)
+- [User Managers](UserManagers.md)
+- [Library Managers](LibraryManagers.md)

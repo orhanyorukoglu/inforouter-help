@@ -1,34 +1,55 @@
-# Custom Property Sets / Definitions
+# Custom Property Sets
 
-Custom Document Property Sets are user defined Meta Data sets that can be attached to folders and documents. They are used to further define the document or folder.
+Custom Property Sets are user-defined metadata fields that can be attached to folders and documents. They allow you to add structured information beyond the standard document properties.
 
-A common use for this feature is to allow documents to be searched based on custom information, rather than just their name or content.
+![Custom Properties](../images/custom-properties-link.jpg)
 
-Examples:
+---
 
-I want every invoice document where the invoice amount is **more than** $400.00
-  
-I want every invoice document that was issued **after** January 5th, 2015.
-  
-I want every proposal we wrote to customer XYZ
-  
-I want every e-mail coming from james@acme.com
-  
-I want every resume where the hometown is London
-  
-  
+## Why Use Custom Properties?
 
-Consider the example where you are looking for invoices in the amount of more than $400.00.
-You could easily find the invoices that have an exact invoice amount of $400.00 but what if you needed more than that?
+Custom properties enable powerful search capabilities based on your specific business data, not just document names or content.
 
-Custom properties allow you to search in ranges. This is much more than a simple full-text search.
+!!! example "Search Examples"
+    - Find all invoices where the amount is **more than** $400.00
+    - Find all invoices issued **after** January 5th, 2015
+    - Find all proposals written for customer **XYZ**
+    - Find all emails from **james@acme.com**
+    - Find all resumes where hometown is **London**
 
-Custom Properties can be defined *globally* or at the *library level*. This allows you to create a custom document property set that only appears in one or selected libraries. This way, "Custom Property Sets" that do not apply to certain libraries can be hidden from view.
+!!! tip "Range Searches"
+    Custom properties allow you to search in ranges (greater than, less than, between dates) — much more powerful than simple full-text search.
 
-![](../images/custom-properties-link.jpg)
+---
 
-See also:
+## Scope Options
 
-[Examples and usage scenarios of Custom Properties](CustomPropertySets.md)
+Custom Properties can be defined at two levels:
 
-[How to create custom property sets](HowtoCreateCustomPropertySets.md)
+| Scope | Description |
+|-------|-------------|
+| :material-earth: **Global** | Available across all libraries |
+| :material-library: **Library Level** | Only appears in specific libraries |
+
+This allows you to create property sets that are relevant only to certain departments or projects, keeping the interface clean for users who don't need them.
+
+---
+
+## Common Use Cases
+
+| Use Case | Custom Properties |
+|----------|-------------------|
+| **Invoices** | Invoice number, amount, date, customer |
+| **Contracts** | Contract ID, parties, expiration date, value |
+| **HR Documents** | Employee ID, department, hire date |
+| **Projects** | Project name, phase, deadline, budget |
+| **Correspondence** | Sender, recipient, date, reference number |
+
+---
+
+## See Also
+
+- [Examples and Usage Scenarios](CustomPropertySets.md)
+- [How to Create Custom Property Sets](HowtoCreateCustomPropertySets.md)
+- [Applying Custom Property Sets](ApplyingCustomPropertySets.md)
+- [Editing Custom Property Sets](EditingCustomPropertySets.md)

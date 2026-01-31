@@ -1,53 +1,151 @@
-# Basic Concepts / Basic Document Management concepts you should know about
+# Basic Concepts
 
-Please review this section to familiarize yourself with basic infoRouter Document Management concepts.
+Before you start using infoRouter, familiarize yourself with these fundamental concepts.
 
 ![infoRouter Basic Concepts](../images/IRGUI.jpg)
 
-Libraries:
+## Libraries
 
-Libraries (infoRouter work areas) are root-level folders. They can be seen on the left of the image above labeled 1.
-Libraries are isolated environments in which a group of users can work, collaborate and produce documents.
+**Libraries** are root-level folders that serve as isolated work areas in infoRouter.
 
-Only the members of libraries can navigate inside libraries or even see that they exist.
-Users and User Groups are assigned as "Members" to libraries by the System Administrator and
-by the members of the "Administrators" and the "User Managers" system user group.
-More on this topic in [Libraries](Libraries.md).
+!!! info "Key Points about Libraries"
+    - Libraries appear on the left side of the screen (labeled **1** in the image above)
+    - Only library members can see or access a library
+    - Members are assigned by System Administrators or User Managers
 
-Folders:
+Libraries provide isolated environments where groups of users can:
 
-Folders are used to store and organize documents.
-  
- Folders may contain any number of documents in a wide variety of file formats.
-  
- Like libraries, access to folders is subject to security permissions. Users may be granted or denied access
-to individual folders. More on this topic in [Folders](Folders.md).
+- Work collaboratively
+- Store and organize documents
+- Manage access permissions
 
-Documents Pane:
+:material-arrow-right: Learn more: [Document Libraries](Libraries.md)
 
-Documents are shown on the right hand side of the screen in the documents pane, labeled 2.
+---
 
-The documents pane contains documents which can be virtually any electronic file produced by applications such as Microsoft Word, Microsoft Excel, Microsoft PowerPoint , WordPerfect, Visio, or any other type of electronic files such as audio and video files.
+## Folders
 
-infoRouter manages all types of electronic documents in their native format. In other words, it does not attempt to convert or interfere with document content. More on this topic in [Documents](Documents.md).
+**Folders** are containers used to store and organize documents within libraries.
 
-Custom Properties (Meta data):
+| Feature | Description |
+|---------|-------------|
+| **Organization** | Group related documents together |
+| **Security** | Apply specific permissions per folder |
+| **Nesting** | Create subfolders for hierarchical organization |
+| **Multiple Formats** | Store any file type |
 
-Custom Property Sets are user defined information sets that can be attached to folders, documents and users. They are used to further define the document, folder or user. A common use for this feature is to allow documents to be searched based on custom information, rather than just their name or content. More on this topic in
-[Custom Properties](CustomPropertyIntro.md).
+!!! tip "Folder Security"
+    Access to folders is controlled by security permissions. Users can be granted or denied access to individual folders independent of library membership.
 
-Portals:
+:material-arrow-right: Learn more: [Working with Folders](MovingFolders.md)
 
-infoRouter portals are customizable and can be personalized web pages that are capable of serving infoRouter content. Their main purpose is to greet users and provide content specific to users or a group of users. You may use infoRouter portals to create web pages for your partners, vendors and employees to provide colorful content rather than a dry list of folders and files. Because they are capable of serving content, you may choose to design portals that provide critical content all on the portal and avoid having to allow navigation into the document library. More on this topic in [Portals](PortalsIntro.md).
+---
 
-Content Searching:
+## Documents Pane
 
-infoRouter is capable of performing an internet-like search on documents and folders based on their content. Various common file formats are indexed giving infoRouter users the ability to search for documents based on their text content. You can use various third-party plug-ins called "**iFilters**" to broaden the range of file formats that can be indexed. More on this topic in [Searching in infoRouter](searchbook.md).
+The **Documents Pane** displays on the right side of the screen (labeled **2** in the image above).
 
-Version Control:
+infoRouter manages all types of electronic documents in their **native format**:
 
-infoRouter retains multiple versions of a document. Every time a document is checked out, edited and checked back in, infoRouter creates a new copy of this document and retains all previous versions. All versions are retained until the owner of the document or an authorized user decides to clean up previous versions.
+- Microsoft Office files (Word, Excel, PowerPoint)
+- PDF documents
+- Images and graphics
+- Audio and video files
+- CAD drawings
+- Any other electronic file type
 
-When you click on a document to view its contents, infoRouter delivers the published version of that document. When you check out a document, infoRouter will deliver the latest version making it virtually impossible to accidentally work with an older copy.
+!!! note "Native Format Storage"
+    infoRouter does not convert or modify your documents. Files are stored exactly as created by their source applications.
 
-Version control allows you to revert back to older versions in case undesirable changes have been made to your documents. More on this topic in [Version Control](VersionControl.md).
+:material-arrow-right: Learn more: [Working with Documents](Documents.md)
+
+---
+
+## Custom Properties (Metadata)
+
+**Custom Property Sets** are user-defined fields that can be attached to:
+
+- :material-file-document: Documents
+- :material-folder: Folders
+- :material-account: Users
+
+### Common Uses
+
+| Use Case | Example |
+|----------|---------|
+| **Document Classification** | Project name, department, status |
+| **Search Enhancement** | Find documents by custom criteria |
+| **Compliance Tracking** | Retention dates, approval status |
+| **Business Metadata** | Customer ID, invoice number, case number |
+
+:material-arrow-right: Learn more: [Custom Properties](CustomPropertyIntro.md)
+
+---
+
+## Portals
+
+**Portals** are customizable web pages that serve infoRouter content to users.
+
+!!! example "Portal Use Cases"
+    - **Partner portals** — Share documents with external partners
+    - **Department portals** — Provide team-specific content
+    - **Customer portals** — Deliver documents to clients
+    - **Employee portals** — Company-wide document access
+
+Portals can be personalized and designed to provide specific content without requiring users to navigate the full document library.
+
+:material-arrow-right: Learn more: [infoRouter Portals](Portals.md)
+
+---
+
+## Content Searching
+
+infoRouter provides powerful **full-text search** capabilities similar to internet search engines.
+
+### Searchable Content
+
+- Document text content
+- File names
+- Custom properties
+- Metadata
+
+!!! tip "Expanding Search Capabilities"
+    Install third-party **iFilters** to index additional file formats beyond the defaults.
+
+:material-arrow-right: Learn more: [Searching for Documents](AdvancedSearch.md)
+
+---
+
+## Version Control
+
+infoRouter automatically maintains **multiple versions** of documents.
+
+### How Version Control Works
+
+```mermaid
+graph LR
+    A[Check Out] --> B[Edit Document]
+    B --> C[Check In]
+    C --> D[New Version Created]
+    D --> E[Previous Versions Retained]
+```
+
+| Action | Result |
+|--------|--------|
+| **View document** | Displays the published version |
+| **Check out** | Delivers the latest version for editing |
+| **Check in** | Creates a new version, retains previous |
+| **Revert** | Restore any previous version |
+
+!!! success "Never Lose Work"
+    All versions are retained until explicitly cleaned up by an authorized user. You can always revert to a previous version if needed.
+
+:material-arrow-right: Learn more: [Document Versions](DocumentVersions.md)
+
+---
+
+## See Also
+
+- [Getting Started](GettingStarted.md)
+- [The Work Area](WorkArea.md)
+- [Document Libraries](Libraries.md)

@@ -1,74 +1,107 @@
-# Users and User Management / Users
+# Users
 
-All users must have a valid account in infoRouter before they can access infoRouter (except Anonymous users).
-infoRouter user accounts are created by the System Administrator, members of the administrators system user group, members of the user managers system user group
-and Library Managers (local users) and are stored in infoRouter's own security database.
+All users must have a valid account in infoRouter before they can access the system (except Anonymous users). User accounts are stored in infoRouter's security database.
 
-Your user account is what identifies you to both the system and to other users. Only users with valid infoRouter accounts can be granted permissions within the document and folder security framework.
+!!! info "User Identity"
+    Your user account identifies you to both the system and other users. Only users with valid accounts can be granted permissions within the document and folder security framework.
 
-Users with valid accounts (also called authenticated users) can perform tasks such as creating documents, editing existing documents and creating folders as defined by their security profiles.
+---
 
-There are four types of Users:
+## User Types
 
-* Regular Users
-* Anonymous Users
-* Read Only Users
-* Local Users
+infoRouter supports four types of users:
 
-Regular Users:
+| Type | Description |
+|------|-------------|
+| :material-account: **Regular Users** | Full-featured accounts with assigned credentials |
+| :material-account-outline: **Anonymous Users** | Unauthenticated access to public content |
+| :material-eye: **Read Only Users** | Can view but not modify content |
+| :material-account-box: **Local Users** | Accounts limited to a single library |
 
-* They are assigned a user id and password.
-* They can be audited and tracked.
-* They only see and operate in anonymous libraries and libraries to which they have been granted access.
-* They access and operate in folders to which they have been granted access.
-* Their activites are limited by document and folder security assigned to them.
-* They can create, edit documents and folders based on the security that has been assigned to them.
+---
 
-Anonymous Users:
+## Regular Users
 
-Anonymous Users are NOT created. They exist inherently whenever Anonymous Libraries are created.
+Standard users with full capabilities within their assigned permissions.
 
-* They do not have user ids and passwords.
-* They cannot be audited and tracked.
-* They only see and operate in "anonymous libraries".
-* They cannot see or access libraries that are not "anonymous".
-* They cannot be assigned or granted security.
-* They can read documents in "anonymous libraries"
+| Feature | Description |
+|---------|-------------|
+| :material-check: Assigned user ID and password | |
+| :material-check: Can be audited and tracked | |
+| :material-check: Access anonymous libraries + assigned libraries | |
+| :material-check: Create, edit documents based on security | |
+| :material-check: Activities limited by assigned permissions | |
 
-Read Only Users:
+---
 
-Read Only users are created by the System Administrator, members of the "User Managers" system user group and members of the "administrators" user group.
+## Anonymous Users
 
-* They have assigned user ids and passwords just like regular users.
-* They can be audited and tracked.
-* They only see and operate in anonymous libraries and libraries to which they have been granted access.
-* They can be assigned or granted security (the maximumsecurity level is "READ").
-* They can read documents in "anonymous libraries".
-* They cannot edit, delete, or modify settings for any existing document or folder
-* They cannot create new documents or folders.
+Anonymous users exist automatically when Anonymous Libraries are created — they are not individually created.
 
-Local Users:
+| Feature | Description |
+|---------|-------------|
+| :material-close: No user ID or password | Access without logging in |
+| :material-close: Cannot be audited or tracked | |
+| :material-close: Cannot be assigned security | |
+| :material-check: Can view Anonymous Libraries only | |
+| :material-check: Can read documents in Anonymous Libraries | |
 
-Local users can be created by the System Administrator or Library Managers. These users are created locally inside individual libraries.
+---
 
-* They are assigned a user id and password.
-* They can be audited and tracked.
-* They only see and operate in anonymous libraries and the ONE library in which they have been created.
-* They cannot cross over to other libraries.
-* They access and operate in folders to which they have been granted access.
-* Their activites are limited by document and folder security assigned to them.
-* They can create, edit documents and folders based on the security that has been assigned to them.
+## Read Only Users
 
-See Also:
+Users who can view content but cannot make any changes.
 
-[Deleting Users](DeletingUsers.md)
+| Feature | Description |
+|---------|-------------|
+| :material-check: Assigned user ID and password | |
+| :material-check: Can be audited and tracked | |
+| :material-check: Access anonymous libraries + assigned libraries | |
+| :material-check: Maximum security level is **Read** | |
+| :material-close: Cannot edit, delete, or modify documents/folders | |
+| :material-close: Cannot create new documents or folders | |
 
-[Adding Users](AddingUsers.md)
+---
 
-[User Groups](UserGroups.md)
+## Local Users
 
-[Importing Users & User Groups](ImportingNTUsers.md)
+Users created within a specific library, limited to that library only.
 
-[LDAP Authentication](https://www.infoRouter.com/downloads/V80/infoRouter_LDAP_Authentication.pdf)
+| Feature | Description |
+|---------|-------------|
+| :material-check: Assigned user ID and password | |
+| :material-check: Can be audited and tracked | |
+| :material-check: Access ONE library (where created) + anonymous libraries | |
+| :material-close: Cannot access other libraries | |
+| :material-check: Create, edit based on assigned permissions | |
 
-[LDAP Synchronization Manager](https://www.infoRouter.com/downloads/V80/infoRouter_LDAP_Synchronization_Manager.pdf)
+!!! tip "When to Use Local Users"
+    Local users are ideal for external parties (clients, vendors) who need access to a specific project library but should not see other organizational content.
+
+---
+
+## Who Can Create Users?
+
+| User Type | Created By |
+|-----------|------------|
+| Regular Users | System Administrator, Administrators group, User Managers |
+| Read Only Users | System Administrator, Administrators group, User Managers |
+| Local Users | System Administrator, Library Managers |
+
+---
+
+## Additional Resources
+
+| Resource | Description |
+|----------|-------------|
+| :material-download: [LDAP Authentication (PDF)](https://www.infoRouter.com/downloads/V80/infoRouter_LDAP_Authentication.pdf) | Configure LDAP authentication |
+| :material-download: [LDAP Sync Manager (PDF)](https://www.infoRouter.com/downloads/V80/infoRouter_LDAP_Synchronization_Manager.pdf) | Synchronize users from LDAP |
+
+---
+
+## See Also
+
+- [Adding Users](AddingUsers.md)
+- [Deleting Users](DeletingUsers.md)
+- [User Groups](UserGroups.md)
+- [Importing Users & User Groups](ImportingNTUsers.md)

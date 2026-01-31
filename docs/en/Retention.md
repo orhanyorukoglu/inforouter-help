@@ -1,24 +1,63 @@
-# Retention & Disposition / Introduction
+# Retention & Disposition
 
-A retention and disposition schedule is a plan of action that specifies the period of time records should be retained.
-Retention and Disposition schedules provide a method in which records and documents are retained and disposed in a timely and systematic manner. This way, records that should be kept are not deleted and records that should be disposed are not kept longer than they need to be kept.
+A Retention and Disposition (R&D) schedule specifies how long records should be kept and what happens when that period ends. This ensures documents are retained when needed and disposed of appropriately when no longer required.
 
-Retention and Disposition schedules are managed by members of a special user group (system user group) called R&D Managers.
+---
 
-These schedules can then be applied to documents and folders by authorized users.
+## Why Use Retention Schedules?
 
-All documents and folders subject to retention are protected against accidental or deliberate deletion even in cases where the user attempting the delete operation has full privileges.
+!!! success "Compliance & Protection"
+    - Records that **should be kept** are protected from accidental or deliberate deletion
+    - Records that **should be disposed** are not kept longer than necessary
+    - Meets regulatory and legal compliance requirements
 
-Other system user groups
+---
 
-[Roles - Audit Managers](AuditManagers.md)
+## Key Features
 
-[Roles - Policy Managers](PolicyManagers.md)
+### Protected Documents
 
-[Roles - User Managers](UserManagers.md)
+All documents subject to retention are **protected against deletion**, even by users with full privileges.
 
-[Roles - Library Managers](LibraryManagers.md)
+!!! warning "Delete Protection"
+    Users cannot delete documents under retention, regardless of their permission level. This protection remains in effect until the retention period expires.
 
-[Roles - Portal Administrators](PortalAdmins.md)
+### Systematic Disposition
 
-[Roles - Search & Category Administrators](CategoryAdministrators.md)
+R&D schedules ensure documents are disposed of in a timely, systematic manner according to organizational policies.
+
+---
+
+## Managing R&D Schedules
+
+Retention and Disposition schedules are managed by members of the **R&D Managers** system user group.
+
+| Action | Who Can Perform |
+|--------|-----------------|
+| Create schedules | R&D Managers |
+| Modify schedules | R&D Managers |
+| Apply to documents | Authorized users |
+| Apply to folders | Authorized users |
+
+---
+
+## Related Administrative Roles
+
+| Role | Description |
+|------|-------------|
+| [Audit Managers](AuditManagers.md) | Manage audit logs and trails |
+| [Policy Managers](PolicyManagers.md) | Manage organizational policies |
+| [User Managers](UserManagers.md) | Manage user accounts |
+| [Library Managers](LibraryManagers.md) | Manage document libraries |
+| [Portal Administrators](PortalAdmins.md) | Manage portal configurations |
+| [Category Administrators](CategoryAdministrators.md) | Manage categories and saved searches |
+
+---
+
+## See Also
+
+- [R&D Schedules](RDSchedules.md)
+- [Document Retention](DocumentRetention.md)
+- [Folder Retention](FolderRetention.md)
+- [Disposition](Disposition.md)
+- [Archiving](ArchiveIntro.md)

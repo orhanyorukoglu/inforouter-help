@@ -2,52 +2,65 @@
 
 infoRouter includes a portal interface that greets users. Depending on the options chosen by the creator of the portal, certain navigation options may or may not be available.
 
-You can find out more about this topic in the **"Portal"** section of this help document. The infoRouter Document Library is designed to look and function similar to the Microsoft Windows Explorer.
+!!! info "Familiar Interface"
+    The infoRouter Document Library is designed to look and function similar to Microsoft Windows Explorer — folders on the left, files (documents) on the right.
 
-Folders are displayed on the left, and files (documents) are displayed on the right.
+:material-arrow-right: Learn more about portals: [infoRouter Portals](Portals.md)
+
+---
+
+## Navigation Tabs
 
 To navigate effectively, take note of the following sections (tabs) of infoRouter:
 
 ![infoRouter Tabs](../images/Tabs.jpg)
 
-Home Tab:
+| Tab | Description |
+|-----|-------------|
+| :material-home: **Home** | Navigate to your portal page |
+| :material-file-document-multiple: **Document Library** | View, edit, and create documents and folders |
+| :material-tag-multiple: **Categories** | Access predefined searches (saved searches) to find documents matching specific criteria |
+| :material-magnify: **Search** | Search for documents and folders using Advanced Search or Saved Search options |
+| :material-clipboard-check: **My Tasks** | View completed, pending, and overdue tasks (requires login) |
+| :material-cog: **Control Panel** | Administrative functions (System Administrators and Library Managers only) |
+| :material-help-circle: **Help** | Access help topics and documentation |
 
-Clicking on this tab will navigate you to your portal page.
+!!! note "My Tasks Tab"
+    The My Tasks tab only appears when you are logged in. It shows:
 
-Document Library Tab:
+    - Tasks assigned to you by other users
+    - Tasks you have assigned to others
+    - Completed, pending, and overdue tasks
 
-Clicking on this tab will navigate you to the infoRouter Document Library. The infoRouter Document Library is where you view, edit and create documents and folders.
+!!! warning "Control Panel Access"
+    The Control Panel tab is only visible to System Administrators and Library Managers. It provides administrative functions such as adding users, creating libraries, and managing user groups.
 
-Categories Tab:
+---
 
-Clicking on this tab will navigate you to the infoRouter Category Screen. In this screen, you may click on any of the predefined searches (sometimes called saved searches) to display a list of documents that match the predefined search criteria.
+## Main Panels
 
-Search:
+### Library Panel
 
-Clicking on this tab will navigate you to the infoRouter Search screen.
-  
- In this screen you will be able to search for documents and folders using the "Advanced Search" option or one of the available "Saved Search" options.
-
-My Tasks Tab:
-
-This tab will only appear when you are logged in by supplying a valid user name and password. Clicking on this tab will navigate you to a screen that contains all of your tasks. You may look at completed tasks, pending and overdue tasks that have been assigned to you by other infoRouter users. This screen also shows tasks that have been assigned by you to other infoRouter users.
-
-Control Panel Tab:
-
-This tab will not appear to most users. It only appears to the System Administrator and Library Managers. Clicking on this link will display the infoRouter Control Panel window which allows you to perform administrative functions such as adding users, creating libraries, creating and editing user groups, etc.
-
-Help Tab:
-
-Displays a collection of selected help topic links of commonly used functions in infoRouter as well as a link to the complete help file.
-
-Library Panel:
-
-This panel display a list of the available libraries and folders under them (sub-folders). All root-level folders are called libraries.
+The Library Panel displays on the left side of the screen, showing all available libraries and their folders (sub-folders).
 
 ![Document Libraries in infoRouter](../images/Libraries.jpg)
 
-Documents Panel:
+!!! tip "Understanding Libraries"
+    All root-level folders are called **libraries**. Libraries serve as isolated work areas for different teams or projects.
 
-This panel display a list of documents in the selected folder.
+---
 
-![](../images/Documents.jpg)
+### Documents Panel
+
+The Documents Panel displays on the right side of the screen, showing all documents in the currently selected folder.
+
+![Documents Panel](../images/Documents.jpg)
+
+---
+
+## See Also
+
+- [Basic Concepts](BasicConcepts.md)
+- [Document Libraries](Libraries.md)
+- [Working with Documents](Documents.md)
+- [Selecting Columns](SelColumns.md)

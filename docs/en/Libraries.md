@@ -1,40 +1,66 @@
-# Document Libraries / Introduction
+# Document Libraries
 
-Libraries are root-level folders that can be created and managed by the System Administrator. The System Administrator can delegate library management functions to other users by assigning [Library Managers](LibraryManagers.md).
+Libraries are root-level folders that serve as isolated work environments in infoRouter. They can be created and managed by the System Administrator or delegated [Library Managers](LibraryManagers.md).
 
-Libraries are isolated environments in which a group of users can work, collaborate and produce documents. Only the members of libraries can navigate inside libraries or even see that they exist.
+!!! info "Library Isolation"
+    Only members of a library can navigate inside it or even see that it exists. This provides complete privacy for departmental or project-based document management.
 
-Users and User Groups are assigned as "Members" to libraries by the System Administrator and "Library Managers".
+---
 
-The System Administrator and Library managers can also create "Local Users" within libraries. Local users are created locally inside individual libraries. Local users cannot cross into other libraries through library memberships. They are only visible in the library in which they were defined. Local users can perform the same functions as regular users but only in their defined library.
+## Library Membership
 
-Note:
+Users and User Groups are assigned as "Members" to libraries by the System Administrator or Library Managers.
 
-Users and User Groups can be members of multiple libraries
+!!! tip "Multiple Memberships"
+    Users and User Groups can be members of multiple libraries simultaneously.
 
-There are two types of libraries.
+### Local Users
 
-* Common libraries
-* Anonymous libraries
+The System Administrator and Library Managers can create **Local Users** within libraries:
 
-Why use Anonymous libraries?
+| Feature | Description |
+|---------|-------------|
+| **Scope** | Only visible in the library where they were created |
+| **Access** | Cannot cross into other libraries through memberships |
+| **Capabilities** | Same functions as regular users, but limited to their library |
 
-Anonymous libraries are used to publish public documents into a common area where everyone who can navigate to the library can access documents without having to log on or be defined as an infoRouter user. Anonymous users will be able to click on and view documents in anonymous libraries (subject to security) but only logged in users will be able to edit documents.
+---
 
-Common uses of libraries
+## Library Types
 
-* To form a private work group area. For example, the Human Resources department may be set up with a library that only they can see and access.
-* To store sensitive documents or projects in a private area. For example, the Legal department may have contractual requirements to keep documentation separate from general-purpose documentation.
-* Allow customers, partners, and vendors access to specific isolated areas (via anonymous libraries) without having to give them access to everything else.
+infoRouter supports two types of libraries:
 
-Click here for more information on [libraries and library usage scenarios](LibraryUsageScenarios.md)
+| Type | Description | Access |
+|------|-------------|--------|
+| :material-lock: **Common Libraries** | Private work areas for authorized members only | Requires login and membership |
+| :material-earth: **Anonymous Libraries** | Public document areas accessible without login | Anyone can view (subject to security) |
 
-See also:
+### Anonymous Libraries
 
-[Creating Libraries](CreatingLibraries.md)
+Anonymous libraries are used to publish public documents where anyone can access them without logging in or being defined as an infoRouter user.
 
-[Library Members](LibraryMembers.md)
+!!! note "Anonymous Access Limitations"
+    - Anonymous users can **view** documents (subject to security)
+    - Only **logged-in users** can edit documents
 
-[Local User Groups](LocalUserGroups.md)
+---
 
-[Deleting Libraries](DeletingLibraries.md)
+## Common Uses for Libraries
+
+| Use Case | Example |
+|----------|---------|
+| :material-account-group: **Private Work Groups** | Human Resources department with documents only they can access |
+| :material-shield-lock: **Sensitive Documents** | Legal department keeping contracts separate from general documentation |
+| :material-account-multiple: **External Access** | Customers, partners, and vendors accessing specific areas via anonymous libraries |
+
+:material-arrow-right: Learn more: [Library Usage Scenarios](LibraryUsageScenarios.md)
+
+---
+
+## See Also
+
+- [Creating Libraries](CreatingLibraries.md)
+- [Library Members](LibraryMembers.md)
+- [Library Managers](LibraryManagers.md)
+- [Local User Groups](LocalUserGroups.md)
+- [Deleting Libraries](DeletingLibraries.md)

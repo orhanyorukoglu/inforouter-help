@@ -1,65 +1,86 @@
-# Tasks / Introduction to infoRouter Tasks
+# Introduction to Tasks
 
-Tasks are document related job assignments that must be performed by infoRouter users.
+Tasks are document-related job assignments that must be performed by infoRouter users. They provide a structured way to request and track work on documents.
 
-Tasks can be assigned by authorized users to other infoRouter users.
+---
 
-Task assignees receive e-mail notifications for every task assigned to them and they can also track their tasks in the [My Tasks](MyTasks.md) window.
+## Task Types
 
-There are two types of tasks:
+infoRouter supports two types of tasks:
 
-* Tasks assigned by other users
-* Workflow tasks
+| Type | Description |
+|------|-------------|
+| :material-account-arrow-right: **User-Assigned Tasks** | Tasks created and assigned by other users |
+| :material-sitemap: **Workflow Tasks** | Tasks automatically assigned as part of a workflow process |
 
-Tasks assigned by other users
+---
 
-These types of task are assigned by other users by clicking on a document action icon and choosing the "Create Task" menu.
+## How Tasks Work
 
-These types of tasks can involve one or more of the following requests/requirements.
+1. An authorized user creates a task and assigns it to another user
+2. The assignee receives an email notification
+3. The assignee can view and manage tasks in [My Tasks](MyTasks.md)
+4. The assignee completes the required actions
+5. The task is marked as complete
 
-* Edit
+---
 
-  This requires the task assignee to edit the document to complete the task. It must be accompanied by an edit permission.
-* Read latest version
+## Task Requirements
 
-  This requires the task assignee to read the latest version of the document to complete the task.
-* Read published version
+Tasks can include one or more of the following requirements:
 
-  This requires the task assignee to read the published version of the to complete the task. It must be accompanied by an edit permission.
-* Provide task comments
+| Requirement | Description |
+|-------------|-------------|
+| :material-file-edit: **Edit** | Edit the document (requires edit permission) |
+| :material-eye: **Read Latest Version** | View the most recent version |
+| :material-eye-outline: **Read Published Version** | View the published version |
+| :material-comment-text: **Provide Task Comments** | Add comments about the task |
+| :material-certificate: **Provide ISO Comments** | Add ISO review comments (stored in special log) |
+| :material-clipboard-check: **Provide SOX Comments** | Add SOX review comments (stored in special log) |
+| :material-delete: **Dispose Document** | Complete document disposition |
+| :material-archive: **Archive Document** | Archive the document |
+| :material-arrow-down: **Downgrade Classification** | Lower the document's classification level |
+| :material-lock-open: **Declassify Document** | Remove classification from document |
 
-  This requires the task assignee to enter task comments to complete the task.
-* Provide ISO comments
+---
 
-  This requires the task assignee to enter ISO comments to complete the task. ISO comments are stored in a special log file which can be used to verify that regular ISO reviews have been performed.
-* Provide SOX comments
+## User-Assigned Tasks
 
-  This requires the task assignee to enter SOX comments to complete the task. SOX comments are stored in a special log file which can be used to verify that regular SOX reviews have been performed.
-* Dispose document
+These tasks are created manually by clicking a document's action icon and selecting **Create Task**.
 
-  This requires the task assignee to dispose the document to complete the task.
-* Archive document
+The task creator:
 
-  This requires the task assignee to archive the document to complete the task.
-* Downgrade classification level
+- Selects the assignee
+- Chooses required actions
+- Sets a due date
+- Adds instructions
 
-  This requires the task assignee to downgrade the classification level of the document to complete the task.
-* Declassify document
+---
 
-  This requires the task assignee to declassify the document to complete the task.
+## Workflow Tasks
 
-Workflow Tasks:
+Workflow tasks are automatically assigned as part of an ongoing workflow process. They follow the same requirements but are triggered by workflow rules rather than manual assignment.
 
-These types of tasks are assigned to users as a part of an ongoing workflow process and can involve the same requirements listed above.
+:material-arrow-right: Learn more: [Introduction to Workflows](WorkflowsIntro.md)
 
-See Also:
+---
 
-[My Tasks](MyTasks.md)
+## Task Notifications
 
-[Task redirection](TaskRedirection.md)
+Task assignees receive email notifications for:
 
-[Task Notifications](TaskNotifications.md)
+- New task assignments
+- Task reminders (approaching due date)
+- Overdue tasks
 
-[How to create tasks](HowtoCreateTasks.md)
+:material-arrow-right: Learn more: [Task Notifications](TaskNotifications.md)
 
-[How to complete tasks](HowtoCompleteTasks.md)
+---
+
+## See Also
+
+- [My Tasks](MyTasks.md)
+- [How to Create Tasks](HowtoCreateTasks.md)
+- [How to Complete Tasks](HowtoCompleteTasks.md)
+- [Task Redirection](TaskRedirection.md)
+- [Task Notifications](TaskNotifications.md)

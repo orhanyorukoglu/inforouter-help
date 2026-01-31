@@ -1,31 +1,56 @@
-# Subscriptions / Introduction
+# Subscriptions
 
-Subscriptions are a mechanism that automatically tracks changes to documents and folders and notifies infoRouter users.
+Subscriptions automatically track changes to documents and folders and notify you when changes occur.
 
-When you subscribe to a document, infoRouter automatically starts tracking the changes to this document and alerts you by sending an e-mail notification informing you of the changes.
+---
 
-When you subscribe to a folder, infoRouter automatically starts tracking the changes to this folder. infoRouter then alerts you by sending an e-mail notification informing you when new documents are created in this folder or when any of the documents within the folder are changed.
+## How Subscriptions Work
 
-These events are:
+### Document Subscriptions
 
-* New Documents
-* Read
-* Change (New versions)
-* Update (Meta changes to document properties)
-* Checkout
-* Approve
-* Reject
-* Comment
-* Move
-* Delete
-* Check In
+When you subscribe to a document, infoRouter tracks all changes and sends you email notifications.
 
-When you subscribe to a folder, infoRouter sends you an e-mail notification whenever a new document is created in that folder or a document in that folder is edited.
+### Folder Subscriptions
 
-To see a list of all your subscriptions, click on "My Subscriptions" in your profile section.
+When you subscribe to a folder, infoRouter notifies you when:
 
-See Also:
+- New documents are created in the folder
+- Existing documents in the folder are modified
 
-[Subscribing to Documents and Folders](Subscribing.md)
+---
 
-[Unsubscribing from Documents and Folders](Unsubscribing.md)
+## Tracked Events
+
+Subscriptions track the following events:
+
+| Event | Description |
+|-------|-------------|
+| :material-file-plus: **New Documents** | Document created in subscribed folder |
+| :material-eye: **Read** | Document was viewed |
+| :material-file-edit: **Change** | New version created |
+| :material-pencil: **Update** | Document properties modified |
+| :material-lock-open: **Check Out** | Document checked out for editing |
+| :material-lock: **Check In** | Document checked back in |
+| :material-check: **Approve** | Document approved in workflow |
+| :material-close: **Reject** | Document rejected in workflow |
+| :material-comment: **Comment** | Comment added to document |
+| :material-file-move: **Move** | Document moved to different location |
+| :material-delete: **Delete** | Document deleted |
+
+---
+
+## Viewing Your Subscriptions
+
+To see all your current subscriptions:
+
+1. Navigate to your **Personal Dashboard**
+2. Click **[My Subscriptions](MySubscriptions.md)**
+
+---
+
+## See Also
+
+- [Subscribing to Documents and Folders](Subscribing.md)
+- [Unsubscribing from Documents and Folders](Unsubscribing.md)
+- [My Subscriptions](MySubscriptions.md)
+- [Notifications](Notifications.md)

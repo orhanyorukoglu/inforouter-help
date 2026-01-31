@@ -1,27 +1,51 @@
-# User Profile / Introduction
+# Personal Dashboard
 
-The infoRouter "User profile" is a special area that contains user specific links.
+The Personal Dashboard is your personalized area in infoRouter containing user-specific links and shortcuts to your documents, tasks, and settings.
 
-These links are shortcuts designed to provide list of documents, tasks etc.
+![infoRouter Personal Dashboard](../images/User_Profile.jpg)
 
-To navigate to your "Personal Dashboard", simply click on the tab labeled with your name and last name.
+---
 
-![infoRouter my profile section](../images/User_Profile.jpg)
+## Accessing Your Dashboard
 
-For more information on this topic, please review the sub-topics under the Personal Dashboard topic.
+Click on the tab labeled with **your name** to navigate to your Personal Dashboard.
 
-See also:
+---
 
-[My checked out documents](MyCheckedOutDocuments.md)
+## Dashboard Features
 
-[My Documents](MyDocuments.md)
+Your Personal Dashboard provides quick access to:
 
-[My Recycle Bin](MyRecycleBin.md)
+| Section | Description |
+|---------|-------------|
+| :material-file-edit: **[My Checked Out Documents](MyCheckedOutDocuments.md)** | Documents currently checked out to you |
+| :material-file-document-multiple: **[My Documents](MyDocuments.md)** | Documents you own |
+| :material-delete: **[My Recycle Bin](MyRecycleBin.md)** | Your deleted items |
+| :material-bell: **[My Subscriptions](MySubscriptions.md)** | Documents you're subscribed to |
+| :material-clipboard-check: **[My Tasks](MyTasks.md)** | Tasks assigned to you |
+| :material-star: **[My Favorites](MyFavorites.md)** | Your bookmarked documents |
+| :material-account: **[My Profile](UserProfile.md)** | Your account settings |
 
-[My Subscriptions](MySubscriptions.md)
+---
 
-[My Tasks](MyTasks.md)
+## Quick Actions
 
-[My Favorites](MyFavorites.md)
+From your Personal Dashboard, you can:
 
-[My Profile](UserProfile.md)
+- View all documents you have checked out
+- Access documents you own
+- Manage your subscriptions
+- Track your pending and completed tasks
+- Update your profile and notification settings
+
+---
+
+## See Also
+
+- [My Checked Out Documents](MyCheckedOutDocuments.md)
+- [My Documents](MyDocuments.md)
+- [My Recycle Bin](MyRecycleBin.md)
+- [My Subscriptions](MySubscriptions.md)
+- [My Tasks](MyTasks.md)
+- [My Favorites](MyFavorites.md)
+- [User Profile](UserProfile.md)

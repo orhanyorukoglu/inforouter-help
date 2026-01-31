@@ -1,56 +1,95 @@
 # Folder Security
 
-infoRouter allows you to assign folder level permissions. To assign folder level permissions, you must have "Full Control" rights to the folder.
+infoRouter allows you to assign folder-level permissions that control access to folders and their contents. To assign folder permissions, you must have **Full Control** rights to the folder.
 
-Levels of folder permissions:
+---
 
-* No Access
-* List
-* Read
-* Add
-* Add and read
-* Change
-* Full Control
+## Permission Levels
 
-When you assign permissions to a folder, those same permissions will be automatically inherited by any documents or folders contained in the folder. You may assign permissions to "Users", "User Groups" and the "Everyone" group.
+| Permission | Description |
+|------------|-------------|
+| **No Access** | Cannot access the folder |
+| **List** | Can see folder contents but not open documents |
+| **Read** | Can view documents in the folder |
+| **Add** | Can create documents but not view existing ones |
+| **Add and Read** | Can create and view documents |
+| **Change** | Can modify documents and properties |
+| **Full Control** | Complete access including security changes |
 
-To assign permissions to a folder, perform the following:
+---
 
-* Navigate to the folder. Click on the "Action" icon and choose the "Folder Properties" menu.
-* In the "Folder Properties" window, click on "Folder Security".
-* In the "Folder Security" window, select users from the first list.
-* Make sure that you also select the appropriate access type from the drop down list box.
-* Click on "Add".
-* The selected users will be added to the security list with the permission level selected.
+## Permissions Matrix
 
-|  |  |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Permissions | No Access | List | Read | Add | Add&Read | Change | Full Control |
-| List folder contents |  | X | X | X | X | X | X |
-| View Documents |  |  | X |  | X | X | X |
-| Create Documents |  |  |  | X | X | X | X |
-| Create & Read Documents |  |  |  |  | X | X | X |
-| Change Properties |  |  |  |  |  | X | X |
-| Change Permissions |  |  |  |  |  |  | X |
-| Take Ownership |  |  |  |  |  |  | X |
-| Delete Folder |  |  |  |  |  |  | X |
+| Capability | No Access | List | Read | Add | Add & Read | Change | Full Control |
+|------------|:---------:|:----:|:----:|:---:|:----------:|:------:|:------------:|
+| List folder contents | | :material-check: | :material-check: | :material-check: | :material-check: | :material-check: | :material-check: |
+| View Documents | | | :material-check: | | :material-check: | :material-check: | :material-check: |
+| Create Documents | | | | :material-check: | :material-check: | :material-check: | :material-check: |
+| Create & Read Documents | | | | | :material-check: | :material-check: | :material-check: |
+| Change Properties | | | | | | :material-check: | :material-check: |
+| Change Permissions | | | | | | | :material-check: |
+| Take Ownership | | | | | | | :material-check: |
+| Delete Folder | | | | | | | :material-check: |
 
-The "No Access" right is the same as not including a user in the access list. It is used in instances where permission is given to a user group or the "Everyone" group and you wish to exclude a member of the group from the assigned security.
+---
 
-Permissions given to individuals supersede the permissions given to user groups.
+## How to Assign Folder Permissions
 
-Example:
+1. Navigate to the folder
+2. Click the **Action** icon and choose **Folder Properties**
+3. Click **Folder Security**
+4. Select users from the list
+5. Choose the access level from the dropdown
+6. Click **Add**
+7. The selected users will be added with the chosen permission level
 
-* User Group A has been given "READ" permissions to a folder
-* User A is in User Group A
-* User A has been given "Full Control" permissions to the folder.
-* User A will have "Full Control" permissions to the folder NOT "READ"
+---
 
-Learn more about this issue in [User Groups](UserGroups.md).
+## Permission Inheritance
 
-Permission Inheritance:
+!!! tip "Automatic Inheritance"
+    When you assign permissions to a folder, those permissions are automatically inherited by all documents and subfolders contained within it.
 
-Setting this option while assigning folder permissions allows you to specify that a folder should inherit its permission list from its parent folder. This is optional, but recommended, because it dramatically reduces the time needed to apply security to child folders. Learn more about this issue in
-[Inheritance](Inheritance.md).
+Setting the inheritance option while assigning permissions dramatically reduces the time needed to apply security to child folders.
 
-**Note:** Groups or users granted "Full Control" at the parent folder level can delete or change any sub-folders, regardless of the permissions protecting the folder. Any user with "Full Control" rights can set or alter the security at any of the subfolders.
+:material-arrow-right: Learn more: [Permission Inheritance](Inheritance.md)
+
+---
+
+## Using No Access
+
+The **No Access** permission is used when:
+
+- A group has been granted access to a folder
+- You need to exclude a specific member from that folder
+
+!!! note "Individual vs Group Permissions"
+    Permissions given to individuals **supersede** permissions given to user groups.
+
+**Example:**
+
+- User Group A has **Read** permissions to a folder
+- User A is in User Group A
+- User A has been given **Full Control** permissions individually
+- **Result:** User A has Full Control, not Read
+
+:material-arrow-right: Learn more: [User Groups](UserGroups.md)
+
+---
+
+## Full Control Implications
+
+!!! warning "Important"
+    Users with **Full Control** at the parent folder level can:
+
+    - Delete or change any subfolders regardless of subfolder permissions
+    - Set or alter security on any subfolders
+
+---
+
+## See Also
+
+- [Document Security](DocumentSecurity.md)
+- [Permission Inheritance](Inheritance.md)
+- [User Groups](UserGroups.md)
+- [Security Scenarios](SecurityScenarios.md)

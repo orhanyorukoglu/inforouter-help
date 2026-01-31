@@ -1,39 +1,54 @@
-# Administrative Functions / Administrative Functions & Tasks
+# Administrative Functions
 
-Administrative functions in infoRouter are primarily performed by the System Administrator however; the system administrator can delegate certain functions to other users.
+Administrative functions in infoRouter are primarily performed by the System Administrator. However, the System Administrator can delegate certain functions to other users through administrative roles.
 
-Users and Groups with Administrative roles:
+---
 
-* Administrators (System User Group)
-* User Managers (System User Group)
-* Audit Managers (System User Group)
-* Policy Managers (System User Group)
-* Library Managers
-* Search & Category Administrators
-* Portal Administrators
+## Administrative Roles
 
-Users with special privileges may access a special area in infoRouter called the infoRouter Control Panel. The Control Panel contains links to many administrative functions of infoRouter.
+| Role | Description |
+|------|-------------|
+| :material-shield-account: **Administrators** | System User Group with full administrative access |
+| :material-account-cog: **[User Managers](UserManagers.md)** | Create and manage user accounts |
+| :material-file-search: **[Audit Managers](AuditManagers.md)** | View and manage audit logs |
+| :material-file-certificate: **[Policy Managers](PolicyManagers.md)** | Manage retention and disposition policies |
+| :material-library: **[Library Managers](LibraryManagers.md)** | Manage specific libraries |
+| :material-magnify: **[Category Administrators](CategoryAdministrators.md)** | Manage categories and saved searches |
+| :material-web: **[Portal Administrators](PortalAdmins.md)** | Configure and manage portals |
 
-In addition to accessing the infoRouter control panel, some of the roles above can perform special functions within document libraries.
+---
 
-Example:
+## The Control Panel
 
-The Library Manager can access all documents within the library regardless of the security that has been assigned to the document.
+Users with administrative privileges can access the **infoRouter Control Panel**, which contains links to various administrative functions.
 
-For a list of administrative functions, navigate to the sub-topics located under this topic.
+!!! tip "Accessing the Control Panel"
+    Click the **Control Panel** tab in the main navigation. This tab only appears if you have administrative privileges.
 
-See also:
+---
 
-[Policy Managers](PolicyManagers.md)
+## Special Privileges
 
-[Library Managers](LibraryManagers.md)
+Some administrative roles have special capabilities within document libraries.
 
-[User Managers](UserManagers.md)
+!!! example "Library Manager Example"
+    Library Managers can access **all documents** within their managed library, regardless of the security assigned to individual documents.
 
-[Portal Administrator's Guide](https://www.infoRouter.com/downloads/V80/Portal-Admins-Guide.pdf).
+---
 
-[Portal Administrators](PortalAdmins.md)
+## Documentation
 
-[User Managers](UserManagers.md)
+| Resource | Description |
+|----------|-------------|
+| :material-download: [Portal Administrator's Guide (PDF)](https://www.infoRouter.com/downloads/V80/Portal-Admins-Guide.pdf) | Complete guide for portal administrators |
 
-[Search & Category Administrators](CategoryAdministrators.md)
+---
+
+## See Also
+
+- [Policy Managers](PolicyManagers.md)
+- [Library Managers](LibraryManagers.md)
+- [User Managers](UserManagers.md)
+- [Audit Managers](AuditManagers.md)
+- [Portal Administrators](PortalAdmins.md)
+- [Category Administrators](CategoryAdministrators.md)

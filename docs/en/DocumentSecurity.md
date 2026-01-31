@@ -1,46 +1,85 @@
-# Security / Document Security
+# Document Security
 
-infoRouter allows the assignment of various levels of permissions to documents. The levels of document permissions available are as follows:
+infoRouter provides granular security controls at the document level. You can assign different permission levels to individual users and groups for each document.
 
-* No Access
-* Read
-* Change
-* Full control
+---
 
-New documents automatically inherit the permissions defined at its folder. Authors (the owner of the document), may alter these default (inherited) permission settings. Permissions may be granted to "Users", "User Groups" and the "Everyone" group.
+## Permission Levels
 
-When authors change the permission settings for a document, they may only grant permissions to users who are members to the Library in which the document lives.
+| Permission | Description |
+|------------|-------------|
+| **No Access** | Cannot view or access the document |
+| **Read** | Can view the document |
+| **Change** | Can view and modify the document |
+| **Full Control** | Complete access including security changes |
 
-To assign permissions to a document, perform the following:
+!!! info "Cumulative Rights"
+    Access rights are cumulative — each level includes all rights from the previous level plus additional capabilities.
 
-1. Select the document you wish to assign permissions by clicking "Action" icon and choose security.
-2. A window showing the currently assigned security permissions will appear. Click on the "change permissions" button.
-3. In the "Document Security" window, select users from the list on the left.
-4. Make sure that you also select the appropriate access type from the drop down list box. The default is "Full Control".
-5. Click on "Add".
-6. The selected users will be added to the security list with the permission level selected.
+---
 
-The permissions matrix
+## Permissions Matrix
 
-|  |  |  |  |  |
-| --- | --- | --- | --- | --- |
-| Permissions Matrix | | | | |
-| Permissions | No Access | Read | Change | Full Control |
-| View Document |  | X | X | X |
-| Change Document |  |  | X | X |
-| Change Properties |  |  | X | X |
-| Delete Document |  |  |  | X |
-| Change Permissions |  |  |  | X |
-| Take Ownership |  |  |  | X |
+| Capability | No Access | Read | Change | Full Control |
+|------------|:---------:|:----:|:------:|:------------:|
+| View Document | | :material-check: | :material-check: | :material-check: |
+| Change Document | | | :material-check: | :material-check: |
+| Change Properties | | | :material-check: | :material-check: |
+| Delete Document | | | | :material-check: |
+| Change Permissions | | | | :material-check: |
+| Take Ownership | | | | :material-check: |
 
-Notice that the access rights are cumulative. Each access level contains the rights of the one before it, and provides additional rights.
+---
 
-The "No Access" right is the same as not including a user in the access list. It is used in instances where a permission is given to a user group or the "Everyone" group and you wish to exclude a member of the group from the assigned security. Learn more about this issue in [User Groups](UserGroups.md).
+## How to Assign Document Permissions
 
-Folder permissions take precedence over file permissions however, the precedence is not automatic.
+1. Click the **Action** icon on the document
+2. Select **Security**
+3. In the Security window, click **Change Permissions**
+4. Select users from the list on the left
+5. Choose the access level from the dropdown (default is "Full Control")
+6. Click **Add**
+7. The selected users will be added with the chosen permission level
 
-Example:
+---
 
-User A has "Full Control" rights in a folder. User A has been given "No Access" permissions to a document in that folder.
+## Permission Inheritance
 
-When User A attempts to access the document, he/she will get the "Access Denied" message. However, because User A has "Full Control" rights at the folder level, he/she will be able to modify permissions on any document in that folder, even take ownership of any document in that folder.
+!!! tip "Default Behavior"
+    New documents automatically inherit permissions from their parent folder. Authors can modify these inherited permissions if needed.
+
+When authors change document permissions, they can only grant access to users who are **members of the library** where the document resides.
+
+---
+
+## Using No Access
+
+The **No Access** permission is equivalent to not including a user in the access list. It's useful when:
+
+- A group has been granted access to a folder
+- You need to exclude a specific member of that group from accessing a particular document
+
+:material-arrow-right: Learn more: [User Groups](UserGroups.md)
+
+---
+
+## Folder vs Document Permissions
+
+!!! warning "Important"
+    Folder permissions take precedence over document permissions, but not automatically.
+
+**Example:**
+
+- User A has **Full Control** rights at the folder level
+- User A has **No Access** permissions to a specific document
+- When User A tries to access the document: **Access Denied**
+- However, User A can still modify the document's permissions or take ownership due to folder-level Full Control
+
+---
+
+## See Also
+
+- [Folder Security](FolderSecurity.md)
+- [User Groups](UserGroups.md)
+- [Security Scenarios](SecurityScenarios.md)
+- [Permission Inheritance](Inheritance.md)

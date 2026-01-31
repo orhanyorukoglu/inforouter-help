@@ -1,31 +1,82 @@
-# Security / Introduction
+# Security Overview
 
-infoRouter provides for a very powerful and flexible security environment. Security can be administered at various levels (Library, Folder and Document).
+infoRouter provides a powerful and flexible security environment. Security can be administered at multiple levels to protect your documents and control access.
 
-infoRouter's security is very similar to Microsoft Windows NT/2000/2003/2008/2012 security, with a few exceptions.
+!!! info "Familiar Model"
+    infoRouter's security model is similar to Microsoft Windows NTFS security, making it intuitive for system administrators.
 
-Levels of Security
+---
 
-Library Level Security
+## Security Levels
 
-The first level of infoRouter security is at the library (root-level folder) level.
+infoRouter security operates at three distinct levels:
 
-Libraries are isolated environments in which a group of users can work, collaborate and produce documents. Only the members of a Library can navigate inside document libraries or even see that they exist.
+```mermaid
+graph TD
+    A[Library Level] --> B[Folder Level]
+    B --> C[Document Level]
+```
 
-In addition to membership requirements, library policies also determine a set of rules in which users can perform certain actions. For more on this topic, please navigate to [Library Policies](LibraryPolicies.md)
+### Level 1: Library Security
 
-Folder Level Security
+Libraries are isolated environments where groups of users work and collaborate.
 
-The second level of infoRouter security is at the folder level. Access to folders within a library is subject to [Folder Security](FolderSecurity.md).
+| Feature | Description |
+|---------|-------------|
+| **Membership Required** | Only library members can see or access a library |
+| **Complete Isolation** | Non-members cannot even see that a library exists |
+| **Policy Control** | Library policies determine what actions users can perform |
 
-Document Level Security
+:material-arrow-right: Learn more: [Library Policies](LibraryPolicies.md)
 
-The third level of infoRouter security is at the document level.
+---
 
-Access to documents within folders is subject to [Document Security](DocumentSecurity.md).
+### Level 2: Folder Security
 
-See also:
+Within a library, access to folders is controlled by folder-level permissions.
 
-[LDAP Authentication](https://www.infoRouter.com/downloads/V80/infoRouter_LDAP_Authentication.pdf)
+| Permission Level | Capabilities |
+|-----------------|--------------|
+| No Access | Cannot access the folder |
+| List | Can see folder contents only |
+| Read | Can view documents |
+| Add | Can create documents |
+| Add & Read | Can create and view documents |
+| Change | Can modify documents |
+| Full Control | Complete access |
 
-[LDAP Synchronization Manager](https://www.infoRouter.com/downloads/V80/infoRouter_LDAP_Synchronization_Manager.pdf)
+:material-arrow-right: Learn more: [Folder Security](FolderSecurity.md)
+
+---
+
+### Level 3: Document Security
+
+Individual documents can have their own permission settings, providing the most granular level of control.
+
+| Permission Level | Capabilities |
+|-----------------|--------------|
+| No Access | Cannot access the document |
+| Read | Can view the document |
+| Change | Can modify the document |
+| Full Control | Complete access including security changes |
+
+:material-arrow-right: Learn more: [Document Security](DocumentSecurity.md)
+
+---
+
+## Additional Resources
+
+| Resource | Description |
+|----------|-------------|
+| :material-download: [LDAP Authentication Guide (PDF)](https://www.infoRouter.com/downloads/V80/infoRouter_LDAP_Authentication.pdf) | Configure LDAP/Active Directory authentication |
+| :material-download: [LDAP Synchronization Manager (PDF)](https://www.infoRouter.com/downloads/V80/infoRouter_LDAP_Synchronization_Manager.pdf) | Synchronize users and groups from LDAP |
+
+---
+
+## See Also
+
+- [Library Policies](LibraryPolicies.md)
+- [Folder Security](FolderSecurity.md)
+- [Document Security](DocumentSecurity.md)
+- [User Authentication](Authentication.md)
+- [Security Scenarios](SecurityScenarios.md)
