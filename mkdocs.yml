@@ -1,0 +1,222 @@
+site_name: infoRouter Help
+site_description: infoRouter Document Management System Help Documentation
+site_author: infoRouter
+site_url: https://help.inforouter.com/
+
+theme:
+  name: material
+  logo: images/inforouter-logo.png
+  favicon: images/favicon.ico
+  palette:
+    - scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+
+plugins:
+  - search:
+      lang: en
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+  - tables
+  - attr_list
+  - md_in_html
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Introduction: en/intro.md
+    - Basic Concepts: en/BasicConcepts.md
+    - Getting Started: en/GettingStarted.md
+    - Accessing infoRouter: en/AccessingInfoRouter.md
+    - How to Login: en/Login.md
+    - Work Area: en/WorkArea.md
+    - Selecting Columns: en/SelColumns.md
+  - Menu System:
+    - Overview: en/TheMenuSystem.md
+    - New Menu: en/MenuNew.md
+    - Edit Menu: en/MenuEdit.md
+    - Tools Menu: en/MenuTools.md
+    - Advanced Menu: en/MenuAdvanced.md
+    - View Menu: en/MenuView.md
+    - Filter Menu: en/MenuFilter.md
+    - Custom Menus: en/MenuCustom.md
+  - Working with Documents:
+    - Introduction: en/Documents.aspx
+    - Viewing Documents: en/ViewDocument.md
+    - Editing Documents: en/EditingDocuments.md
+    - Check In: en/CheckIn.md
+    - Check Out: en/CheckOut.md
+    - Copying Documents: en/CopyingDocuments.md
+    - Moving Documents: en/MovingDocuments.md
+    - Deleting Documents: en/DeletingDocuments.md
+    - Document Properties: en/DocumentProperties.md
+    - Document Comments: en/DocumentComments.md
+    - Document Auditing: en/DocumentAuditing.md
+    - Document Versions: en/DocumentVersions.md
+    - Uploading Documents: en/UploadingDocuments.md
+  - Working with Folders:
+    - Creating Folders: en/CreatingFolders.md
+    - Renaming Folders: en/RenamingFolders.md
+    - Moving Folders: en/MovingFolders.md
+    - Deleting Folders: en/DeletingFolders.md
+    - Folder Properties: en/FolderProperties.md
+  - Form Templates:
+    - Overview: en/FormTemplates.md
+    - Creating Templates: en/CreatingFormTemplates.md
+    - Template Fields: en/FormTemplateFields.md
+    - Validation: en/FormTemplateValidation.md
+  - Portals:
+    - Overview: en/Portals.md
+    - Portal Administration: en/PortalAdministration.md
+    - Portal Users: en/PortalUsers.md
+  - Search:
+    - Introduction: en/SearchIntro.md
+    - Basic Search: en/BasicSearch.md
+    - Advanced Search: en/AdvancedSearch.md
+    - Search Operators: en/SearchOperators.md
+    - Ignored Keywords: en/IgnoredKeywords.md
+    - Saved Searches: en/CreatingSavedSearches.md
+  - Categories:
+    - Overview: en/Categories.md
+    - Creating Categories: en/CreatingCategories.md
+    - Editing Categories: en/EditingCategories.md
+    - Deleting Categories: en/DeletingCategories.md
+    - Category Administrators: en/CategoryAdministrators.md
+  - User Profile:
+    - Personal Dashboard: en/PersonalDashboard.md
+    - My Documents: en/MyDocuments.md
+    - My Subscriptions: en/MySubscriptions.md
+    - My Checked Out Documents: en/MyCheckedOutDocuments.md
+    - My Favorites: en/MyFavorites.md
+    - My Tasks: en/MyTasks.md
+    - My Recycle Bin: en/MyRecycleBin.md
+    - User Profile: en/UserProfile.md
+    - Recent Documents: en/RecentDocuments.md
+  - Custom Properties:
+    - Introduction: en/CustomPropertyIntro.md
+    - Creating Sets: en/HowtoCreateCustomPropertySets.md
+    - Editing Sets: en/EditingCustomPropertySets.md
+    - Applying Sets: en/ApplyingCustomPropertySets.md
+    - Overview: en/CustomPropertySets.md
+  - Archiving:
+    - Introduction: en/ArchiveIntro.md
+    - Archiving Libraries: en/ArchivingLibraries.md
+  - Document Libraries:
+    - Overview: en/Libraries.md
+    - Creating Libraries: en/CreatingLibraries.md
+    - Deleting Libraries: en/DeletingLibraries.md
+    - Library Members: en/LibraryMembers.md
+    - Adding Members: en/AddingLibraryMembers.md
+    - Usage Scenarios: en/LibraryUsageScenarios.md
+    - Library Policies: en/LibraryPolicies.md
+  - Tasks:
+    - Introduction: en/TasksIntro.md
+    - Creating Tasks: en/HowtoCreateTasks.md
+    - Completing Tasks: en/HowtoCompleteTasks.md
+    - Task Redirection: en/TaskRedirection.md
+  - Workflows:
+    - Introduction: en/WorkflowsIntro.md
+    - Creating Workflows: en/HowtoCreateWorkflowDefinitions.md
+    - Author Reviews: en/AuthorReviews.md
+    - Workflow Reports: en/Workflow-Reports.md
+  - WebDAV:
+    - Introduction: en/WebdavIntro.md
+    - Setup: en/WebdavSetup.md
+    - Using WebDAV: en/UsingWebdav.md
+  - Subscriptions:
+    - Overview: en/Subscriptions.md
+    - Subscribing: en/Subscribing.md
+    - Unsubscribing: en/Unsubscribing.md
+  - Notifications:
+    - Overview: en/Notifications.md
+    - Subscription Notifications: en/SubscriptionNotifications.md
+    - Task Notifications: en/TaskNotifications.md
+    - Comment Notifications: en/CommentNotifications.md
+  - Security:
+    - Overview: en/Security.md
+    - Authentication: en/Authentication.md
+    - Document Security: en/DocumentSecurity.md
+    - Folder Security: en/FolderSecurity.md
+    - Inheritance: en/Inheritance.md
+    - Login Log: en/LoginLog.md
+    - Security Scenarios: en/SecurityScenarios.md
+  - Retention & Disposition:
+    - Overview: en/Retention.md
+    - Document Retention: en/DocumentRetention.md
+    - Folder Retention: en/FolderRetention.md
+    - Disposition: en/Disposition.md
+    - RD Schedules: en/RDSchedules.md
+  - Modules & Add-ins:
+    - Overview: en/Modules.md
+    - Office Add-in: en/OfficeAddin.md
+    - Hot Folders: en/HotFolders.md
+    - Scan Station: en/ScanStation.md
+    - Import/Export: en/ImportExport.md
+    - Email Scanner: en/EmailScanner.md
+  - Administration:
+    - Functions: en/AdminFunctions.md
+    - Audit Log: en/AuditLogControlPanel.md
+    - Auth Policies: en/AuthPassPolicies.md
+    - Email Settings: en/EmailSettings.md
+    - MIME Types: en/MimeTypes.md
+    - Manage Recycle Bin: en/ManageRecycleBin.md
+    - Warehouse Management: en/WarehouseManagement.md
+    - Application Settings: en/ApplicationSettings.md
+    - Document Types: en/CreatingDocumentTypes.md
+    - Defining Tags: en/DefiningTags.md
+    - LDAP Synchronization: en/LDAPSynchronization.md
+  - Users & Groups:
+    - Overview: en/Users.md
+    - Adding Users: en/AddingUsers.md
+    - Importing NT Users: en/ImportingNTUsers.md
+    - Deleting Users: en/DeletingUsers.md
+    - User Groups: en/UserGroups.md
+    - Local User Groups: en/LocalUserGroups.md
+    - Transfer Ownership: en/TransferOwnership.md
+    - Administrators: en/Administrators-User-Group.md
+    - Audit Managers: en/AuditManagers.md
+    - Policy Managers: en/PolicyManagers.md
+    - User Managers: en/UserManagers.md
+    - Library Managers: en/LibraryManagers.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/infoRouter
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/infoRouter
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/inforouter
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX  # Replace with your Google Analytics ID
+
+copyright: Copyright &copy; 2024 infoRouter. All rights reserved.
