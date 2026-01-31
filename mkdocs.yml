@@ -69,7 +69,7 @@ nav:
     - Filter Menu: en/MenuFilter.md
     - Custom Menus: en/MenuCustom.md
   - Working with Documents:
-    - Introduction: en/Documents.aspx
+    - Introduction: en/Documents.md
     - Viewing Documents: en/ViewDocument.md
     - Editing Documents: en/EditingDocuments.md
     - Check In: en/CheckIn.md

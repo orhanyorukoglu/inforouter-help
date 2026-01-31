@@ -28,12 +28,12 @@ infoRouter provides a comprehensive set of features for document management:
 ## Main Topics
 
 ### Working with Content
-- [Working with Documents](en/Documents.aspx)
-- [Working with Folders](en/CreatingFolders.md)
-- [Form Templates](en/FormTemplates.md)
+- [Working with Documents](en/Documents.md)
+- [Working with Folders](en/MovingFolders.md)
+- [Form Templates](en/CreatingFormTemplates.md)
 
 ### Search & Organization
-- [Searching for Documents](en/SearchIntro.md)
+- [Searching for Documents](en/AdvancedSearch.md)
 - [Categories](en/Categories.md)
 - [Custom Properties](en/CustomPropertyIntro.md)
 
