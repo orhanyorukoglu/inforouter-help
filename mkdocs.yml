@@ -32,13 +32,11 @@ theme:
   icon:
     repo: fontawesome/brands/github
 
-  # Features
+  # Features - Sidebar navigation (no top tabs)
   features:
     - navigation.instant
     - navigation.instant.progress
     - navigation.tracking
-    - navigation.tabs
-    - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
     - navigation.path
@@ -96,30 +94,49 @@ nav:
     - Selecting Columns: en/SelColumns.md
   - The Menu System:
     - Overview: en/TheMenuSystem.md
-    - New Menu: en/MenuNew.md
-    - Edit Menu: en/MenuEdit.md
-    - Tools Menu: en/MenuTools.md
-    - Advanced Menu: en/MenuAdvanced.md
-    - View Menu: en/MenuView.md
-    - Filter Menu: en/MenuFilter.md
+    - The New Menu: en/MenuNew.md
+    - The Edit Menu: en/MenuEdit.md
+    - The Tools Menu: en/MenuTools.md
+    - The Advanced Menu: en/MenuAdvanced.md
+    - The View Menu: en/MenuView.md
+    - The Filter Menu: en/MenuFilter.md
     - Custom Menus: en/MenuCustom.md
   - Working with Documents:
     - Introduction: en/Documents.md
     - Viewing Documents: en/ViewDocument.md
     - Editing Documents: en/EditingDocuments.md
     - Check In: en/CheckIn.md
+    - Check Out: en/CheckOut.md
+    - Copying Documents: en/CopyingDocuments.md
+    - Moving Documents: en/MovingDocuments.md
+    - Deleting Documents: en/DeletingDocuments.md
     - Document Properties: en/DocumentProperties.md
     - Document Comments: en/DocumentComments.md
+    - Document Auditing: en/DocumentAuditing.md
+    - Document Versions: en/DocumentVersions.md
+    - Uploading Documents: en/UploadingDocuments.md
   - Working with Folders:
+    - Creating Folders: en/CreatingFolders.md
+    - Renaming Folders: en/RenamingFolders.md
     - Moving Folders: en/MovingFolders.md
+    - Deleting Folders: en/DeletingFolders.md
+    - Folder Properties: en/FolderProperties.md
     - Folder Security: en/FolderSecurity.md
     - Folder Retention: en/FolderRetention.md
   - Working with Form Templates:
+    - Overview: en/FormTemplates.md
     - Creating Form Templates: en/CreatingFormTemplates.md
+    - Form Template Fields: en/FormTemplateFields.md
+    - Form Template Validation: en/FormTemplateValidation.md
   - infoRouter Portals:
-    - Introduction: en/intro.md
+    - Overview: en/Portals.md
+    - Portal Administration: en/PortalAdministration.md
+    - Portal Users: en/PortalUsers.md
   - Searching for Documents and Folders:
+    - Introduction: en/SearchIntro.md
+    - Basic Search: en/BasicSearch.md
     - Advanced Search: en/AdvancedSearch.md
+    - Search Operators: en/SearchOperators.md
     - Ignored Keywords: en/IgnoredKeywords.md
     - Saved Searches: en/CreatingSavedSearches.md
   - Categories:
