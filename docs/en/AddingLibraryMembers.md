@@ -1,49 +1,61 @@
-# Libraries / Library Members
+# Adding Library Members
 
-To add users and user groups to libraries as members perform the following:
+Add users and user groups to document libraries to grant access.
 
-1. Navigate to the infoRouter Control Panel
-2. Click on the Libraries link to display a list of infoRouter libraries.
-3. Select a library from the library list.
-4. Click on the "Members" link located in the left sidebar.
+---
 
-The steps above will launch the "Library Members" window. It is here in this window that you can add members to the library.
+## Accessing Library Members
 
-Adding users to the library
+1. Navigate to **Control Panel**
+2. Click **Libraries**
+3. Select a library from the list
+4. Click **Members** in the left sidebar
 
-If you wish to add a user to the library as a member perform the following:
+---
 
-1. Click on "Add Member (user) link located in the left sidebar.
-2. This will launch a window displaying a list of all global users defined in infoRouter who are not already members of this library.
-3. Select all the users you wish to add to the library from this list and click "Ok"
-4. The selected users will be added to the library as members.
+## Adding Users
 
-Adding user groups to the library
+1. Click **Add Member (User)** in the left sidebar
+2. Select users from the available list
+3. Click **OK**
 
-If you wish to add a user group (global) to the library perform the following:
+!!! info "Available Users"
+    Only users who are not already members of the library will appear in the selection list.
 
-1. Click on "Add Member (User Group) link located in the left sidebar.
-2. This will launch a window displaying a list of all global user groups defined in infoRouter who are not already members of this library.
-3. Select all the global user groups you wish to add to the library from this list and click "Ok"
-4. The selected global user groups will be added to the library as members.
+---
 
-Removing users and user groups from the library
+## Adding User Groups
 
-If you wish to remove a member (user or user group) from the library perform the following:
+1. Click **Add Member (User Group)** in the left sidebar
+2. Select user groups from the available list
+3. Click **OK**
 
-1. Select the user or user group from the "Library members" window.
-2. Click on the "remove member" link located in the left sidebar.
+!!! tip "Automatic Membership"
+    When a global user group is a library member, any users added to that group automatically become library members.
 
-Notes:
+---
 
-If a global user group is a member of a library, any new users added to the global user group will automatically become a member of the libraries that the global user group is a member of.
+## Removing Members
 
-See also:
+1. Select the user or user group in the Library Members window
+2. Click **Remove Member** in the left sidebar
 
-[User Groups](UserGroups.md)
+---
 
-[Users](Users.md)
+## Who Can Manage Members
 
-Security Considerations:
+| Role | Can Manage Members |
+|------|-------------------|
+| :material-shield-crown: System Administrator | :material-check: Yes |
+| :material-shield-star: Library Managers | :material-check: Yes |
+| :material-account-cog: User Managers | :material-check: Yes |
+| :material-account-group: Administrators group | :material-check: Yes |
 
-Library members can be managed by the System Administrator, Library Managers and members of the User Managers and Administrators system user group.
+---
+
+## See Also
+
+- [Library Members](LibraryMembers.md)
+- [User Groups](UserGroups.md)
+- [Users](Users.md)
+- [Library Managers](LibraryManagers.md)

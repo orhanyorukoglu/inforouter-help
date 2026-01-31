@@ -1,28 +1,55 @@
-# Administrative Functions and Roles / Administrators
+# Administrators User Group
 
-"Administrators" is a system user group that comes built-in to infoRouter. This system user group cannot be deleted.
-Its members are assigned by the system administrator and these members inherit special permissions that allow them to
-perform certain functions in infoRouter without restrictions.
-The Sysadmin account is by default a member of this group and cannot be removed.
+The built-in system user group with full administrative privileges.
 
-Members of the Administrators user group can perform the following functions:
+---
 
-1. Create/Delete/Edit/Enable/Disable global users
-2. Create/Delete/Edit/Enable/Disable local users
-3. Create/Delete/Edit global user groups
-4. Create/Delete/Edit local user groups
-5. Manage memberships for local and global user groups
-6. Grant Library membership rights to individual users
-7. Grant Library membership rights to global user groups
-8. Manage all sections of the infoRouter Control Panel
+## Overview
 
-Member of the Administrators user group are in effect just as powerful as the Sysadmin.
+!!! warning "Built-in Group"
+    The Administrators group is a built-in system group that cannot be deleted. The Sysadmin account is a permanent member.
 
-Member of the this group do not by default have access to the infoRouter document libraries however, they can add themselves to
-any infoRouter library as a member and also make themselves one of the library managers giving them full control of the library.
+---
 
-See also:
+## Capabilities
 
-[Policy Managers](PolicyManagers.md)
+Members of the Administrators user group can:
 
-[Library Managers](LibraryManagers.md)
+| Function | Scope |
+|----------|-------|
+| :material-account-plus: **Create users** | Global and local users |
+| :material-account-remove: **Delete users** | Global and local users |
+| :material-account-edit: **Edit users** | Global and local users |
+| :material-account-off: **Enable/Disable users** | Global and local users |
+| :material-account-group: **Manage user groups** | Global and local groups |
+| :material-account-multiple-plus: **Manage memberships** | All user groups |
+| :material-library: **Grant library access** | All libraries |
+| :material-cog: **Control Panel access** | All sections |
+
+---
+
+## Power Level
+
+!!! info "Administrative Authority"
+    Members of the Administrators group have the same administrative powers as the Sysadmin account.
+
+---
+
+## Library Access
+
+| Default Access | Can Self-Grant |
+|----------------|----------------|
+| :material-close: No automatic library access | :material-check: Can add themselves as library members |
+| — | :material-check: Can assign themselves as Library Managers |
+
+!!! note "Self-Service Access"
+    While Administrators don't automatically have library access, they can grant themselves membership and management rights to any library.
+
+---
+
+## See Also
+
+- [Policy Managers](PolicyManagers.md)
+- [Library Managers](LibraryManagers.md)
+- [User Managers](UserManagers.md)
+- [Users Overview](Users.md)
