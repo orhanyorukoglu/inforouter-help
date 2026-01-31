@@ -1,47 +1,61 @@
-# The Menu System / Edit Menu
+# Edit Menu
 
-![The edit menu](../images/Menu-Edit.jpg)
+Common document and folder operations for copying, moving, and managing content.
 
-Cut:
+---
 
-This menu creates a copy of the selected documents and folders. The copied items are placed in the clipboard. When the "Paste" menu item is clicked, the clipboard items are copied into the target folder, the selected items are removed from their original location and finally the clipboard is emptied.
+## Clipboard Operations
 
-Copy:
+| Menu Item | Description |
+|-----------|-------------|
+| :material-content-cut: **Cut** | Move items to clipboard; paste removes from original location |
+| :material-content-copy: **Copy** | Copy items to clipboard; paste keeps original |
+| :material-content-paste: **Paste** | Insert clipboard contents into current folder |
+| :material-delete: **Delete** | Remove selected documents and folders |
 
-This menu creates a copy of the selected documents and folders. The copied items are placed in the clipboard. When the "Paste" menu item is clicked, the clipboard items are copied into the target folder, the clipboard is emptied. The selected items remain in their original location.
+---
 
-Paste:
+## Check In/Out Operations
 
-This menu item copies the contents of the clipboard into the current folder.
+| Menu Item | Description |
+|-----------|-------------|
+| :material-lock: **Check Out** | Lock documents for editing (includes folder contents) |
+| :material-lock-open: **Undo Check Out** | Cancel checkout and discard changes |
 
-Delete:
+!!! info "Folder Check Out"
+    When you check out a folder, all documents within that folder are also checked out.
 
-This menu item deletes the selected documents and folders.
+---
 
-Check Out:
+## Subscription Operations
 
-This menu item checks out the selected documents. If any of the selected items are folders, the contents of the folder are also checked out.
+| Menu Item | Description |
+|-----------|-------------|
+| :material-bell-plus: **Subscribe** | Receive notifications for selected items |
+| :material-bell-minus: **Un-Subscribe** | Stop receiving notifications |
 
-Undo Check Out:
+---
 
-This menu item performs an "Undo Check Out" operation on the selected documents and folders.
+## Download Operations
 
-Subscribe:
+| Menu Item | Description |
+|-----------|-------------|
+| :material-folder-zip: **Download as Zip** | Create and download a ZIP file of selected items |
+| :material-playlist-plus: **Add to Queue** | Add shortcuts to Download Queue for later |
 
-This menu item creates a subscription record for the selected items for the current user.
+---
 
-Un-Subscribe:
+## Favorites
 
-This menu item unsubscribes you from the selected documents.
+| Menu Item | Description |
+|-----------|-------------|
+| :material-star-plus: **Add to Favorites** | Add selected items to your Favorites list |
 
-Download as Zip:
+---
 
-This menu item, creates a zip file of the selected documents and folders and downloads the zip file.
+## See Also
 
-Add to Queue:
-
-This menu item places a shortcut of the selected documents and folders into the Download Queue for later downloading.
-
-Add to Favorites:
-
-This menu item adds the selected documents and folders into the Favorites list.
+- [The Menu System](TheMenuSystem.md)
+- [Check Out Documents](CheckOut.md)
+- [Subscriptions](Subscriptions.md)
+- [My Favorites](MyFavorites.md)

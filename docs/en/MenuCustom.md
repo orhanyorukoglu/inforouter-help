@@ -1,11 +1,55 @@
-# The Menu System / Custom Menus
+# Custom Menus
 
-infoRouter allows you to create custom menu items with sub-menus This feature allows integration with other systems such as home-grown applications and third-party tools.
+Create custom menu items to integrate infoRouter with external applications and third-party tools.
 
-When a custom menu is launched by the user, infoRouter automatically passes vital information about the current folder, selected folders and documents along with user information etc. to the program that is being called by the menu.
+---
 
-This information can then be used by the external application. The external application can talk back to infoRouter using our Web Services API.
+## Overview
 
-For more information on how to create custom menus, please refer to this guide:
+Custom menus enable integration between infoRouter and:
 
-[Adding Custom Menus](https://support.inforouter.com/documentation/v80/adding-custom-menus.md)
+- Home-grown applications
+- Third-party tools
+- External systems
+
+---
+
+## How It Works
+
+```mermaid
+graph LR
+    A[User clicks custom menu] --> B[infoRouter passes context]
+    B --> C[External application processes]
+    C --> D[App can call infoRouter API]
+```
+
+### Information Passed
+
+When a custom menu is launched, infoRouter automatically passes:
+
+| Information | Description |
+|-------------|-------------|
+| :material-folder: **Current folder** | Active folder context |
+| :material-folder-multiple: **Selected folders** | All selected folders |
+| :material-file-multiple: **Selected documents** | All selected documents |
+| :material-account: **User information** | Current user details |
+
+---
+
+## Integration
+
+!!! tip "Web Services API"
+    External applications can communicate back to infoRouter using the Web Services API for bi-directional integration.
+
+---
+
+## Documentation
+
+:material-book-open: [Adding Custom Menus Guide](https://support.inforouter.com/documentation/v80/adding-custom-menus.md)
+
+---
+
+## See Also
+
+- [The Menu System](TheMenuSystem.md)
+- [Application Settings](ApplicationSettings.md)

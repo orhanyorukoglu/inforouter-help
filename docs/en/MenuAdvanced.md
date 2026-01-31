@@ -1,64 +1,86 @@
-# The Tools Menu
+# Advanced Menu
 
-![infoRouter Advanced tools menu](../images/Menu_advanced.jpg)
+Advanced document and records management operations.
 
-Change document type:
+---
 
-This menu item launces a window in which you can chnage the document type. Please note that some document types require the entry of custom property values.
+## Document Classification
 
-Set Completion Status:
+| Menu Item | Description |
+|-----------|-------------|
+| :material-swap-horizontal: **Change Document Type** | Change the document type; may require custom property values |
+| :material-check-circle: **Set Completion Status** | Mark documents as complete (prevents further editing) |
+| :material-tag: **Set Tag** | Apply a tag to the selected document version |
 
-This menu item launces a window in which you can set the completion status of documents. Setting a completion status for documents will prevent documents from being edited.
+---
 
-Set expiration date:
+## Date Management
 
-This menu item allows you to set an expiration date for the selected documents.
+| Menu Item | Description |
+|-----------|-------------|
+| :material-calendar-clock: **Set Expiration Date** | Set when documents expire |
+| :material-calendar-alert: **Set Cutoff Date** | Trigger retention and disposition schedules |
 
-Set cutoff date:
+---
 
-This menu item allows you to set a cutoff date for a document or folder. Setting a cutoff date triggers a Retention and Disposition Schedule.
+## Publishing Options
 
-Set publishing rules:
+| Menu Item | Description |
+|-----------|-------------|
+| :material-publish: **Set Publishing Rules** | Choose which version is displayed to users |
 
-This menu item allows you to set publishing rules for the selected document. The selected version will be displayed/downloaded when a user clicks on the document.
+!!! info "Version Publishing"
+    The published version can be different from the latest version, allowing you to control which version users access.
 
-Set ISO Periodic Review Definition:
+---
 
-Using this window, you may create a scheduled process where documents are reviewed based on a set schedule by users or by a group of users in a workflow.
+## Records Management
 
-Set publishing rules:
+| Menu Item | Description |
+|-----------|-------------|
+| :material-archive-clock: **Set Retention and Disposition Schedule** | Protect documents from accidental deletion |
+| :material-delete-clock: **Dispose** | Delete documents when retention schedule allows |
 
-This menu item allows you to set the publishing rules for a document. Using this feature, you can decide which version of the document gets published to users.The version that gets published can be different than the latest version.
+---
 
-Set Tag:
+## Compliance & Review
 
-This menu allows users to mark the selected documents with a specific tag. The tag will be applied to the specific version of the document at time of tag application.
+| Menu Item | Description |
+|-----------|-------------|
+| :material-certificate: **Set ISO Periodic Review Definition** | Schedule periodic document reviews by users or workflow |
 
-Set Retention and Disposition Schedule:
+---
 
-This menu item launces a window in which you can set a retention schedule for selected documents and folders. Setting a retention schedule will protect documents and folders from accidental deletion.
+## Workflows
 
-Dispose:
+| Menu Item | Description |
+|-----------|-------------|
+| :material-sitemap: **Workflow Definitions** | Manage workflow definitions for the library |
 
-This menu item allows authorized users to properly delete a document once the Retention and Disposition Schedule allows this action.
+---
 
-Set ISO Periodic Review Definition:
+## Version Management
 
-Using this window, you may create a scheduled process where documents are reviewed based on a set schedule by users or by a group of users in a workflow.
+| Menu Item | Description |
+|-----------|-------------|
+| :material-delete-sweep: **Compact Versions** | Remove unwanted document versions |
 
-Workflow Definitions:
+---
 
-This menu launches the "Workflow Definitions" window for the active document library
+## Client Tools
 
-Compact Versions:
+| Menu Item | Description |
+|-----------|-------------|
+| :material-download: **Client Add-Ins / Programs** | Download Import/Export Tool, Office Add-in |
 
-This menu item launches the "Compact Versions" window.   
-Using this window, you get rid of unwanted document versions.
+!!! note "Administrator Control"
+    The system administrator may disable client add-in downloads. Contact your administrator if this menu is not visible.
 
-Client Add-Ins / Programs:
+---
 
-This menu item launches the "Client Add-Ins and Programs" window.
-  
- This window provides a list of available client-side tools such as the Import Export Tool, the infoRouter Add-in for MS Office.
+## See Also
 
-The system administrator may disable this menu to prevent users from downloading and installing these programs. If you do not see this menu please ask your administrator about it.
+- [The Menu System](TheMenuSystem.md)
+- [Document Retention](DocumentRetention.md)
+- [Document Versions](DocumentVersions.md)
+- [Workflows Introduction](WorkflowsIntro.md)

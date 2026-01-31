@@ -1,11 +1,50 @@
-# Administrative Functions / Warehouse Management
+# Warehouse Management
 
-The Warehouse Status screen gives the System Administrator vital statistics about disk space usage and how documents are spread out over the drives in the warehouse.
+Monitor disk space usage and document distribution across your infoRouter storage warehouse.
 
-The first section, "Disk Usage", gives you information about all the physical drives participating in your warehouse.
+---
 
-The System Administrator should check the "disk space usage" regularly and make sure that the physical drive has enough capacity.
+## Accessing Warehouse Status
 
-The second section, "Warehouse Paths", gives you information about the warehouse paths and the amount of disk space used by infoRouter on each path.
+1. Click **Control Panel**
+2. Click **Warehouse Status**
 
-The "Warehouse Status" screen can be reached by going to the "Control Panel" and clicking on the "Warehouse Status" link.
+---
+
+## Warehouse Status Sections
+
+### Disk Usage
+
+| Information | Description |
+|-------------|-------------|
+| :material-harddisk: **Physical drives** | All drives participating in the warehouse |
+| :material-chart-pie: **Space used** | Current disk space consumption |
+| :material-chart-donut: **Space available** | Remaining capacity on each drive |
+
+!!! warning "Monitor Regularly"
+    Check disk space usage regularly to ensure physical drives have enough capacity. Running out of space can prevent document uploads and affect system performance.
+
+### Warehouse Paths
+
+| Information | Description |
+|-------------|-------------|
+| :material-folder-multiple: **Path locations** | Directory paths configured for document storage |
+| :material-database: **Space per path** | Disk space used by infoRouter on each path |
+| :material-file-multiple: **Document distribution** | How documents are spread across paths |
+
+---
+
+## Best Practices
+
+!!! tip "Capacity Planning"
+    - Set up monitoring alerts for disk space thresholds
+    - Plan for capacity increases before reaching limits
+    - Consider adding additional warehouse paths as storage needs grow
+
+---
+
+## See Also
+
+- [Control Panel Overview](ControlPanel.md)
+- [Application Settings](ApplicationSettings.md)
+- [System Configuration](SystemConfiguration.md)

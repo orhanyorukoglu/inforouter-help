@@ -1,30 +1,57 @@
-# The Tools Menu
+# Tools Menu
 
-![infoRouter tools menu](../images/Menu-tools.jpg)
+Access folder management, sharing, workflow, and task operations.
 
-Folder Properties:
+---
 
-This menu item launches the "Folder Properties" window.
+## Folder Management
 
-Folder Security:
+| Menu Item | Description |
+|-----------|-------------|
+| :material-folder-cog: **Folder Properties** | View and edit folder settings |
+| :material-folder-lock: **Folder Security** | Manage folder permissions (authorized users only) |
 
-This menu item launches the "Folder Security" window. Please note that only authorized users can see or edit the folder security definitions screen.
+---
 
-Send To:
+## Sharing
 
-This menu item launches a window that allows you to e-mail the selected documents and folder to internal and external users.
+| Menu Item | Description |
+|-----------|-------------|
+| :material-email: **Send To** | Email documents and folders to internal or external users |
 
-Send to Workflow:
+---
 
-This menu item launches a window that displays a list of library wide "Workflow Definitions". You can choose from one of the items in the list and submit your document to the selected workflow.
+## Workflow
 
-Create Task:
+| Menu Item | Description |
+|-----------|-------------|
+| :material-sitemap: **Send to Workflow** | Submit documents to a library workflow |
 
-This menu item launches the "Create Task" window.
-  
- Using this menu, users may assign other users tasks based on the selected documents.
+!!! info "Workflow Submission"
+    Select from available workflow definitions configured for the library.
 
-Change Ownership:
+---
 
-This menu item launches the "Change Ownership" window.   
-Using this window, you may change the ownership of documents and folders.
+## Task Management
+
+| Menu Item | Description |
+|-----------|-------------|
+| :material-clipboard-plus: **Create Task** | Assign document-based tasks to other users |
+
+---
+
+## Ownership
+
+| Menu Item | Description |
+|-----------|-------------|
+| :material-account-switch: **Change Ownership** | Transfer document or folder ownership |
+
+---
+
+## See Also
+
+- [The Menu System](TheMenuSystem.md)
+- [Folder Properties](FolderProperties.md)
+- [Folder Security](FolderSecurity.md)
+- [Introduction to Workflows](WorkflowsIntro.md)
+- [How to Create Tasks](HowtoCreateTasks.md)

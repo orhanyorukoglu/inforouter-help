@@ -1,35 +1,75 @@
-# The Menu System / New Menu
+# New Menu
 
-![new menu](../images/Menu_new.jpg)
+Create new documents, folders, and other items in infoRouter.
 
-Upload:
+---
 
-This menu executes a window that allows you to upload an existing document into infoRouter. For more information on this topic, navigate to [Uploading Documents](UploadDocument.md)
+## Menu Options
 
-Document from Template:
+| Menu Item | Description | More Info |
+|-----------|-------------|-----------|
+| :material-upload: **Upload** | Upload files from your computer | [Uploading Documents](UploadingDocuments.md) |
+| :material-file-document-edit: **Document from Template** | Create document from a form template | [Using Form Templates](UsingFormTemplates.md) |
+| :material-language-html5: **HTML Document** | Create content using built-in editor | — |
+| :material-link: **URL** | Create a URL document (bookmark) | [URLs](URLs.md) |
+| :material-file-link: **Shortcut** | Create a shortcut to another document | [Document Shortcuts](DocumentShortcuts.md) |
+| :material-folder-zip: **Zip File** | Upload and auto-extract a ZIP file | [Using Zip Uploads](UsingZipUpload.md) |
+| :material-folder-plus: **Folder** | Create a new folder | [Creating Folders](CreatingFolders.md) |
 
-This menu item executes a window that allows you to pick from a list available "Form Templates". For more information on this topic, navigate to  [Using Form Templates](UsingFormTemplates.md)
+---
 
-HTML Document
+## Upload
 
-This menu item executes a built-in Editor window that allows you to create a document directly inside infoRouter. The "Editor" includes all the basis text editing and formatting functions and the resulting output is saved in HTML format.
+Upload existing files from your computer to infoRouter.
 
-URL:
+---
 
-This menu item executes a window that allows you to create a URL document. For more information on this topic, navigate to [URLs](URLs.md)
+## Document from Template
 
-Shortcut:
+Select from available form templates to create standardized documents.
 
-This menu item executes a window that allows you to create a Shortcut document.
-  
- For more information on this topic, navigate to [Document Shortcuts](DocumentShortcuts.md)
+---
 
-Zip File:
+## HTML Document
 
-This menu item allows you to upload a ZIP file. Please note that the zip file you upload will automatically be expanded on the server.
-  
- For more information on this topic, navigate to [Using Zip Uploads](UsingZipUpload.md)
+Create content directly in infoRouter using the built-in editor:
 
-Folder:
+- Basic text editing and formatting
+- No external application required
+- Saved in HTML format
 
-This menu item executes a window that allows you to create a Folder. For more information on this topic, navigate to [Creating Folders](CreateFolder.md)
+---
+
+## URL
+
+Create URL documents that link to external web resources.
+
+---
+
+## Shortcut
+
+Create shortcuts that point to documents in other locations within infoRouter.
+
+---
+
+## Zip File
+
+Upload ZIP archives that are automatically extracted on the server.
+
+!!! info "Auto-Extraction"
+    ZIP files are expanded automatically when uploaded, creating the folder structure and files contained within.
+
+---
+
+## Folder
+
+Create new folders to organize your documents.
+
+---
+
+## See Also
+
+- [The Menu System](TheMenuSystem.md)
+- [Uploading Documents](UploadingDocuments.md)
+- [Creating Folders](CreatingFolders.md)
+- [Form Templates](FormTemplates.md)

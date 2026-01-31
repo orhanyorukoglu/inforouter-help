@@ -1,57 +1,76 @@
-# The Menu System / View Menu
+# View Menu
 
-![The view menu](../images/Menu_view.jpg)
+Change how documents and folders are displayed in the document list.
 
-infoRouter allows you to view the contents of your folders in various ways.
-  
- To change your view type, click on the "View" Menu and select a view type.
-  
- Notice, the current view type will be marked with an icon to the left to indicate that this view type is active.
+---
 
-Each view type displays different types of information about documents in the folder.
+## How to Change Views
 
-List:
+1. Click the **View** menu
+2. Select a view type
+3. The active view is marked with an icon
 
-This view is a simple document listing. No additional information is displayed.
+---
 
-Details:
+## Available Views
 
-This view provides additional details about the folder's contents, including document descriptions and any associated documents.
+| View | Description |
+|------|-------------|
+| :material-view-list: **List** | Simple document listing without additional details |
+| :material-view-list-outline: **Details** | Extended information including descriptions |
+| :material-comment-multiple: **Comments** | Display comments for each document |
+| :material-sitemap: **Workflow Status** | Show review status and reviewer votes |
+| :material-view-grid: **Thumbnails** | Visual preview of images |
+| :material-history: **Versions** | Show all document versions |
+| :material-eye: **View Log** | Display who has viewed each document |
+| :material-tag-multiple: **Tag View** | Show tags applied to documents |
 
-Comments:
+---
 
-This view displays all the comments added to each document.
+## View Details
 
-Workflow Status:
+### List View
+Simple listing with document names only.
 
-This view displays information about the review status of a document. It displays information about each reviewer assigned and their votes on the status of a document.
+### Details View
+Includes document descriptions and associated documents.
 
-Thumbnails:
+### Comments View
+Shows all comments added to documents in the folder.
 
-This view is used for folders containing images. It displays a small thumbnail view of each image, allowing you to identify the image visually.
+### Workflow Status View
+Displays review status including:
+- Assigned reviewers
+- Approval/rejection votes
+- Current workflow step
 
-Versions:
+### Thumbnails View
+Visual previews ideal for image folders.
 
-This view displays all available versions of a document. You can select and view previous versions of any document.
+### Versions View
+Access and view any previous version of documents.
 
-View Log:
+### View Log
+Audit trail showing which users viewed each document.
 
-This view displays a log of users who have viewed each document.
+### Tag View
+Shows all classification tags applied to documents.
 
-Tag View:
+---
 
-This view displays all tags applied to the documents in a given folder.
+## Display Options
 
-Select Columns:
+| Option | Description |
+|--------|-------------|
+| :material-table-column: **[Select Columns](SelColumns.md)** | Choose which fields appear in the document list |
+| :material-printer: **Print Friendly View** | Simplified view for printing |
+| :material-library: **Library View Options** | Show/hide Hidden and Archive libraries |
 
-This menu item displays a window that allows you to select from a complete list of fields that you wish to display in the document list.
+---
 
-For more information on this screen, click here [Select Columns](SelColumns.md).
+## See Also
 
-Print Friendly View:
-
-This view displays a printer friendly view eliminating buttons and extra graphics for easy printing.
-
-Library View Options:
-
-This view displays a window where you can elect to see Hidden Libraries and Archive Libraries in the navigation tree.
+- [The Menu System](TheMenuSystem.md)
+- [Select Columns](SelColumns.md)
+- [Document Comments](DocumentComments.md)
+- [Document Versions](DocumentVersions.md)

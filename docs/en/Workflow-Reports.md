@@ -1,31 +1,72 @@
 # Workflow Reports
 
-Workflow reports have been designed to give authorized users a sense of where each workflow is, where certain workflows are in the process, incomplete workflows and so on.
+Monitor workflow progress, performance metrics, and pending tasks across your organization.
 
-There are currently 3 workflow reports:
+---
 
-* Workflow Status Report
-* Performance Report
-* User due task report
+## Available Reports
 
-Workflow Status Report
+| Report | Purpose |
+|--------|---------|
+| :material-chart-box: **Workflow Status Report** | Overall workflow statistics |
+| :material-speedometer: **Performance Report** | Workflow submission and completion metrics |
+| :material-account-clock: **User Due Task Report** | Track user tasks and overdue items |
 
-An overall workflow report listing all workflows with statistics on completed and pending statuses.
+---
 
-Performance Report
+## Workflow Status Report
 
-This report provides a list of workflows and provides vital statistics on how many times they were submitted to along with all pending and completed workflows. The report can be limited to all activity within a begin and end date.
+An overview of all workflows showing their current status.
 
-User Due Task Report
+| Metric | Description |
+|--------|-------------|
+| **Total workflows** | Number of workflow definitions |
+| **Pending** | Workflows currently in progress |
+| **Completed** | Successfully finished workflows |
+| **Status breakdown** | Per-workflow completion statistics |
 
-This report provides a list of users with due tasks and indicates how many of them are overdue. The overdue tasks column value can be clicked to display all overdue tasks.
+---
 
-Please read this document for a comprehensive overview of the infoRouter Workflow system here:
+## Performance Report
 
-[Workflow Administrator's Guide](https://www.infoRouter.com/downloads/V80/infoRouter_Workflows.pdf)
+Detailed workflow activity metrics with date filtering.
 
-See also:
+| Metric | Description |
+|--------|-------------|
+| **Submission count** | Times each workflow was initiated |
+| **Pending count** | Currently active workflow instances |
+| **Completed count** | Finished workflow instances |
+| **Date range** | Filter by begin and end dates |
 
-[Reviewers or Tasks Assignees](Reviewers.md)
+!!! tip "Performance Analysis"
+    Use this report to identify bottlenecks and measure workflow efficiency over time.
 
-[Author Reviews](AuthorReviews.md)
+---
+
+## User Due Task Report
+
+Track task assignments and identify overdue items.
+
+| Column | Description |
+|--------|-------------|
+| **User** | Task assignee |
+| **Due tasks** | Number of pending tasks |
+| **Overdue tasks** | Tasks past their due date (clickable) |
+
+!!! info "Drill Down"
+    Click the overdue tasks count to see the complete list of overdue tasks for that user.
+
+---
+
+## Documentation
+
+:material-download: [Workflow Administrator's Guide (PDF)](https://www.infoRouter.com/downloads/V80/infoRouter_Workflows.pdf)
+
+---
+
+## See Also
+
+- [Introduction to Workflows](WorkflowsIntro.md)
+- [How to Create Workflow Definitions](HowtoCreateWorkflowDefinitions.md)
+- [Reviewers and Task Assignees](Reviewers.md)
+- [Author Reviews](AuthorReviews.md)
