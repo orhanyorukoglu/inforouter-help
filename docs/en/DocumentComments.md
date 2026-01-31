@@ -1,42 +1,74 @@
 # Document Comments
 
-To add comments to a document, you must have (at least) "Read" permissions to that document.
+Comments allow you to add notes and feedback to documents without modifying the document itself.
 
-To attach/add comments to a document:
+![Document comments](../images/document-comments.png)
 
-1. Click on the "Action" icon and choose the "Add comment" menu.
-2. The "Add New Comment" window will appear.
-3. Enter your comment.
-4. Click "OK".
+---
 
-or
+## Adding Comments
 
-1. You may also add comments to a document by navigating to the "Document Properties" window.
-2. Click on the "Comments" link located in the left sidebar.
-3. At the "Document Comments" window, click on the "Add comment" button.
-4. Enter your comment
-5. Click "Ok"
+!!! note "Permission Required"
+    You must have at least **Read** permissions to add comments to a document.
 
-You may delete comments if you own the document or if you have attached the comment.
+### Method 1: Action Menu
 
-To delete a document comment:
+1. Click the **Action** icon on the document
+2. Select **Add Comment**
+3. Enter your comment in the window that appears
+4. Click **OK**
 
-1. Click on the "Action" icon and choose the "Document Properties" menu.
-2. At the "Properties" window, click on the "Comments" link.
-3. At the "Comments" window, click on the "Delete" button next to the comment you wish to remove.
-
-Version Comments:
-
-Version comments are entered at the time of creating new versions.
-
-Only users with access to change the document can enter these comments and the point of creating the new version. Version comments are mainly used to create notes about the specific version, and not the document in general.
-
-To view "Version Comments", perform the following:
-
-1. Click on the "Action" icon and choose the "Document Properties" menu.
-2. At the "Properties" window, click on the "Versions" link located in the left sidebar.
-3. Version specific comments are displayed under each version.
-
-![document comments](../images/document-comments.png)
 ![Adding comments to documents](../images/document-add-comment.png)
+
+### Method 2: Document Properties
+
+1. Open **Document Properties**
+2. Click **Comments** in the left sidebar
+3. Click the **Add Comment** button
+4. Enter your comment
+5. Click **OK**
+
 ![The comment pop-up window](../images/document-comments-popup.png)
+
+---
+
+## Deleting Comments
+
+You can delete a comment if:
+
+- You own the document, OR
+- You added the comment
+
+### How to Delete
+
+1. Click the **Action** icon → **Document Properties**
+2. Click **Comments** in the sidebar
+3. Click the **Delete** button next to the comment you want to remove
+
+---
+
+## Version Comments
+
+Version comments are different from document comments — they're attached to specific versions and created when checking in documents.
+
+| Comment Type | When Created | Purpose |
+|--------------|--------------|---------|
+| **Document Comments** | Anytime | General notes about the document |
+| **Version Comments** | During check-in | Notes about specific version changes |
+
+### Viewing Version Comments
+
+1. Open **Document Properties**
+2. Click **Versions** in the left sidebar
+3. Version-specific comments appear under each version
+
+!!! info "Who Can Add Version Comments"
+    Only users with **Change** permissions can add version comments, as they're created during the check-in process.
+
+---
+
+## See Also
+
+- [Document Properties](DocumentProperties.md)
+- [Check In Documents](CheckIn.md)
+- [Document Versions](DocumentVersions.md)

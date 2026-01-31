@@ -1,28 +1,61 @@
-# Libraries / Library Members
+# Library Members
 
-Libraries can only be accessed by its members (except for Anonymous libraries).
+Libraries can only be accessed by their members (except for Anonymous Libraries). Membership determines who can see and work within a library.
 
-The System Administrator assigns "Users" and "User Groups" as "Members" to libraries from the "Libraries" screen
-in the "Control Panel".
+---
 
-Library managers can create "Local Users" and "Local User Groups"
+## Key Concepts
 
-Notes:
+| Concept | Description |
+|---------|-------------|
+| **Visibility** | Libraries are invisible to non-members |
+| **Multiple Memberships** | Users and groups can be members of multiple libraries |
+| **Security Lists** | Only library members appear in user lists when assigning security |
 
-Users and User Groups can be members of multiple libraries.
+!!! info "Anonymous Libraries"
+    Anonymous Libraries are the exception — they can be accessed without membership by anyone who can navigate to them.
 
-Libraries are not visible to users who are non-members.
+---
 
-When assigning Folder and Document Security in a library, only the library members appear in the user list.
+## Who Assigns Members?
 
-See also:
+| Role | Can Assign Members |
+|------|-------------------|
+| System Administrator | :material-check: Yes |
+| Administrators group | :material-check: Yes |
+| Library Managers | :material-check: Yes (including local users) |
+| User Managers | :material-check: Yes |
 
-[Adding Library Members](AddingLibraryMembers.md)
+---
 
-[User Groups](UserGroups.md)
+## Member Types
 
-[Users](Users.md)
+### Global Members
 
-Security Considerations:
+- **Users** — Individual user accounts assigned by the System Administrator
+- **User Groups** — Groups of users assigned collectively
 
-Library members can be managed by the System Administrator and members of the "Administrators" system user group, Library Managers and members of the User Managers group.
+### Local Members
+
+Library Managers can create:
+
+- **Local Users** — Users that exist only within the library
+- **Local User Groups** — Groups that exist only within the library
+
+---
+
+## Managing Members
+
+Members are assigned from the **Libraries** screen in the **Control Panel**.
+
+:material-arrow-right: [Adding Library Members](AddingLibraryMembers.md)
+
+---
+
+## See Also
+
+- [Adding Library Members](AddingLibraryMembers.md)
+- [User Groups](UserGroups.md)
+- [Users](Users.md)
+- [Document Libraries](Libraries.md)
+- [Library Managers](LibraryManagers.md)

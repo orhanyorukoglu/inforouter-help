@@ -1,36 +1,52 @@
-# Libraries / Library Managers
+# Library Managers
 
-A Library Manager is a user who has been specifically granted library management rights by the System Administrator or
-any one of the members of the “administrators” system user group.
+A Library Manager is a user granted special rights to manage a specific library. This allows System Administrators to delegate administrative tasks, making libraries more self-sufficient.
 
-Creating one or more Library Managers for each library is a good strategy. System Administrators can delegate many administrative functions to the library managers making them self-sufficient to manage almost every aspect of document libraries.
+!!! tip "Best Practice"
+    Creating one or more Library Managers for each library is recommended. This distributes administrative workload and enables faster response to library-related needs.
 
-What can Library Managers do?
+---
 
-* Create local users
-* Create local user groups
-* Assign and manage document security throughout the Library
-* Assign and manage folder security throughout the Library
+## Library Manager Capabilities
 
-To create a Library Manager, perform the following:
+Library Managers can:
 
-1. Click on "Control Panel" and choose the "libraries" section from the right panel.
-2. Select a library by clicking on the library on the right panel.
-3. Click on the "Library Managers" tab.
-4. Click on the "Add Library Manager" tab.
-5. Select the user you wish to assign as the Library Manager.
-6. Click "OK".
+| Function | Description |
+|----------|-------------|
+| :material-account-plus: **Create local users** | Add users specific to the library |
+| :material-account-group: **Create local user groups** | Create groups specific to the library |
+| :material-shield-edit: **Manage document security** | Assign and modify document permissions |
+| :material-folder-lock: **Manage folder security** | Assign and modify folder permissions |
+| :material-account-multiple: **Manage library members** | Add and remove members |
 
-See also
+---
 
-[User Groups](UserGroups.md)
+## Creating a Library Manager
 
-[infoRouter Users](Users.md)
+1. Go to **Control Panel**
+2. Click **Libraries**
+3. Select a library from the list
+4. Click the **Library Managers** tab
+5. Click **Add Library Manager**
+6. Select the user to assign as Library Manager
+7. Click **OK**
 
-[Library Usage Scenarios](LibraryUsageScenarios.md)
+---
 
-[Document Libraries](Libraries.md)
+## Who Can Create Library Managers?
 
-[Library Policies](LibraryPolicies.md)
+| Role | Can Create |
+|------|------------|
+| System Administrator | :material-check: Yes |
+| Administrators group members | :material-check: Yes |
 
-[Other administrative functions and roles](AdminFunctions.md)
+---
+
+## See Also
+
+- [Document Libraries](Libraries.md)
+- [Library Policies](LibraryPolicies.md)
+- [Library Members](LibraryMembers.md)
+- [Library Usage Scenarios](LibraryUsageScenarios.md)
+- [User Groups](UserGroups.md)
+- [Administrative Functions](AdminFunctions.md)

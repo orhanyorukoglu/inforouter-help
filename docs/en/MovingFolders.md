@@ -1,32 +1,68 @@
-# Folders / Moving Folders
+# Moving Folders
 
-When you move a folder, the entire contents of the folder will be moved including all sub-folders and documents.
+When you move a folder, the entire contents — including all subfolders and documents — are moved to the new location.
 
-Moving a folder will not change any of its settings such as the "Folder Rules" or any data contained in "Custom Properties" that may have been applied to the folders and documents.
+---
 
-Documents and folders will retain their security settings but in some cases, the current security settings may become unusable. A good example of this might be moving folders across libraries:
+## What Gets Preserved
 
-Consider the following example:
+| Setting | Preserved? |
+|---------|------------|
+| Folder Rules | :material-check: Yes |
+| Custom Properties | :material-check: Yes |
+| Security Settings | :material-check: Yes* |
 
-* Jim has "Full Control" on a folder.
-* Mary moves the folder to a library and Jim is not a member of that library.
-* Jim will no longer be able to access the folder or its contents.
-* If Jim is made a member of the library, then Jim will be able to access those folders and documents.
-* If the folder is moved back into its original library, Jim will be able to access the folder and its documents.
+!!! warning "Security Across Libraries"
+    *Security settings are preserved, but may become unusable when moving folders across libraries.
 
-To move a folder, perform the following:
+---
 
-1. Click on the check box to the left of the folder you wish to move.
-2. Click on the "Cut" menu item in the "Edit" menu.
-3. Navigate to the location where you wish to move the folder.
-4. Click on the "Paste" menu item in the "Edit" menu.
-5. infoRouter will prompt you to confirm the action and move the folder and all of its contents.
+## Cross-Library Move Example
 
-Moving a folder is subject to security rights. You must have "Full Control" rights on the folder you are trying to move, because you will be deleting the folder from its original location. You must also have at least "Add" or "Change" rights in the target folder, because you will be creating a new folder in this new location.
+Consider this scenario:
 
-Note:
+1. Jim has **Full Control** on a folder
+2. Mary moves the folder to a different library where Jim is **not a member**
+3. **Result:** Jim can no longer access the folder or its contents
+4. **If** Jim is made a member of the new library → Jim regains access
+5. **If** the folder is moved back → Jim's original access is restored
 
-Root level folders (Libraries) cannot be moved
+---
 
-![Cutting - Moving Folders](../images/Moving-Folders-cut.jpg)
-![Pasting folders](../images/Moving-Folders-paste.jpg)
+## How to Move a Folder
+
+1. Check the box next to the folder you want to move
+2. Go to **Edit** → **Cut**
+
+    ![Cutting - Moving Folders](../images/Moving-Folders-cut.jpg)
+
+3. Navigate to the destination location
+4. Go to **Edit** → **Paste**
+
+    ![Pasting folders](../images/Moving-Folders-paste.jpg)
+
+5. Confirm the action when prompted
+
+---
+
+## Required Permissions
+
+| Location | Required Permission |
+|----------|-------------------|
+| **Source folder** | Full Control (you're deleting from here) |
+| **Destination folder** | Add or Change (you're creating here) |
+
+---
+
+## Restrictions
+
+!!! note "Libraries Cannot Be Moved"
+    Root-level folders (Libraries) cannot be moved. Only subfolders within libraries can be moved.
+
+---
+
+## See Also
+
+- [Folder Security](FolderSecurity.md)
+- [Document Libraries](Libraries.md)
+- [Security Inheritance](Inheritance.md)

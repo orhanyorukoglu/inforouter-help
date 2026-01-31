@@ -1,19 +1,55 @@
-# Administrative Functions and Roles / User Managers
+# User Managers
 
-"User Managers" is a system user group that comes built-in to infoRouter. This system user group cannot be deleted. Its members are assigned by the system administrator and these members inherit special permissions that allow them to perform certain functions in infoRouter without restrictions.
+**User Managers** is a built-in system user group in infoRouter. Members of this group have special permissions to create and manage users throughout the system.
 
-Policy Managers can perform the following functions:
+!!! note "System Group"
+    This system user group cannot be deleted. Members are assigned by the System Administrator.
 
-1. Create/Delete/Edit/Enable/Disable global users
-2. Create/Delete/Edit/Enable/Disable local users
-3. Create/Delete/Edit global user groups
-4. Create/Delete/Edit local user groups
-5. Manage memberships for local and global user groups.
-6. Grant Library membership rights to individual users
-7. Grant Library membership rights to global user groups
+---
 
-See also:
+## User Manager Capabilities
 
-[Policy Managers](PolicyManagers.md)
+Members of the User Managers group can:
 
-[Library Managers](LibraryManagers.md)
+| Function | Description |
+|----------|-------------|
+| :material-account-plus: **Create users** | Create global and local users |
+| :material-account-remove: **Delete users** | Remove user accounts |
+| :material-account-edit: **Edit users** | Modify user properties |
+| :material-account-off: **Enable/Disable users** | Activate or deactivate accounts |
+| :material-account-group: **Manage user groups** | Create, edit, delete global and local groups |
+| :material-account-multiple: **Manage memberships** | Add/remove users from groups |
+| :material-library: **Grant library membership** | Add users to libraries |
+
+---
+
+## Scope of Access
+
+| Scope | What User Managers Can Do |
+|-------|---------------------------|
+| **Global Users** | Full management (create, delete, edit, enable/disable) |
+| **Local Users** | Full management within any library |
+| **Global User Groups** | Create, delete, edit, manage members |
+| **Local User Groups** | Create, delete, edit, manage members |
+| **Library Membership** | Grant membership to users and groups |
+
+---
+
+## Becoming a User Manager
+
+The System Administrator assigns users to the User Managers group:
+
+1. Go to **Control Panel**
+2. Navigate to **System User Groups**
+3. Select **User Managers**
+4. Add members to the group
+
+---
+
+## See Also
+
+- [Users](Users.md)
+- [User Groups](UserGroups.md)
+- [Policy Managers](PolicyManagers.md)
+- [Library Managers](LibraryManagers.md)
+- [Administrative Functions](AdminFunctions.md)
