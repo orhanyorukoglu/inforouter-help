@@ -1,15 +1,83 @@
-# Administrative Functions / Managing MIME Types
+# Managing MIME Types
 
-MIME Types allow infoRouter and your browser to correctly identify the type of document the user is trying to download. With known MIME types, your browser knows to launch the appropriate application when you choose to open the document.
+Configure MIME types to ensure proper handling of file types in infoRouter.
 
-For your convenience, infoRouter provides a wide variety of commonly used MIME Types. If your organization uses documents or files generated with applications not widely used, the System Administrator may need to identify a new MIME Type.
+---
 
-For example, your company may use a specialized drawing application that generates files with an ".xyz" extension. In this case, the System Administrator would need to identify a new MIME type so that infoRouter will know which application should be associated with that file extension.
+## What Are MIME Types?
 
-To add a MIME Type, perform the following:
+MIME (Multipurpose Internet Mail Extensions) types tell browsers how to handle different file formats. They ensure the correct application opens when users download documents.
 
-1. Navigate to the infoRouter installation Path example: c:\infoRouter\config.
-2. Edit the document called MimeTypes.Custom.xml with notepad.
-3. If you need help on the format of this file, look at MimeTypes.xml.
-4. Do NOT edit the MimeTypes.xml file. This file may be overwritten by the Live Update program from time to time.
-5. The MimeTypes.Custom.xml however is never updated and can be controlled directly by you.
+---
+
+## Built-in MIME Types
+
+infoRouter includes common MIME types:
+
+| Extension | MIME Type | Application |
+|-----------|-----------|-------------|
+| `.pdf` | application/pdf | Adobe Reader |
+| `.docx` | application/vnd.openxmlformats... | Microsoft Word |
+| `.xlsx` | application/vnd.openxmlformats... | Microsoft Excel |
+| `.jpg` | image/jpeg | Image viewers |
+| `.txt` | text/plain | Text editors |
+
+---
+
+## When to Add MIME Types
+
+Add custom MIME types when:
+
+- Your organization uses specialized applications
+- Files have custom extensions
+- Browsers don't recognize the file type
+
+!!! example "Example Scenario"
+    Your company uses a CAD application that creates `.xyz` files. Without a MIME type definition, browsers won't know how to handle these files.
+
+---
+
+## Adding Custom MIME Types
+
+### Step 1: Locate Configuration File
+
+Navigate to:
+```
+C:\infoRouter\config\
+```
+
+### Step 2: Edit Custom File
+
+Edit `MimeTypes.Custom.xml` with a text editor (Notepad).
+
+!!! warning "Do Not Edit MimeTypes.xml"
+    The main `MimeTypes.xml` file may be overwritten during updates. Always use `MimeTypes.Custom.xml` for your customizations.
+
+### Step 3: Add Entry
+
+Reference `MimeTypes.xml` for format examples:
+
+```xml
+<MimeType Extension=".xyz" ContentType="application/x-xyz" />
+```
+
+### Step 4: Save and Restart
+
+Save the file and restart the infoRouter application pool if needed.
+
+---
+
+## MIME Type Entry Format
+
+| Attribute | Description |
+|-----------|-------------|
+| **Extension** | File extension (e.g., `.xyz`) |
+| **ContentType** | MIME type string |
+| **Icon** | Optional icon identifier |
+
+---
+
+## See Also
+
+- [General Application Settings](ApplicationSettings.md)
+- [Administrative Functions](AdminFunctions.md)

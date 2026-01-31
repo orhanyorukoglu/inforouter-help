@@ -1,39 +1,104 @@
-# Libraries / Library Scenarios
+# Library Usage Scenarios
 
-Typical Corporate Library Layout:
+Plan your infoRouter library structure based on organizational needs and use cases.
 
-A typical corporate environment may have the following departments.
+---
 
-* Accounting
-* Sales
-* Marketing
-* Human Resources
-* Information Services
-* Customer Service
-* Help Desk & Support
+## Typical Corporate Library Layout
 
-All of which are good candidates for Libraries.
+A typical organization might create libraries for:
 
-Why have multiple Libraries?
+| Department | Library Purpose |
+|------------|-----------------|
+| :material-calculator: **Accounting** | Financial documents, invoices, reports |
+| :material-cart: **Sales** | Proposals, contracts, quotes |
+| :material-bullhorn: **Marketing** | Campaigns, collateral, brand assets |
+| :material-account-group: **Human Resources** | Policies, employee records, forms |
+| :material-laptop: **Information Services** | Technical documentation, procedures |
+| :material-headset: **Customer Service** | Support guides, FAQs |
+| :material-help-circle: **Help Desk** | Tickets, knowledge base articles |
 
-Each department is likely to have their own policies, procedures and security levels defined for their day-to-day operations. Only for this purpose alone, it makes sense to have a separate library for each functional department or area in your organization. Each library would have their members who can freely navigate and perform functions dictated by their assigned privileges. Such libraries are not visible to non-members.
+---
 
-Remember that an infoRouter user may be a member of multiple libraries.
+## Why Have Multiple Libraries?
 
-Common uses of Libraries
+!!! tip "Separation of Concerns"
+    Each department typically has its own policies, procedures, and security requirements. Separate libraries allow:
 
-* To form a private work group area. For example, the Human Resources department may be set up with a library that only they can see and access.
-* To store sensitive documents or projects in a private area. For example, the Legal department may have contractual requirements to keep documentation separate from general-purpose documentation.
-* Allow customers, partners, and vendors access to specific isolated areas (via anonymous libraries) without having to give them access to everything else.
+    - **Different retention policies** per department
+    - **Unique security settings** for sensitive data
+    - **Separate audit trails** for compliance
+    - **Custom workflows** for each business area
 
-Why have Anonymous Libraries?
+---
 
-Anonymous libraries are libraries that **all** infoRouter users can access.
+## Common Library Use Cases
 
-Once a library is created as an anonymous library, the documents in this library are available for "READ" to all users who navigate to this library. Users with permissions higher than "READ" will be able to update existing documents, create new documents and new folders just as they would in regular libraries.
+### Private Work Areas
 
-Common uses for Anonymous Libraries
+| Use Case | Description |
+|----------|-------------|
+| :material-shield-lock: **Departmental** | HR department library visible only to HR staff |
+| :material-briefcase: **Project-based** | Project teams with isolated workspace |
+| :material-gavel: **Legal** | Sensitive contracts requiring separation |
 
-* Public Announcements
-* Public Human Resources documents such as Vacation Request Forms
-* Public information such as corporate vision, locations, departments etc.
+### External Access
+
+| Use Case | Description |
+|----------|-------------|
+| :material-account-tie: **Customer portal** | Clients access their documents |
+| :material-handshake: **Partner sharing** | Vendors and partners collaboration |
+| :material-earth: **Public content** | Announcements and forms |
+
+---
+
+## Anonymous Libraries
+
+Anonymous libraries are accessible to **all** infoRouter users without membership.
+
+### How They Work
+
+| Permission | Behavior |
+|------------|----------|
+| **Default access** | READ for all users |
+| **Higher permissions** | Can be granted for specific users |
+| **No membership required** | Everyone can view |
+
+### Anonymous Library Uses
+
+| Use Case | Examples |
+|----------|----------|
+| :material-bullhorn: **Announcements** | Company news, policy updates |
+| :material-file-document: **Public forms** | Vacation requests, expense reports |
+| :material-information: **Corporate info** | Vision, locations, org charts |
+
+---
+
+## Multi-Library Membership
+
+!!! info "Flexible Access"
+    Users can belong to multiple libraries. A project manager might be a member of:
+
+    - Project Management library
+    - Accounting library (for budgets)
+    - Marketing library (for campaigns)
+
+---
+
+## Best Practices
+
+| Practice | Benefit |
+|----------|---------|
+| **Organize by function** | Match business structure |
+| **Use consistent naming** | Easy navigation |
+| **Plan permissions early** | Avoid security gaps |
+| **Consider growth** | Allow for expansion |
+
+---
+
+## See Also
+
+- [Libraries Overview](Libraries.md)
+- [Creating Libraries](CreatingLibraries.md)
+- [Library Members](LibraryMembers.md)
+- [Library Policies](LibraryPolicies.md)

@@ -1,31 +1,91 @@
-# Users and User Management / Local User Groups
+# Local User Groups
 
-Local user groups are defined at the library level and can only be used in the library in which it was created.
+Local user groups are library-specific groups that exist only within a single library.
 
-Creating a Local User Group:
+---
 
-1. Click on the "Control Panel" link.
-2. Click on "Libraries".
-3. Select the library for which you wish to create a Local User Group.
-4. Click on "Local Groups".
-5. Click on "New" from the left sidebar
-6. Enter a name for the user group, then click "OK".
+## Local vs Global Groups
 
-Adding users to a Local User Group:
+| Feature | Local Groups | Global Groups |
+|---------|--------------|---------------|
+| **Scope** | Single library only | All libraries |
+| **Visibility** | Library members | System-wide |
+| **Created by** | Library Managers | System Administrators |
+| **Use case** | Library-specific roles | Organization-wide roles |
 
-1. To add users to the new group, select the group name from the list.
-2. Click on the "Add Member" link from the left sidebar.
-3. Select the users you wish to add to this user group by clicking on the check boxes for each user.
-4. Click on the "OK" button.
+---
 
-Deleting a User Group:
+## Who Can Manage Local Groups?
 
-1. Click on "Libraries".
-2. Select the library from which you wish to delete Local User Group.
-3. Click on "Local Groups".
-4. Click on the "Delete" link located in the left sidebar.
-5. Click "OK".
+| Role | Can Manage |
+|------|------------|
+| System Administrator | :material-check: Yes |
+| Administrators group | :material-check: Yes |
+| User Managers | :material-check: Yes |
+| Library Managers | :material-check: Yes (their library) |
+| Regular Users | :material-close: No |
 
-Security considerations
+---
 
-Only the System Administrator and members of the “administrators” system user group , members of the "User Managers" system user group and library managers can create and manage local user groups
+## Creating a Local User Group
+
+1. Click **Control Panel**
+2. Click **Libraries**
+3. Select the library
+4. Click **Local Groups**
+5. Click **New** in the sidebar
+6. Enter a group name
+7. Click **OK**
+
+---
+
+## Adding Users to a Group
+
+1. Select the group name from the list
+2. Click **Add Member** in the sidebar
+3. Select users by clicking their checkboxes
+4. Click **OK**
+
+---
+
+## Removing Users from a Group
+
+1. Select the group name from the list
+2. Select the member(s) to remove
+3. Click **Remove Member** in the sidebar
+4. Confirm the removal
+
+---
+
+## Deleting a User Group
+
+1. Click **Control Panel**
+2. Click **Libraries**
+3. Select the library
+4. Click **Local Groups**
+5. Select the group to delete
+6. Click **Delete** in the sidebar
+7. Click **OK** to confirm
+
+!!! warning "Deletion Impact"
+    Deleting a group removes all permissions assigned to that group. Ensure you reassign permissions before deleting.
+
+---
+
+## Common Local Group Uses
+
+| Group Name | Purpose |
+|------------|---------|
+| Reviewers | Users who review documents |
+| Publishers | Users who can publish content |
+| Managers | Department leadership |
+| Editors | Content editors |
+
+---
+
+## See Also
+
+- [User Groups Overview](UserGroups.md)
+- [Library Members](LibraryMembers.md)
+- [Folder Security](FolderSecurity.md)
+- [Document Security](DocumentSecurity.md)

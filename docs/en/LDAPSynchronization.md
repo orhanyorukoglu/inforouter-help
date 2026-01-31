@@ -1,26 +1,87 @@
-# Administrative Functions / Importing & Synchronizing LDAP Users with infoRouter
+# LDAP Synchronization
 
-All users must have a valid account in infoRouter before they can use it. infoRouter user accounts are created by
-users with Administrator priveledges and are stored in infoRouter's own security database.
+Keep infoRouter user accounts synchronized with your organization's LDAP directory (Active Directory).
 
-Your user account is what identifies you both to the system and to other users. It allows you to check documents in
-and out, and it allows you to be granted permissions within the document and folder security framework.
+---
 
-The System Administrator can reduce the time it takes to add infoRouter user accounts by importing users directly from
-your existing LDAP user database.
+## Why Synchronize with LDAP?
 
-Users imported from LDAP are automatically authenticated from LDAP. LDAP users will still have to log into infoRouter
-however, their passwords are not kept in infoRouter so when their passwords are updated in LDAP infoRouter can still
-authenticate them by calling on the LDAP Server.
+| Benefit | Description |
+|---------|-------------|
+| :material-sync: **Automatic updates** | User changes in LDAP reflect in infoRouter |
+| :material-account-off: **Deactivation sync** | Disabled LDAP accounts auto-disable in infoRouter |
+| :material-account-group: **Group sync** | LDAP group memberships can be synchronized |
+| :material-key: **Password sync** | Password changes in LDAP work immediately |
 
-When an LDAP authenticated user logs in, infoRouter makes a call to the LDAP database to verify the authenticity of
-this user. This way, the user only maintains one set of user ids and password between the two systems.
+---
 
-To import LDAP Users, your system administrator must install a stand-alone tool called "LDAP Synchronization Manager".
-For more help on this tool, please navigate to the [infoRouter support page](https://support.inforouter.com)
+## How Synchronization Works
 
-See also:
+```mermaid
+flowchart LR
+    A[LDAP Directory] --> B[Sync Manager]
+    B --> C{Compare}
+    C --> D[Add new users]
+    C --> E[Update existing]
+    C --> F[Disable removed]
+    D --> G[infoRouter]
+    E --> G
+    F --> G
+```
 
-[LDAP Authentication](https://www.infoRouter.com/downloads/V80/infoRouter_LDAP_Authentication.pdf)
+---
 
-[LDAP Synchronization Manager](https://www.infoRouter.com/downloads/V80/infoRouter_LDAP_Synchronization_Manager.pdf)
+## Authentication Flow
+
+When an LDAP user logs in:
+
+1. User enters credentials in infoRouter
+2. infoRouter queries LDAP server
+3. LDAP validates the password
+4. Access granted if valid
+
+!!! info "Password Storage"
+    LDAP user passwords are **never** stored in infoRouter. Authentication always goes through the LDAP server.
+
+---
+
+## LDAP Synchronization Manager
+
+The LDAP Synchronization Manager is a standalone tool that:
+
+| Function | Description |
+|----------|-------------|
+| **Import users** | Bring LDAP users into infoRouter |
+| **Update users** | Keep user info current |
+| **Sync groups** | Mirror LDAP group structures |
+| **Schedule sync** | Run automatically at intervals |
+
+---
+
+## Requirements
+
+| Requirement | Description |
+|-------------|-------------|
+| **Tool installation** | LDAP Sync Manager must be installed |
+| **Network access** | Access to LDAP server |
+| **Service account** | LDAP credentials for queries |
+| **Admin rights** | infoRouter admin access |
+
+---
+
+## Documentation
+
+| Resource | Description |
+|----------|-------------|
+| :material-download: [LDAP Authentication (PDF)](https://www.infoRouter.com/downloads/V80/infoRouter_LDAP_Authentication.pdf) | Setup guide |
+| :material-download: [LDAP Sync Manager (PDF)](https://www.infoRouter.com/downloads/V80/infoRouter_LDAP_Synchronization_Manager.pdf) | Tool documentation |
+| :material-help-circle: [infoRouter Support](https://support.inforouter.com) | Additional help |
+
+---
+
+## See Also
+
+- [Importing LDAP Users](ImportingNTUsers.md)
+- [User Authentication](Authentication.md)
+- [Users Overview](Users.md)
+- [Adding Users](AddingUsers.md)

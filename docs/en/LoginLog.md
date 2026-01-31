@@ -1,15 +1,77 @@
-# Security / Auditing Logins
+# Login Log (Auditing Logins)
 
-infoRouter can maintain a log of all logins. This log will show the date, time, and username for all successful logins.
-Only the System Administrator and members of the “administrators” system user group can enable or disable this feature.
+Track user login activity for security and compliance purposes.
 
-To enable or disable the Login Log:
+---
 
-1. Go to the "Authentication and Password Policy Settings" section in the "Control Panel".
-2. Check or uncheck the check box next to the "Login Log" option.
+## What Is the Login Log?
 
-To view the contents of the Login Log, perform the following:
+The login log records authentication events, capturing:
 
-1. Navigate to the "Application" directory where infoRouter is installed.
-2. Further navigate to the sub-folder called "Logs/Logins"
-3. This sub-folder contains a daily log of logins in text format.
+| Information | Description |
+|-------------|-------------|
+| :material-calendar: **Date** | When the login occurred |
+| :material-clock: **Time** | Exact time of login |
+| :material-account: **Username** | Who logged in |
+| :material-check-circle: **Status** | Success or failure |
+
+---
+
+## Who Can Manage the Login Log?
+
+| Role | Access |
+|------|--------|
+| System Administrator | :material-check: Enable/disable and view |
+| Administrators group | :material-check: Enable/disable and view |
+| Regular Users | :material-close: No access |
+
+---
+
+## Enabling/Disabling the Login Log
+
+1. Navigate to **Control Panel**
+2. Click **Authentication and Password Policy Settings**
+3. Locate the **Login Tracking** section
+4. Check or uncheck **Track successful logins**
+5. Optionally enable **Track unsuccessful login attempts**
+6. Save changes
+
+---
+
+## Viewing Login Logs
+
+Login logs are stored as daily text files on the server:
+
+1. Navigate to the infoRouter installation directory
+   Example: `C:\infoRouter\`
+2. Open the `Logs/Logins` subfolder
+3. Each day has a separate log file
+
+---
+
+## Log File Format
+
+Login log entries include:
+
+```
+Date, Time, Username, IP Address, Result
+```
+
+---
+
+## Security Best Practices
+
+!!! tip "Recommended Settings"
+    - Enable tracking for **both** successful and failed logins
+    - Review logs regularly for suspicious activity
+    - Set up alerts for multiple failed login attempts
+    - Archive logs for compliance requirements
+
+---
+
+## See Also
+
+- [Authentication and Password Policies](AuthPassPolicies.md)
+- [User Authentication](Authentication.md)
+- [Audit Logs & Reports](AuditLogControlPanel.md)
+- [Audit Managers](AuditManagers.md)

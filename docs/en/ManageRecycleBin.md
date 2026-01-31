@@ -1,46 +1,95 @@
-# Administrative Functions / Recycle Bin Management
+# System Recycle Bin Management
 
-The System Recycle Bin is the central location for all deleted documents in infoRouter.
-The "System Administrator" and members of the "Administrators" system user group can access to the system recycle bin.
+Manage deleted documents across all users from the central System Recycle Bin.
 
-Documents and folders deleted by users all appear in their own recycle bins but also the system recycle bin. Even when users "empty" their recycle bins, these deleted items continue to appear in the system recycle bin.
+---
 
-Restoring Deleted Documents:
+## System vs User Recycle Bin
 
-When users delete a document or folder belonging to another user (something they can only do if they have "Full Control" over the document or folder) the deleted items will go into the Recycle Bin of the user who deleted the document.
+| Feature | User Recycle Bin | System Recycle Bin |
+|---------|------------------|-------------------|
+| **Scope** | Individual user's deletions | All deletions system-wide |
+| **Access** | Each user | Administrators only |
+| **After user empties** | Items removed | Items still visible |
 
-If the user who owns the document wishes to restore the document, the System Administrator must step in.
+!!! info "Central Repository"
+    Even when users empty their personal recycle bins, deleted items remain in the System Recycle Bin until purged by administrators.
 
-To do this, perform the following:
+---
 
-1. Navigate to the "Control Panel"
-2. Click on the "System Recycle Bin" link to display the "System Recycle Bin"
-3. Specify search criteria relevant to your search.
-4. Click "Find" to execute your search.
-5. Select the document or folder from the search results and click "Restore"
+## Who Can Access?
 
-Re-claiming Disk Space by Purging Recycle Bin entries:
+| Role | Access |
+|------|--------|
+| System Administrator | :material-check: Full access |
+| Administrators group | :material-check: Full access |
+| Regular Users | :material-close: No access |
 
-In order to re-claim valuable disk space, the Recycle Bin has to be cleaned up periodically. To do this, perform the following:
+---
 
-1. Navigate to the "Control Panel".
-2. Click on the "Search in "Recycle Bin" link.
-3. Specify a date in the "Date Deleted" section.
-     
-    Note: Every document deleted between the two dates will be returned
-4. Check all the documents and folders you wish to Purge.
-5. Click on the "Empty" button
+## Restoring Deleted Documents
 
-The selected documents will be permanently purged from infoRouter.
+When documents need to be recovered:
 
-Automatic purging of the system recycle bin:
+1. Navigate to the **Control Panel**
+2. Click **System Recycle Bin**
+3. Enter search criteria to find the document
+4. Click **Find**
+5. Select the document or folder
+6. Click **Restore**
 
-The system recycle bin is automatically purged by infoRouter at defined time intervals. This has been implemented to prevent the system recycle bin from getting overly bloated. To control this time interval, perform the following:
+!!! tip "Cross-User Deletions"
+    When User A deletes User B's document (with Full Control permission), the item goes to User A's recycle bin. User B must contact an administrator to restore it from the System Recycle Bin.
 
-1. Navigate to the "Control Panel".
-2. Click on the "General Application Settings" link.
-3. Scroll down to the section labeled "System Recycle Bin Settings"
-4. Check or un-check the check box that allows the automatic purging of the system recycle bin.
-5. If checked, specify time period in which documents can stay in the system recycle bin
+---
 
-The selected documents will be permanently purged from infoRouter.
+## Manual Purging
+
+To permanently delete and reclaim disk space:
+
+1. Navigate to the **Control Panel**
+2. Click **Search in Recycle Bin**
+3. Set date range in **Date Deleted** section
+4. Click **Find**
+5. Select documents/folders to purge
+6. Click **Empty**
+
+!!! danger "Permanent Deletion"
+    Purged documents cannot be recovered. Verify selections before purging.
+
+---
+
+## Automatic Purging
+
+Configure automatic cleanup to prevent storage bloat:
+
+1. Navigate to the **Control Panel**
+2. Click **General Application Settings**
+3. Scroll to **System Recycle Bin Settings**
+4. Enable or disable automatic purging
+5. Set retention period (days before automatic deletion)
+6. Save changes
+
+| Setting | Description |
+|---------|-------------|
+| **Enable auto-purge** | Turn automatic cleanup on/off |
+| **Retention period** | Days deleted items are kept |
+
+---
+
+## Best Practices
+
+!!! tip "Recycle Bin Management"
+    - Schedule regular reviews of the System Recycle Bin
+    - Set reasonable automatic purge intervals
+    - Document restoration requests for audit purposes
+    - Balance storage costs with recovery needs
+
+---
+
+## See Also
+
+- [My Recycle Bin](MyRecycleBin.md)
+- [Deleting Documents](DeletingDocuments.md)
+- [Deleting Folders](DeletingFolders.md)
+- [General Application Settings](ApplicationSettings.md)
