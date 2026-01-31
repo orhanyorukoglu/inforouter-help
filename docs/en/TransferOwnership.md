@@ -1,53 +1,96 @@
-# Users and User Management / Transferring ownership
+# Transferring Ownership
 
-Ownership of infoRouter assets may have to be transferred from infoRouter user to the other. Employee turnover or change of roles may be examples of why this may be needed.
+Transfer documents, folders, and other assets from one user to another during role changes or employee departures.
 
-To transfer ownership of documents, folders and other assets to another user perform the following:
+---
 
-1. Click on the "Control Panel" link.
-2. Click on the "Manage Users" link located in the infoRouter Control Panel.
-3. In the list that appears, select the user.
-4. Click "Transfer ownership" link located in the left sidebar.
-5. This will launch the "Transfer ownership" window.
+## When to Transfer Ownership
 
-In the "Transfer ownership" window, select the new owner.
+| Scenario | Action |
+|----------|--------|
+| :material-account-arrow-left: **Employee departure** | Transfer all assets to replacement |
+| :material-swap-horizontal: **Role change** | Transfer relevant assets to new role holder |
+| :material-account-group: **Team reorganization** | Redistribute document ownership |
 
-The new owner will be the [new] owner of the items you select to transfer.
+---
 
-infoRouter assets that can be transferred are the following:
+## How to Transfer Ownership
 
-* Library memberships
+1. Click **Control Panel**
+2. Click **Manage Users**
+3. Select the user transferring assets
+4. Click **Transfer Ownership** in the sidebar
+5. Select the **new owner**
+6. Check the assets to transfer
+7. Click **OK**
 
-  This option will transfer all library memberships to the selected user
-* User group memberships
+---
 
-  This option will transfer the membership of all user groups to the selected user.
-* Library management
+## Transferable Assets
 
-  This option will transfer any "Library manager" roles the original user may have to the selected user.
-* Security assignments
+### Memberships
 
-  Any security permissions granted to the original user will be transferred to the selected user.
-* Workflow assignments (roles)
+| Asset | Description |
+|-------|-------------|
+| :material-library: **Library memberships** | Access to document libraries |
+| :material-account-group: **User group memberships** | Group affiliations |
 
-  Any roles defined in workflow definitions will be transferred to the selected user.
-* Existing tasks
+### Roles
 
-  All existing tasks that were assigned to the original user will be transferred to the selected user.
-* Checked out documents
+| Asset | Description |
+|-------|-------------|
+| :material-shield-star: **Library management** | Library Manager roles |
+| :material-sitemap: **Workflow assignments** | Roles in workflow definitions |
 
-  Any documents the original user may have checked out will be transferred to the selected user.
-* Folder ownerships
+### Permissions
 
-  Any folder ownerships will be transferred to the selected user.
-* Documents ownerships
+| Asset | Description |
+|-------|-------------|
+| :material-shield-lock: **Security assignments** | Folder and document permissions |
 
-  Any document ownerships will be transferred to the selected user.
-* Document subscriptions
+### Work Items
 
-  Any document subscriptions will be transferred to the selected user.
-* Folder subscriptions
+| Asset | Description |
+|-------|-------------|
+| :material-clipboard-check: **Existing tasks** | Pending assigned tasks |
+| :material-file-lock: **Checked out documents** | Documents currently checked out |
 
-  Any folder subscriptions will be transferred to the selected user.
+### Content
 
-If you select all the options outlined above, you will effectively transfer all infoRouter assets from the original user to the selected user. This option is usually chosen in cases where an employee leaves the company. The selected user (whether new or existing) will inherit all the infoRouter assets owned by the original user
+| Asset | Description |
+|-------|-------------|
+| :material-folder: **Folder ownerships** | Folders the user owns |
+| :material-file-document: **Document ownerships** | Documents the user owns |
+
+### Subscriptions
+
+| Asset | Description |
+|-------|-------------|
+| :material-file-document-outline: **Document subscriptions** | Document notifications |
+| :material-folder-outline: **Folder subscriptions** | Folder notifications |
+
+---
+
+## Complete Transfer
+
+!!! tip "Employee Departure"
+    Select **all options** to completely transfer all infoRouter assets from a departing employee to their replacement. This ensures continuity and prevents orphaned content.
+
+---
+
+## Best Practices
+
+!!! info "Before Transferring"
+    - Identify the appropriate new owner
+    - Review what's being transferred
+    - Consider transferring in phases for complex transitions
+    - Document the transfer for audit purposes
+
+---
+
+## See Also
+
+- [Users Overview](Users.md)
+- [Deleting Users](DeletingUsers.md)
+- [User Profile](UserProfile.md)
+- [Document Properties](DocumentProperties.md)

@@ -1,38 +1,136 @@
-# infoRouter Security Scenarios
+# Security Scenarios and Best Practices
 
-Follow the best practices guide below when setting up infoRouter for the first time or every time you create a new document library.
+Follow this guide when setting up infoRouter security for the first time or creating new libraries.
 
-A Simple Security Implementation:
+---
 
-1. Create Users
+## Security Implementation Steps
 
-First create your users from the infoRouter Control Panel / Manage Users screen. For more on this topic, click [Creating users](Users.md)
+### Step 1: Create Users
 
-2. Create Global User Groups (optional)
+Create user accounts from the Control Panel.
 
-Now create Global users Groups from the infoRouter Control Panel / Global user groups screen. Global user groups can become very handy when you assign library members. For more on this topic, click [Creating User Groups](UserGroups.md)
+| Action | Location |
+|--------|----------|
+| Create users | Control Panel → Manage Users |
 
-3. Create Libraries
+:material-arrow-right: [Creating Users](AddingUsers.md)
 
-Create libraries for different functional areas such as accounting, marketing, sales and human resources. Remember that libraries are isolated work areas for a group of [members] users. For more on this topic, click [Creating Libraries](Libraries.md)
+---
 
-4. Make individual users and/or Global User Groups, members of libraries.
-5. Create Local Library Users (optional).
+### Step 2: Create Global User Groups (Optional)
 
-If you wish to create users that can only be a member of one library and you do not plan on making these users members of other libraries, creating them as local users may be a very good idea. For more on this topic, click [Creating Local Users](Users.md)
+Global groups simplify library membership assignment.
 
-6. Create Local User Groups.
+| Action | Location |
+|--------|----------|
+| Create global groups | Control Panel → Global User Groups |
 
-Local users groups are essential to a good security implementation. Instead of having to assign each individual user their own set of security permissions, assigning security to a group of individuals is a much better option. It is much easier to assign a particular user to a user group and manage security based on the group. As long as the right users are made members of a user group, its members can access the areas of infoRouter based on the permissions assigned to the group. If they leave the user group, their rights are automatically revoked. For more on this topic, click [Creating Local User Groups](UserGroups.md)
+:material-arrow-right: [User Groups](UserGroups.md)
 
-7. Create Folders within the Library
+---
 
-Create folders and sub-folders inside libraries in a way that reflects the way you work. Creating the folder structure correctly is very important. Do not create sub-folders that are deeper than 6-7 levels. Try to keep the names of folders descriptive but not too long. Keep in mind that when you try to export folders and documents out of infoRouter on to the file system, the file system does not support more than 250 characters for a path. The 250 character limit includes the path and the document name. For more on this topic, click [Creating Folders](CreateFolder.md)
+### Step 3: Create Libraries
 
-8. Assign folder security
+Create libraries for different functional areas:
 
-Assigning the correct folder security is very important. Make sure that you spend time thinking through your structure and how you intend implement the correct security for all library users. Do not go overboard with "Full Control". Remember that a simple "Add" permission for a user allows the user to create documents and access those documents. For more on this topic, click [Folder Security](FolderSecurity.md)
+| Library Example | Purpose |
+|-----------------|---------|
+| Accounting | Financial documents |
+| Marketing | Campaign materials |
+| Sales | Proposals and contracts |
+| Human Resources | HR policies and records |
 
-9. Assign document security
+!!! info "Library Isolation"
+    Libraries are isolated work areas. Non-members cannot see or access library content.
 
-Try to use user group security more than individual security assignments. Making sure that a group of users with a specific role get access to documents and folders makes more sense than individual users. If a user leaves a particular role and no longer should access certain documents, it will be more difficult to hunt down the individual documents this user has access. Whereas the removal of the user from a user group can give you the same effect in a painless way. For more on this topic, click [Document Security](DocumentSecurity.md)
+:material-arrow-right: [Creating Libraries](CreatingLibraries.md)
+
+---
+
+### Step 4: Assign Library Members
+
+Add users and groups as library members.
+
+---
+
+### Step 5: Create Local Users (Optional)
+
+For users who only need access to one library, create them as local users.
+
+:material-arrow-right: [Users Overview](Users.md)
+
+---
+
+### Step 6: Create Local User Groups
+
+!!! tip "Best Practice"
+    Local user groups are **essential** for good security:
+
+    - Assign security to groups, not individuals
+    - When users change roles, simply update group membership
+    - Revoke access by removing from group
+
+:material-arrow-right: [Local User Groups](LocalUserGroups.md)
+
+---
+
+### Step 7: Create Folder Structure
+
+Design your folder hierarchy to match your workflow.
+
+| Guideline | Recommendation |
+|-----------|----------------|
+| **Depth** | Maximum 6-7 levels |
+| **Names** | Descriptive but not too long |
+| **Path length** | Keep under 250 characters total |
+
+!!! warning "Path Limitations"
+    File system exports are limited to 250 characters for the full path including document name.
+
+:material-arrow-right: [Creating Folders](CreatingFolders.md)
+
+---
+
+### Step 8: Assign Folder Security
+
+| Recommendation | Details |
+|----------------|---------|
+| **Plan first** | Think through your security structure |
+| **Minimize Full Control** | Use minimum necessary permissions |
+| **"Add" permission** | Allows users to create and access their own documents |
+
+:material-arrow-right: [Folder Security](FolderSecurity.md)
+
+---
+
+### Step 9: Assign Document Security
+
+| Best Practice | Benefit |
+|---------------|---------|
+| **Use groups** | Easier to manage than individual assignments |
+| **Role-based** | Access follows job function |
+| **Easy revocation** | Remove from group to remove access |
+
+:material-arrow-right: [Document Security](DocumentSecurity.md)
+
+---
+
+## Summary: Security Best Practices
+
+| Practice | Why |
+|----------|-----|
+| :material-account-group: **Use groups** | Easier management, cleaner revocation |
+| :material-shield-half-full: **Minimum permissions** | Reduce risk, follow least-privilege |
+| :material-folder-network: **Plan folder structure** | Reflects workflow, supports security |
+| :material-test-tube: **Test access** | Verify before going live |
+
+---
+
+## See Also
+
+- [Security Overview](Security.md)
+- [Folder Security](FolderSecurity.md)
+- [Document Security](DocumentSecurity.md)
+- [User Groups](UserGroups.md)
+- [Permission Inheritance](Inheritance.md)

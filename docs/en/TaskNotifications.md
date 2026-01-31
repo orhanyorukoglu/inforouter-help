@@ -1,49 +1,71 @@
-# Notifications and E-mail / Task Notifications
+# Task Notifications
 
-Task notifications are e-mails sent to infoRouter users reminding them that a Task has been assigned to them and is pending.
+Email notifications sent when tasks are assigned or require attention.
 
-The built in tasks in infoRouter are as follows:
+---
 
-Edit
+## When Task Notifications Are Sent
 
-This task is typically used in circumstances where a document is created by one author but another is needed to complete the document.
+| Event | Notification |
+|-------|--------------|
+| :material-clipboard-plus: **Task assigned** | Assignee notified |
+| :material-clock-alert: **Task overdue** | Assignee and supervisor notified |
+| :material-calendar-alert: **Reminder date** | Assignee notified |
+| :material-check-circle: **Task completed** | Task creator notified |
 
-Read
+---
 
-This task is typically used by managers who wish to assign tasks to users. This task assigns a READ request to the selected users in the task.
+## Built-in Task Types
 
-Comment
+### Document Tasks
 
-This task is typically used in cases where comments of other users are requested. This task assigns a COMMENT request to the selected users in the task.
+| Task Type | Description |
+|-----------|-------------|
+| :material-pencil: **Edit** | Request another user to complete or edit a document |
+| :material-eye: **Read** | Assign a read request to users |
+| :material-comment-plus: **Comment** | Request comments from users |
 
-ISO Review
+### Review Tasks
 
-This task type allows users to specify ISO review tasks to documents.
+| Task Type | Description |
+|-----------|-------------|
+| :material-certificate: **ISO Review** | ISO certification review tasks |
+| :material-shield-check: **SOX Review** | Sarbanes-Oxley compliance review |
 
-infoRouter will automatically route documents with ISO review tasks to the individuals defined in the task. ISO review tasks are typically used in organizations wishing to obtain or maintain ISO Certifications.
+### Records Management Tasks
 
-SOX Review
+| Task Type | Description |
+|-----------|-------------|
+| :material-delete-clock: **Disposition** | Manage document destruction after retention |
+| :material-archive: **Archive** | Manage document archiving |
 
-This task type allows users to specify SOX review tasks to documents.
+### Classification Tasks
 
-infoRouter will automatically route documents with ISO review tasks to the individuals defined in the task. ISO review tasks are typically used in organizations wishing to obtain or maintain ISO Certifications.
+| Task Type | Description |
+|-----------|-------------|
+| :material-arrow-down-circle: **Downgrade Classification** | Lower document classification level |
+| :material-lock-open: **Declassify** | Remove document classification |
 
-Disposition
+---
 
-This task is typically used by organizations who wish to destroy sensitive documents after their useful life has ended.
+## Notification Content
 
-Archive
+Task notification emails include:
 
-This task is typically assigned to an archive manager to manage the archiving of documents, libraries and projects after their active use ends.
+| Field | Description |
+|-------|-------------|
+| **Task name** | What needs to be done |
+| **Document** | Related document with link |
+| **Due date** | When task must be completed |
+| **Priority** | Task urgency level |
+| **Instructions** | What the assignee should do |
 
-Downgrade Classification Level
+---
 
-This task is used in environments where documents can be classified. A typical use for this task type is the automatic downgrading of the classification level of documents after a certain period.
+## See Also
 
-Declassify
-
-This task is used in environments where documents can be classified. A typical use for this task type is the automatic declassification of documents after a certain period.
-
-See also:
-
-[How to Create and Assign Tasks](HowtoCreateTasks.md)
+- [My Tasks](MyTasks.md)
+- [How to Create Tasks](HowtoCreateTasks.md)
+- [How to Complete Tasks](HowtoCompleteTasks.md)
+- [Task Redirection](TaskRedirection.md)
+- [Notifications Overview](Notifications.md)

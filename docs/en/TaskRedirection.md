@@ -1,31 +1,77 @@
-# Tasks / Task redirection
+# Task Redirection
 
-Users can redirect their tasks to other users for a defined period of time.
+Redirect your tasks to another user when you're unavailable, such as during vacation or leave.
 
-To redirect your tasks perform the following:
+---
 
-1. Navigate to your "Personal Dashboard". This is the tab in the main infoRouter window with your name on it.
-2. Click on the "My Profile" link
-3. Scroll down to the section labeled "Task Redirection"
-4. Click on the properties icon located to the right of the "Redirect tasks to" prompt.
-5. This will launch the "Task redirection" window.
-6. Click on the "select" button to display a list of users.
-7. Pick a user from the "Users" list that appears. You can only select one user from this list.
-8. Enter the date on which you wish to start the redirection.
-9. Enter the date on which you wish to end the redirection.
+## When to Use Task Redirection
 
-Notes:
+| Scenario | Use Redirection |
+|----------|-----------------|
+| :material-beach: **Vacation** | Redirect tasks during time off |
+| :material-airplane: **Business travel** | Ensure coverage while away |
+| :material-hospital: **Leave** | Handle extended absences |
+| :material-account-switch: **Role change** | Transition responsibilities |
 
-The user you choose to redirect your tasks during this period will be assigned all the tasks that may be assigned to you during this period.
+---
 
-The start date of the redirection cannot be in the past. So the start date of the redirection has to be either the day you set this value or some future date.
+## How to Set Up Redirection
 
-Tasks that have already been assigned to you cannot be redirected using this method. This method only works for future tasks.
+1. Navigate to your **Personal Dashboard** (tab with your name)
+2. Click **My Profile**
+3. Scroll to **Task Redirection** section
+4. Click the properties icon next to "Redirect tasks to"
+5. Click **Select** to choose a user
+6. Pick one user from the list
+7. Enter the **Start Date**
+8. Enter the **End Date**
+9. Click **OK**
 
-![my profile](../images/my_profile.jpg)
-![my profile screen](../images/my_profile_screen_1.jpg)
-![redirecting tasks to another user](../images/task_redirection.jpg)
+---
 
-See also:
+## Redirection Settings
 
-[How to Create and Assign Tasks](HowtoCreateTasks.md)
+| Setting | Description |
+|---------|-------------|
+| **Redirect to** | User who will receive your tasks |
+| **Start Date** | When redirection begins |
+| **End Date** | When redirection ends |
+
+---
+
+## Important Notes
+
+!!! warning "Limitations"
+    - **Start date** cannot be in the past (must be today or future)
+    - **Existing tasks** are not affected (only future assignments)
+    - Only **one user** can be selected as redirect target
+
+---
+
+## What Gets Redirected
+
+| Task Source | Redirected |
+|-------------|------------|
+| :material-account-arrow-right: New user-assigned tasks | :material-check: Yes |
+| :material-sitemap: New workflow tasks | :material-check: Yes |
+| :material-clipboard-check: Existing tasks | :material-close: No |
+
+---
+
+## Canceling Redirection
+
+To stop redirection before the end date:
+
+1. Go to **My Profile**
+2. Clear the **Task Redirection** settings
+3. Save changes
+
+---
+
+## See Also
+
+- [My Tasks](MyTasks.md)
+- [How to Create Tasks](HowtoCreateTasks.md)
+- [How to Complete Tasks](HowtoCompleteTasks.md)
+- [Task Notifications](TaskNotifications.md)
+- [User Profile](UserProfile.md)
