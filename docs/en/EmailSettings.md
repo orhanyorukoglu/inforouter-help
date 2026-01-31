@@ -1,83 +1,92 @@
 # E-mail and Notification Settings
 
-E-mail and Notification Settings in infoRouter
+Configure SMTP and notification settings for infoRouter's email capabilities.
 
-To view or change the E-mail and Notification Settings, perform the following.
+---
 
-1. Navigate to the infoRouter "Control Panel"
-2. Click on the "E-mail and Notification Settings" link in the "Control Panel" window.
-3. The E-mail and Notification Settings window will appear.
+## Accessing E-mail Settings
 
-Please note that some of the settings can be changed from this screen but some settings are defined in the web.config file and must be changed there. This window simply shows/displays the settings in the web.config file.
+1. Navigate to the **Control Panel**
+2. Click **E-mail and Notification Settings**
+3. The settings window appears
 
-The E-mail and Notification Settings parameters are as follows:
+!!! info "Configuration File"
+    Some settings can be changed from this screen; others are defined in the `web.config` file. This window displays all current settings.
 
-SMTP Settings:
+---
 
-SMTP Server Name:
+## SMTP Settings
 
-This setting determines the SMTP Server Name that infoRouter is going to use when sending out e-mail notifications. This is "localhost" by default but you can specify a remote SMTP Server Name if you wish.
+### Server Configuration
 
-SMTP Server Port:
+| Setting | Description | Default |
+|---------|-------------|---------|
+| **SMTP Server Name** | Server for sending notifications | `localhost` |
+| **SMTP Server Port** | Port number for SMTP connection | `25` |
+| **SMTP Connection Timeout** | Max time to establish connection | — |
 
-This setting is the SMTP Port number to be used in the SMTP Server specified above. It is Port 25 by default.
+### Authentication
 
-SMTP Connection Timeout:
+| Setting | Description |
+|---------|-------------|
+| **SMTP User Name** | Username for servers requiring authentication |
+| **SMTP Password** | Password for servers requiring authentication |
 
-This setting determines the time it should take to establish a connection with the SMTP Server specified. If this timeout is exceeded, the e-mail is aborted.
+### System Address
 
-SMTP User Name:
+| Setting | Description |
+|---------|-------------|
+| **System E-mail Address** | "From" address on outgoing emails |
 
-This setting is the User name to be used when establishing a connection to the SMTP Server for SMTP Servers that require authentication.
+!!! warning "Required Setting"
+    You must specify the System E-mail Address. Without it, your SMTP server will likely move infoRouter emails to the BAD MAIL folder.
 
-SMTP Password:
+---
 
-This setting is the Password to be used when establishing a connection to the SMTP Server for SMTP Servers that require authentication.
+## Subscription Settings
 
-System E-mail Address:
+| Setting | Description |
+|---------|-------------|
+| **Enable E-mail Notifications** | Turn email notifications on/off |
+| **Allow E-mail Attachments** | Allow documents as email attachments |
+| **Attachment Size Limit** | Maximum attachment size (in bytes) |
 
-This setting is used when e-mails are sent out. This value appears in the "From" portion of the outgoing notification emails. If you do not specify this setting, your SMTP Server will most likely move infoRouter notification e-mails to the BAD MAIL folder.
+!!! tip "Size Consideration"
+    Documents approximately double in size when sent as email attachments. Ensure your SMTP server limits match your settings here.
 
-Important Note:
+---
 
-Please check your SMTP Server Configuration parameters to make sure that the limit you set here matches the limit set there. Also note that a document will be doubled in size when sent as an e-mail.
+## "Send To" Settings
 
-Subscription Settings:
+| Setting | Description |
+|---------|-------------|
+| **Enable "Send To" feature** | Allow users to email documents |
+| **Allow E-mail Attachments** | Attach documents vs. send links only |
 
-Enable E-mail Notifications:
+---
 
-This setting determines if infoRouter E-mail Notifications feature is enabled or not.
+## MS Outlook Integration
 
-Allow E-mail Attachments:
+| Setting | Description |
+|---------|-------------|
+| **Allow partial e-mail uploads** | Let users select which attachments to include when registering emails via Outlook add-in |
 
-Setting to determine if users can request subscription e-mails to be attached to their notification emails
+---
 
-Attachment Size Limit:
+## Administrator Documentation
 
-Setting to determine the size of the attachment. If not set, no limit is imposed, otherwise the specified number (in bytes) is imposed.
+| Resource | Description |
+|----------|-------------|
+| :material-download: [SMTP Configuration - Windows 2003 (PDF)](https://www.infoRouter.com/downloads/V80/SMTP-Configuration-V80-Win2003.pdf) | Setup for Windows Server 2003 |
+| :material-download: [SMTP Configuration - Windows 2008 (PDF)](https://www.infoRouter.com/downloads/V80/SMTP-Configuration-V80-Win2008.pdf) | Setup for Windows Server 2008 |
+| :material-download: [Remote SMTP Configuration (PDF)](https://www.infoRouter.com/downloads/V80/Remote-SMTP-Configuration-V80.pdf) | Using external SMTP servers |
+| :material-download: [SMTP Troubleshooting (PDF)](https://www.infoRouter.com/downloads/V80/SMTP_Troubleshooting_V80.pdf) | Resolving email issues |
 
-"Send To" Settings:
+---
 
-Enable "Send To" feature:
+## See Also
 
-This setting determines if users can use the "Send To" feature to send out infoRouter documents via e-mail.
-
-Allow E-mail Attachments:
-
-This setting determines if users can attach documents using the send to features. If this is not allowed, the send to feature will send links to documents instead.
-
-MS Outlook Integration:
-
-Allow partial e-mail uploads:
-
-This setting determines if users can choose to attach selected attachments when registering e-mails using the MS Outlook add-in.
-
-See also for Administrators:
-
-[SMTP Configuration on Windows 2003](https://www.infoRouter.com/downloads/V80/SMTP-Configuration-V80-Win2003.pdf)
-
-[SMTP Configuration on Windows 2008](https://www.infoRouter.com/downloads/V80/SMTP-Configuration-V80-Win2008.pdf)
-
-[Remote SMTP server configuration](https://www.infoRouter.com/downloads/V80/Remote-SMTP-Configuration-V80.pdf)
-
-[SMTP Troubleshooting](https://www.infoRouter.com/downloads/V80/SMTP_Troubleshooting_V80.pdf)
+- [Notifications Overview](Notifications.md)
+- [Subscriptions](Subscriptions.md)
+- [E-mail Scanner](EmailScanner.md)
+- [General Application Settings](ApplicationSettings.md)

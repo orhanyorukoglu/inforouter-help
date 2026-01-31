@@ -1,29 +1,77 @@
-# Additional Modules / infoRouter E-mail Scanner
+# E-mail Scanner
 
-infoRouter E-mail scanner is a tool that is designed to monitor multiple E-mail accounts hosted at any POP3 server. The e-mails sent to these accounts are automatically pulled into designated infoRouter folders for storage and distribution.
+The infoRouter E-mail Scanner automatically captures emails from POP3 accounts and stores them in infoRouter for management and distribution.
 
-Even non-infoRouter users can send e-mails to these monitored e-mail accounts and have their e-mails automatically appear in infoRouter. The e-mail attachments are also stored in emails. infoRouter is capable of indexing the attachments so when users search for a content phrase, infoRouter will be able to return e-mail documents in the search results.
+---
 
-E-mail Scanner Usage Scenarios and Examples:
+## What Is E-mail Scanner?
 
-Configure E-mail Scanner to watch all e-mails to the sales@acme.com e-mail account
+E-mail Scanner monitors designated email accounts and automatically imports incoming emails into infoRouter folders. This enables:
 
-* All e-mails are routed to an infoRouter folder
-* Sales personnel are setup as subscribers to the folder
-* All personnel are notified of the incoming e-mail through the subscription mechanism.
+- Automatic email archiving
+- Full-text search of email content and attachments
+- Workflow integration
+- Subscription notifications
 
-Configure E-mail Scanner to watch all e-mails to the invoice@acme.com e-mail account
+!!! info "External Senders"
+    Even non-infoRouter users can send emails to monitored accounts—their messages are automatically captured in infoRouter.
 
-* All invoices are routed to the incoming invoices folder
-* An Accounts Payable clerks is notified of the incoming invoice
-* The clerk submits the invoice to an invoice approval workflow
+---
 
-Configure E-mail Scanner to watch all e-mails to the help@acme.com e-mail account
+## Key Features
 
-* Help requests sent via e-mails are routed to an infoRouter folder.
-* Each help request is routed to workflows
+| Feature | Description |
+|---------|-------------|
+| :material-email-multiple: **POP3 Monitoring** | Monitor any POP3 email account |
+| :material-folder-download: **Auto-Import** | Emails automatically saved to designated folders |
+| :material-attachment: **Attachment Storage** | Attachments stored with emails |
+| :material-magnify: **Full-Text Search** | Search email content and attachments |
+| :material-bell: **Notifications** | Subscribers notified of new emails |
 
-For more information on how this tool can be setup and implemented, please refer to this guide:
+---
 
-[E-mail Scanner
-documentation](https://www.infoRouter.com/downloads/V80/infoRouter_Email_Scanner_Setup.pdf)
+## Usage Scenarios
+
+### Sales Inquiries
+
+| Step | Action |
+|------|--------|
+| 1 | Configure scanner to watch `sales@acme.com` |
+| 2 | Emails routed to Sales folder |
+| 3 | Sales team subscribed to folder |
+| 4 | Team notified of incoming inquiries |
+
+### Invoice Processing
+
+| Step | Action |
+|------|--------|
+| 1 | Configure scanner to watch `invoice@acme.com` |
+| 2 | Invoices routed to Incoming Invoices folder |
+| 3 | Accounts Payable clerk notified |
+| 4 | Clerk submits invoice to approval workflow |
+
+### Help Desk
+
+| Step | Action |
+|------|--------|
+| 1 | Configure scanner to watch `help@acme.com` |
+| 2 | Help requests routed to Support folder |
+| 3 | Requests automatically enter support workflow |
+| 4 | Technicians assigned via workflow |
+
+---
+
+## Documentation
+
+| Resource | Description |
+|----------|-------------|
+| :material-download: [E-mail Scanner Setup Guide (PDF)](https://www.infoRouter.com/downloads/V80/infoRouter_Email_Scanner_Setup.pdf) | Complete setup and configuration instructions |
+
+---
+
+## See Also
+
+- [E-mail and Notification Settings](EmailSettings.md)
+- [Subscriptions](Subscriptions.md)
+- [Workflows Introduction](WorkflowsIntro.md)
+- [Hot Folders](HotFolders.md)

@@ -1,48 +1,85 @@
 # Editing Custom Property Sets
 
-To add fields to an existing Custom Property Set, perform the following:
+Modify existing Custom Property Sets to add, remove, or reorganize fields.
 
-* Click on the "Control Panel" link.
-* Click on the "Custom Properties" link.
-* Select the custom property set you wish to edit by clicking on it.
-* Click on the "Fields" link on the tool bar.
-* A prompt for a new field will automatically appear.
-* Enter the appropriate information to enter a new field.
-* Click on the "Add" button to add the new field.
+---
 
-Note:
+## Who Can Edit Custom Property Sets?
 
-This new field cannot be marked as "Required"
+| Role | Can Edit |
+|------|----------|
+| System Administrator | :material-check: Yes |
+| Administrators group | :material-check: Yes |
+| Regular Users | :material-close: No |
 
-To delete fields from an existing Custom Property Set, perform the following:
+---
 
-* Click on the "Control Panel" link.
-* Click on the "Custom Properties" link.
-* Select the custom property set you wish to edit by clicking on it.
-* Click on the "Fields" link on the tool bar.
-* The "Custom Property Fields" window will appear.
-* Click on the appropriate "Delete" button located on each row to delete the field.
+## Adding New Fields
 
-**Note:** This action is not reversible and you will permanently lose the data values for deleted fields.
+1. Click **Control Panel**
+2. Click **Custom Properties**
+3. Select the custom property set to edit
+4. Click **Fields** in the toolbar
+5. A new field prompt appears automatically
+6. Enter the field information
+7. Click **Add**
 
-To change the order in which custom properties are displayed or prompted, perform the following:
+!!! warning "Required Fields"
+    New fields added to an existing property set cannot be marked as "Required" since existing documents won't have values for them.
 
-* Click on the "Control Panel" link.
-* Click on the "Custom Properties" link.
-* Select the custom property set you wish to edit by clicking on it.
-* Click on the "Fields" link on the tool bar.
-* The "Custom Property Fields" window will appear.
-* Change the order of the displayed fields by clicking on the up and down arrows that appear in the far-right column of this screen.
+---
 
-To change the caption of custom properties, perform the following:
+## Deleting Fields
 
-* Click on the "Control Panel" link.
-* Click on the "Custom Properties" link.
-* Select the custom property set you wish to edit by clicking on it.
-* Click on the "Custom Property Settings" link on the tool bar.
-* The "Custom Property Settings" screen will appear.
-* Edit the prompt labeled "Caption" to make the desired change.
+1. Click **Control Panel**
+2. Click **Custom Properties**
+3. Select the custom property set to edit
+4. Click **Fields** in the toolbar
+5. The Custom Property Fields window appears
+6. Click the **Delete** button on the row you want to remove
 
-Security Considerations:
+!!! danger "Data Loss Warning"
+    Field deletion is **permanent and irreversible**. All data values for deleted fields will be permanently lost.
 
-Only the System Administrator and members of the “administrators” system user group can define or edit Custom Property Sets.
+---
+
+## Reordering Fields
+
+Change the order fields are displayed and prompted:
+
+1. Click **Control Panel**
+2. Click **Custom Properties**
+3. Select the custom property set to edit
+4. Click **Fields** in the toolbar
+5. Use the **up/down arrows** in the far-right column to reorder fields
+
+---
+
+## Changing Caption
+
+1. Click **Control Panel**
+2. Click **Custom Properties**
+3. Select the custom property set to edit
+4. Click **Custom Property Settings** in the toolbar
+5. Edit the **Caption** field
+6. Save changes
+
+---
+
+## Edit Operations Summary
+
+| Operation | Location | Notes |
+|-----------|----------|-------|
+| Add fields | Fields toolbar | Cannot be required |
+| Delete fields | Fields toolbar | Permanent data loss |
+| Reorder fields | Fields toolbar | Use arrow buttons |
+| Change caption | Custom Property Settings | Display name change |
+
+---
+
+## See Also
+
+- [Custom Properties Introduction](CustomPropertyIntro.md)
+- [How to Create Custom Property Sets](HowtoCreateCustomPropertySets.md)
+- [Applying Custom Property Sets](ApplyingCustomPropertySets.md)
+- [Custom Property Sets Examples](CustomPropertySets.md)
