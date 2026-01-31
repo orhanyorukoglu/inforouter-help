@@ -1,19 +1,73 @@
-# How to access the infoRouter Document Management Software
+# How to Access infoRouter
 
-Accessing the infoRouter Document Management Software System only involves typing a URL in your browser screen.
+Accessing the infoRouter Document Management System is simple - just open your web browser and navigate to the URL provided by your administrator.
 
-The infoRouter URL generally has one of the following formats:
+## URL Formats
 
-- http://(machine_name)/infoRouter
-- http://infoRouter
-- http://infoRouter.acme.com
+The infoRouter URL typically follows one of these formats:
 
-If infoRouter was installed as a virtual directory, the (machine_name) is the name of the server and infoRouter is the default name of the virtual directory.
+| Format | Example |
+|--------|---------|
+| Virtual Directory | `http://servername/infoRouter` |
+| Dedicated Website | `http://inforouter.yourcompany.com` |
+| Custom DNS | `http://documents` or `http://dms` |
 
-Your administrator may also have chosen to create a website instead of a virtual directory. There are many ways to access infoRouter including creating DNS entries that allow quick access such as http://documentserver
+!!! tip "Don't know your URL?"
+    Contact your system administrator to get the correct URL for your organization's infoRouter installation.
 
-Please contact your administrator to find what the exact URL should be.
+## Installation Types
 
-When you type the correct URL to access infoRouter, you will be greeted by the default portal.
+### Virtual Directory Installation
 
-To access to infoRouter documents and folders, you must log in by clicking on the "Member Login" link.
+If infoRouter was installed as a **virtual directory**, the URL consists of:
+
+- **Server name** - The name of the web server hosting infoRouter
+- **Virtual directory** - Usually `infoRouter` (the default name)
+
+**Example:** `http://myserver/infoRouter`
+
+### Dedicated Website Installation
+
+Your administrator may have configured infoRouter as a **dedicated website** with its own domain or subdomain.
+
+**Examples:**
+- `http://inforouter.acme.com`
+- `https://documents.yourcompany.com`
+- `http://dms.internal.local`
+
+## Accessing infoRouter
+
+1. Open your web browser (Chrome, Firefox, Edge, or Safari recommended)
+2. Type the infoRouter URL in the address bar
+3. Press ++enter++
+
+You will be greeted by the **default portal** page.
+
+## Logging In
+
+To access documents and folders, you must authenticate:
+
+1. Click the **"Member Login"** link on the portal page
+2. Enter your **username** and **password**
+3. Click **"Login"**
+
+!!! info "Authentication Methods"
+    Depending on your organization's configuration, you may authenticate using:
+
+    - **infoRouter credentials** - Username and password created in infoRouter
+    - **Windows/LDAP authentication** - Your network domain credentials
+
+## Troubleshooting
+
+| Problem | Solution |
+|---------|----------|
+| Page not found | Verify the URL with your administrator |
+| Cannot connect | Check your network connection |
+| Login failed | Verify your username and password |
+| Account locked | Contact your administrator |
+
+## See Also
+
+- [How to Login](Login.md)
+- [The infoRouter Work Area](WorkArea.md)
+- [User Authentication](Authentication.md)
