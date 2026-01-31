@@ -94,7 +94,7 @@ nav:
     - How to Login: en/Login.md
     - Work Area: en/WorkArea.md
     - Selecting Columns: en/SelColumns.md
-  - Menu System:
+  - The Menu System:
     - Overview: en/TheMenuSystem.md
     - New Menu: en/MenuNew.md
     - Edit Menu: en/MenuEdit.md
@@ -108,35 +108,18 @@ nav:
     - Viewing Documents: en/ViewDocument.md
     - Editing Documents: en/EditingDocuments.md
     - Check In: en/CheckIn.md
-    - Check Out: en/CheckOut.md
-    - Copying Documents: en/CopyingDocuments.md
-    - Moving Documents: en/MovingDocuments.md
-    - Deleting Documents: en/DeletingDocuments.md
     - Document Properties: en/DocumentProperties.md
     - Document Comments: en/DocumentComments.md
-    - Document Auditing: en/DocumentAuditing.md
-    - Document Versions: en/DocumentVersions.md
-    - Uploading Documents: en/UploadingDocuments.md
   - Working with Folders:
-    - Creating Folders: en/CreatingFolders.md
-    - Renaming Folders: en/RenamingFolders.md
     - Moving Folders: en/MovingFolders.md
-    - Deleting Folders: en/DeletingFolders.md
-    - Folder Properties: en/FolderProperties.md
-  - Form Templates:
-    - Overview: en/FormTemplates.md
-    - Creating Templates: en/CreatingFormTemplates.md
-    - Template Fields: en/FormTemplateFields.md
-    - Validation: en/FormTemplateValidation.md
-  - Portals:
-    - Overview: en/Portals.md
-    - Portal Administration: en/PortalAdministration.md
-    - Portal Users: en/PortalUsers.md
-  - Search:
-    - Introduction: en/SearchIntro.md
-    - Basic Search: en/BasicSearch.md
+    - Folder Security: en/FolderSecurity.md
+    - Folder Retention: en/FolderRetention.md
+  - Working with Form Templates:
+    - Creating Form Templates: en/CreatingFormTemplates.md
+  - infoRouter Portals:
+    - Introduction: en/intro.md
+  - Searching for Documents and Folders:
     - Advanced Search: en/AdvancedSearch.md
-    - Search Operators: en/SearchOperators.md
     - Ignored Keywords: en/IgnoredKeywords.md
     - Saved Searches: en/CreatingSavedSearches.md
   - Categories:
@@ -155,12 +138,12 @@ nav:
     - My Recycle Bin: en/MyRecycleBin.md
     - User Profile: en/UserProfile.md
     - Recent Documents: en/RecentDocuments.md
-  - Custom Properties:
+  - Custom Property Sets (Meta Data):
     - Introduction: en/CustomPropertyIntro.md
     - Creating Sets: en/HowtoCreateCustomPropertySets.md
     - Editing Sets: en/EditingCustomPropertySets.md
     - Applying Sets: en/ApplyingCustomPropertySets.md
-    - Overview: en/CustomPropertySets.md
+    - Usage Scenarios: en/CustomPropertySets.md
   - Archiving:
     - Introduction: en/ArchiveIntro.md
     - Archiving Libraries: en/ArchivingLibraries.md
@@ -190,7 +173,7 @@ nav:
     - Overview: en/Subscriptions.md
     - Subscribing: en/Subscribing.md
     - Unsubscribing: en/Unsubscribing.md
-  - Notifications:
+  - Notifications and E-mail:
     - Overview: en/Notifications.md
     - Subscription Notifications: en/SubscriptionNotifications.md
     - Task Notifications: en/TaskNotifications.md
@@ -209,14 +192,14 @@ nav:
     - Folder Retention: en/FolderRetention.md
     - Disposition: en/Disposition.md
     - RD Schedules: en/RDSchedules.md
-  - Modules & Add-ins:
+  - Additional Modules and Add-ins:
     - Overview: en/Modules.md
     - Office Add-in: en/OfficeAddin.md
     - Hot Folders: en/HotFolders.md
     - Scan Station: en/ScanStation.md
     - Import/Export: en/ImportExport.md
     - Email Scanner: en/EmailScanner.md
-  - Administration:
+  - Administrative Functions & Tasks:
     - Functions: en/AdminFunctions.md
     - Audit Log: en/AuditLogControlPanel.md
     - Auth Policies: en/AuthPassPolicies.md
@@ -228,7 +211,7 @@ nav:
     - Document Types: en/CreatingDocumentTypes.md
     - Defining Tags: en/DefiningTags.md
     - LDAP Synchronization: en/LDAPSynchronization.md
-  - Users & Groups:
+  - Users and User Management:
     - Overview: en/Users.md
     - Adding Users: en/AddingUsers.md
     - Importing NT Users: en/ImportingNTUsers.md
@@ -257,10 +240,6 @@ extra:
   analytics:
     provider: google
     property: G-XXXXXXXXXX  # Replace with your Google Analytics ID
-  # Uncomment below to add an announcement bar
-  # announce:
-  #   dismiss: true
-  #   content: "Welcome to the new infoRouter Help Documentation!"
 
 extra_css:
   - stylesheets/extra.css
