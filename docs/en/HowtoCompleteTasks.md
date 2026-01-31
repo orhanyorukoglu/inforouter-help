@@ -1,19 +1,74 @@
-# Tasks / How to complete tasks
+# How to Complete Tasks
 
-If you have been assigned a task and wish to complete the task, please perform the following:
+Complete workflow tasks assigned to you to keep document processes moving forward.
 
-1. Navigate to the "My Tasks" tab to display tasks that are associated with you.
-2. For information on how you can filter through your tasks read [My Tasks](MyTasks.md)
-3. Once you find the task you wish to complete, click on the task icon in the "Action" column.
-4. This will launch the "Task" window where you will be able to see the task details.
-5. Pay special attention to the section labeled "Task requirements"
-6. Here in this section will be a list of requirements you must satisfy before the task can be marked as complete.
-7. Notice that as you perform the requirements a green check mark will appear to the left of the completed requirements.
-8. Once all the requirements are completed, click on the "Complete task" link located in the left sidebar.
+---
 
-![open tasks](../images/task-open-task.jpg)
-![pending tasks](../images/task-pending.jpg)
+## Finding Your Tasks
 
-See Also:
+1. Navigate to the **My Tasks** tab
+2. View the list of tasks assigned to you
+3. Use filters to find specific tasks
 
-[My Tasks](MyTasks.md)
+:material-arrow-right: Learn more: [My Tasks](MyTasks.md)
+
+---
+
+## Completing a Task
+
+### Step-by-Step Process
+
+1. Click the **Action** icon on the task row
+2. The Task window opens showing task details
+3. Review the **Task Requirements** section carefully
+4. Complete each requirement listed
+5. Watch for :material-check: green checkmarks as requirements are met
+6. Once all requirements show checkmarks, click **Complete Task** in the sidebar
+
+---
+
+## Task Requirements
+
+Tasks may have various requirements:
+
+| Requirement Type | Action Needed |
+|------------------|---------------|
+| :material-file-document: **Review document** | Open and view the attached document |
+| :material-comment-plus: **Add comment** | Add a comment to the document |
+| :material-checkbox-marked: **Approve/Reject** | Make an approval decision |
+| :material-upload: **Upload file** | Attach required files |
+| :material-form-textbox: **Enter data** | Fill in required fields |
+
+---
+
+## Task Status Indicators
+
+| Indicator | Meaning |
+|-----------|---------|
+| :material-circle-outline: Open requirement | Not yet completed |
+| :material-check-circle: Green checkmark | Requirement satisfied |
+| :material-alert-circle: Red indicator | Requires attention |
+
+---
+
+## Unable to Complete?
+
+If you cannot complete a task:
+
+| Option | Description |
+|--------|-------------|
+| :material-account-switch: **Redirect** | Send task to another user |
+| :material-comment: **Add comment** | Explain the issue |
+| :material-account-supervisor: **Contact supervisor** | Escalate if needed |
+
+:material-arrow-right: Learn more: [Task Redirection](TaskRedirection.md)
+
+---
+
+## See Also
+
+- [My Tasks](MyTasks.md)
+- [How to Create Tasks](HowtoCreateTasks.md)
+- [Task Notifications](TaskNotifications.md)
+- [Task Redirection](TaskRedirection.md)
+- [Workflows Introduction](WorkflowsIntro.md)

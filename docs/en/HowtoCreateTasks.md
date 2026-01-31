@@ -1,33 +1,75 @@
-# Tasks / How to Create Tasks
+# How to Create Tasks
 
-Tasks are assigned at the document level and at the workflow level. This section describes how tasks are created and assigned at the document level.
+Assign tasks to users at the document level to track work items and responsibilities.
 
-To assign a task, perform the following:
+---
 
-1. Select the document you wish to assign a task.
-2. Select the check box and click on the "Create Task" menu located in the Tools main menu. Or click the action arrow and choose "Create task".
-   ![](../images/task-create-link.jpg)
-3. The "Create task" window will appear.
-4. Set the task priority.
-5. Click the check box if you would like to send a task notice to assignees.
-6. Set the Due Date for the task.
-7. Set the allowed start time span.
-     
-    When set, this allows you to control when the task can be started. Example: You wish for the task to be performed at a later date.
-8. Set the task reminder date.
-9. Assign the task to a specific user.
-10. Enter the task instructions.
-11. Set the task permissions.
-      
-     The task permissions determine what the task assignee is allowed to do with the task such as postponement, task priority and the finish date.
-12. Set the task requirements.
-      
-     The task requirements section determines what the task assignee must do before being able to mark the task as complete.
+## Task Types
 
-All items in this section are validated. Example: If a comment is required to complete the task, infoRouter will verify that the task assignee has supplied a comment before he/she is able to complete the task.
+| Type | Description |
+|------|-------------|
+| :material-file-document: **Document-level** | Tasks assigned to specific documents |
+| :material-sitemap: **Workflow-level** | Tasks created as part of workflow definitions |
 
-![task properties](../images/task-create-props.jpg)
+This section covers document-level task creation.
 
-See Also:
+---
 
-[My Tasks](MyTasks.md)
+## Creating a Document Task
+
+### Step 1: Select the Document
+
+1. Navigate to the document
+2. Select the checkbox, or click the **Action** icon
+3. Click **Create Task** from the **Tools** menu (or Action menu)
+
+### Step 2: Configure Task Settings
+
+The Create Task window appears with these options:
+
+| Setting | Description |
+|---------|-------------|
+| **Priority** | Task urgency level |
+| **Send Notice** | Email notification to assignees |
+| **Due Date** | When task must be completed |
+| **Start Time Span** | Delay before task can start |
+| **Reminder Date** | When to send reminder |
+| **Assignee** | User responsible for task |
+| **Instructions** | What the assignee should do |
+
+### Step 3: Set Task Permissions
+
+Task permissions control what the assignee can do:
+
+| Permission | Description |
+|------------|-------------|
+| :material-calendar-edit: **Postponement** | Allow changing due date |
+| :material-flag-triangle: **Priority change** | Allow changing priority |
+| :material-calendar-check: **Finish date** | Allow setting completion date |
+
+### Step 4: Set Task Requirements
+
+Define what must be done before marking complete:
+
+| Requirement | Description |
+|-------------|-------------|
+| :material-eye: **View document** | Must open the document |
+| :material-comment: **Add comment** | Must add a comment |
+| :material-checkbox-marked: **Approve/Reject** | Must make a decision |
+| :material-upload: **Upload attachment** | Must attach a file |
+
+!!! info "Validation"
+    All requirements are validated. infoRouter verifies each requirement is met before the task can be marked complete.
+
+### Step 5: Save
+
+Click **OK** to create the task. The assignee will be notified if notifications are enabled.
+
+---
+
+## See Also
+
+- [My Tasks](MyTasks.md)
+- [How to Complete Tasks](HowtoCompleteTasks.md)
+- [Task Notifications](TaskNotifications.md)
+- [Workflows Introduction](WorkflowsIntro.md)

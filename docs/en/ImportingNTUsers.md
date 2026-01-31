@@ -1,19 +1,83 @@
-# Users and User Management / Importing & Synchronizing LDAP Users with infoRouter
+# Importing LDAP Users
 
-All users must have a valid account in infoRouter before they can use it. infoRouter user accounts are created by the System Administrator and are stored in infoRouter's own security database.
+Import and synchronize users from your organization's LDAP directory (Active Directory) to streamline user management.
 
-Your user account is what identifies you both to the system and to other users. It allows you to check documents in and out, and it allows you to be granted permissions within the document and folder security framework.
+---
 
-The System Administrator can reduce the time it takes to add infoRouter user accounts by importing users directly from your existing LDAP user database.
+## Why Import LDAP Users?
 
-Users imported from LDAP are automatically authenticated from LDAP. LDAP users will still have to log into infoRouter however, their passwords are not kept in infoRouter but rather the LDAP database.
+| Benefit | Description |
+|---------|-------------|
+| :material-clock-fast: **Time savings** | Import many users at once |
+| :material-key-chain: **Single sign-on** | Users keep same password |
+| :material-sync: **Synchronization** | Keep user data current |
+| :material-account-group: **Consistency** | Match organization's directory |
 
-When an LDAP authenticated user logs in, infoRouter makes a call to the LDAP database to verify the authenticity of this user. This way, the user only maintains one set of user ids and password between the two systems.
+---
 
-To import LDAP Users, your system administrator must install a stand-alone tool called "LDAP Synchronization Tool".
+## How LDAP Authentication Works
 
-More information about LDAP tools can be found here:
+```mermaid
+flowchart LR
+    A[User logs in] --> B[infoRouter]
+    B --> C{Authentication Type?}
+    C -->|LDAP| D[Query LDAP Server]
+    D --> E{Valid?}
+    E -->|Yes| F[Access Granted]
+    E -->|No| G[Access Denied]
+    C -->|infoRouter| H[Check infoRouter DB]
+```
 
-[LDAP Authentication](https://www.infoRouter.com/downloads/V80/infoRouter_LDAP_Authentication.pdf)
+!!! info "Password Management"
+    LDAP users maintain passwords in the LDAP directory, not infoRouter. They log in to infoRouter, but authentication is handled by LDAP.
 
-[LDAP Synchronization Manager](https://www.infoRouter.com/downloads/V80/infoRouter_LDAP_Synchronization_Manager.pdf)
+---
+
+## Requirements
+
+| Item | Description |
+|------|-------------|
+| **LDAP Sync Tool** | Standalone utility must be installed |
+| **LDAP Access** | Network access to LDAP server |
+| **Credentials** | LDAP service account for queries |
+| **Admin Rights** | System Administrator access in infoRouter |
+
+---
+
+## Import Process
+
+1. System Administrator installs LDAP Synchronization Tool
+2. Configure connection to LDAP server
+3. Select users/groups to import
+4. Run synchronization
+5. Users appear in infoRouter with LDAP authentication
+
+---
+
+## Imported User Properties
+
+| Property | Source |
+|----------|--------|
+| Username | LDAP |
+| Full Name | LDAP |
+| Email | LDAP |
+| Password | Stored in LDAP (not infoRouter) |
+| Authentication Type | LDAP (automatic) |
+
+---
+
+## Documentation
+
+| Resource | Description |
+|----------|-------------|
+| :material-download: [LDAP Authentication Guide (PDF)](https://www.infoRouter.com/downloads/V80/infoRouter_LDAP_Authentication.pdf) | Authentication setup |
+| :material-download: [LDAP Synchronization Manager (PDF)](https://www.infoRouter.com/downloads/V80/infoRouter_LDAP_Synchronization_Manager.pdf) | User import tool |
+
+---
+
+## See Also
+
+- [User Authentication](Authentication.md)
+- [Adding Users](AddingUsers.md)
+- [Users Overview](Users.md)
+- [LDAP Synchronization](LDAPSynchronization.md)
