@@ -1,61 +1,90 @@
-# Administrative Functions / Authentication and Password Policy Settings
+# Authentication and Password Policies
 
-Administrators can adjust the authentication and password policy settings for infoRouter.
+Configure authentication methods and password requirements to secure your infoRouter system.
 
-To view or change the Authentication and Password Policy Settings perform the following.
+---
 
-1. Navigate to the "Control Panel" by clicking on the "Control Panel" tab.
-2. Click on the "Authentication and Password Policy Settings" link in the "Control Panel" window.
-3. The "Authentication and Password Policy Settings" window will appear.
+## Accessing Policy Settings
 
-The "Authentication and Password Policy Settings" window contains the following information:
+1. Click the **Control Panel** tab
+2. Click **Authentication and Password Policy Settings**
+3. The settings window appears
 
-NT Authentication Domain
+---
 
-This section dispays the LDAP authentication domain that is being used to authenticate some or all the infoRouter users. This setting can only be altered by editing the web.config file.
+## NT Authentication Domain
 
-Login tracking
+| Setting | Description |
+|---------|-------------|
+| **LDAP Domain** | Displays the LDAP authentication domain used to authenticate infoRouter users |
 
-This section is used for user login auditing. If you wish to log successful or unsuccessful login attempts check the appropriate check boxes. If you wish to prevent automated login attempts, you can specify a delay that will be in effect between each login attempt. This can be specified in milliseconds.
+!!! info "Configuration File"
+    The LDAP domain setting can only be changed by editing the `web.config` file directly.
 
-* Track successful logins
-* Track unsuccessful login attempts
-* Apply delays between each login attempt
+---
 
-Password Policy
+## Login Tracking
 
-This section specifies the password policy you wish to have in effect. Please note that this only applies to infoRouter authenticated users and not user who are authenticated using LDAP.
+Track login activity for security auditing and brute-force prevention.
 
-Check the appropriate check boxes to reflect your preferred password settings.
+| Option | Description |
+|--------|-------------|
+| :material-check-circle: **Track successful logins** | Log all successful login attempts |
+| :material-alert-circle: **Track unsuccessful login attempts** | Log failed login attempts |
+| :material-timer: **Apply delays between login attempts** | Prevent automated login attacks (specify delay in milliseconds) |
 
-* Password expiration period (in days)
-* Minimum Password Length
-* Passwords must include alpha characters (Aa-Zz)
-* Passwords must include numeric characters (0-9)
-* Passwords must include special characters ~!@#$%^ & \*()-\_+=
-* Password cannot be the same as e-mail address
-* Password cannot be the same as user name
-* Check weak password list
+---
 
-Re-prompt user for password for the following actions
+## Password Policy
 
-This section specifies selected actions in infoRouter where a password re-prompt is required to carry out the operation. This creates an addition layer of security.
+!!! warning "Applies to infoRouter Authentication Only"
+    Password policies only apply to users authenticated by infoRouter, not users authenticated via LDAP.
 
-* Delete libraries
-* Delete documents or folders
-* Delete users
-* Change security
-* Change owners
-* Change classification status
-* Perform workflow tasks
-* Role Restrictions
+### Password Requirements
 
-Role Restrictions
+| Requirement | Description |
+|-------------|-------------|
+| **Password expiration period** | Number of days before password must be changed |
+| **Minimum password length** | Minimum number of characters required |
+| **Alpha characters** | Require letters (Aa-Zz) |
+| **Numeric characters** | Require numbers (0-9) |
+| **Special characters** | Require symbols (~!@#$%^&*()-_+=) |
+| **Cannot match email** | Password cannot be the same as email address |
+| **Cannot match username** | Password cannot be the same as username |
+| **Weak password check** | Check against list of common weak passwords |
 
-This section specifies whether "Library managers" can edit the library policies. This setting can be controlled by the policy managers and the sytem administrator.
+---
 
-* Library Managers can edit polices
+## Password Re-Prompt
 
-See Also
+Add an extra layer of security by requiring users to re-enter their password for sensitive operations.
 
-[E-mail and Notification Settings](EmailSettings.md)
+| Action | Description |
+|--------|-------------|
+| :material-library-minus: **Delete libraries** | Require password to delete libraries |
+| :material-file-remove: **Delete documents or folders** | Require password for deletions |
+| :material-account-remove: **Delete users** | Require password to delete user accounts |
+| :material-shield-lock: **Change security** | Require password for security changes |
+| :material-account-switch: **Change owners** | Require password to transfer ownership |
+| :material-tag-edit: **Change classification status** | Require password for classification changes |
+| :material-checkbox-marked: **Perform workflow tasks** | Require password for workflow actions |
+
+---
+
+## Role Restrictions
+
+| Setting | Description |
+|---------|-------------|
+| **Library Managers can edit policies** | Allow or prevent Library Managers from modifying library policies |
+
+!!! note "Control Access"
+    This setting is controlled by Policy Managers and the System Administrator.
+
+---
+
+## See Also
+
+- [User Authentication](Authentication.md)
+- [E-mail and Notification Settings](EmailSettings.md)
+- [Policy Managers](PolicyManagers.md)
+- [General Application Settings](ApplicationSettings.md)

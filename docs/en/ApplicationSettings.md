@@ -1,61 +1,73 @@
-# Administrative Functions / General Application Settings
+# General Application Settings
 
-infoRouter Document Management Software application settings allow System Administrators to alter the behavior of infoRouter.
+Application settings allow System Administrators to configure and customize infoRouter behavior.
 
-To view or change the Application Settings, perform the following.
+---
 
-1. Navigate to the "Control Panel" by clicking on the "Control Panel" tab.
-2. Click on the "General Application Settings" link in the "Control Panel" window.
-3. The "Application Settings" window will appear.
+## Accessing Application Settings
 
-Please note that some of the settings can be changed from this screen but most settings are defined in the web.config file and must be changed there. This window simply shows/displays the settings in the web.config file.
+1. Click the **Control Panel** tab
+2. Click **General Application Settings**
+3. The Application Settings window appears
 
-The application setting parameters are as follows:
+!!! info "Configuration Location"
+    Some settings can be changed from this screen, but most settings are defined in the `web.config` file and must be changed there. This window displays the current settings from the configuration file.
 
-Application URL:
+---
 
-This setting is very important. It must be set correctly for e-mail functions to work properly. Set this value as http://[server name]/infoRouter. If not set correctly, the links provided in outgoing notification e-mails will not function properly.
+## Application Settings Reference
 
-Index Server:
+### Core Settings
 
-This setting determines if infoRouter is to use Index Server as its indexing engine.
+| Setting | Description |
+|---------|-------------|
+| **Application URL** | Base URL for infoRouter (e.g., `http://[server]/infoRouter`). Critical for email notifications to work properly |
+| **Temporary Folder** | Path infoRouter uses for uploads and downloads. Ensure infoRouter has **Full Control** permissions |
 
-Index Catalog:
+!!! warning "Application URL"
+    The Application URL must be set correctly for email functions to work. If incorrect, links in notification emails will not function properly.
 
-This is the name of the Index Server Catalog that was created. Default Value = WHINDEX
+---
 
-Temporary Folder:
+### Indexing Settings
 
-This setting determines the path infoRouter will use on a temporary basis during uploads and downloads. Make sure that infoRouter has "Full Control" in this path.
+| Setting | Description | Default |
+|---------|-------------|---------|
+| **Index Server** | Enable/disable Index Server as the indexing engine | — |
+| **Index Catalog** | Name of the Index Server Catalog | `WHINDEX` |
 
-File Upload Limit:
+---
 
-This setting determines the maximum file size that can be uploaded into infoRouter. Setting it to 0 would impose no limit. Any other setting (in bytes) would enforce this limit.
+### Upload Settings
 
-Maximum Document Size:
+| Setting | Description | Notes |
+|---------|-------------|-------|
+| **File Upload Limit** | Maximum file size for uploads (in bytes) | Set to `0` for no limit |
+| **Maximum Document Size** | Maximum file size that can be created | — |
+| **File Upload Time Out** | Timeout value in seconds | Time before page gives up waiting |
 
-This setting determines the maximum file size that can be created in infoRouter.
+---
 
-File Upload Time Out:
+### Feature Settings
 
-This setting determines the File upload timeout value. When set (in seconds) would determine the time that a page would wait until it gives up.
+| Setting | Description |
+|---------|-------------|
+| **Allow Ownership Transfer** | Whether users can transfer ownership of documents and folders to others |
+| **WebDAV** | Enable or disable WebDAV functionality |
+| **Enable Add-in Downloads** | Whether users can download optional add-in modules from Tools > Add-ins menu |
 
-Allow Ownership Transfer:
+---
 
-This setting determines whether a user can transfer ownership of his/her documents and folders to others.
+### Search Settings
 
-WebDAV:
+| Setting | Description | Default |
+|---------|-------------|---------|
+| **Search Page Size** | Number of documents per page in search results | `20` |
 
-This setting determines whether the WebDAV feature is enabled or disabled.
+---
 
-Enable Add-in downloads:
+## See Also
 
-This setting determines whether users can download the optional add-in modules from the tools - add-ins menu. When disabled, this menu does not appear to users.
-
-Search Page Size:
-
-This setting determines the number of documents returned on each page of search results. The default values is 20
-
-See Also
-
-[E-mail and Notification Settings](EmailSettings.md)
+- [E-mail and Notification Settings](EmailSettings.md)
+- [Authentication and Password Policies](AuthPassPolicies.md)
+- [Administrative Functions](AdminFunctions.md)

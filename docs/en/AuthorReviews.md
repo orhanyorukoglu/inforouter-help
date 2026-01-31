@@ -1,20 +1,53 @@
-# Reviews / Submitting documents to workflow
+# Submitting Documents to Workflow
 
-When authors create documents, they may be required to have their documents approved by their bosses, peers etc.
+Submit documents for review, approval, or processing through infoRouter's workflow system.
 
-Similarly, a scanned document such as an invoice may have to be submitted to other users for approval.
+---
 
-To submit a document for review, perform the following:
+## Common Review Scenarios
 
-1. Navigate to where your document is located.
-2. Select the document you wish to send to review by clicking on the check box next to it.
-3. From the "Tools" menu, choose "Send to Workflow"
-4. This action will launch a window titled "Send to Workflow" and a list of available workflows will be listed.
-5. Select the appropriate workflow and click on the "Ok" button
-6. This will create tasks for all defined users in the first step of the workflow.
-7. The assignees will receive an e-mail notification indicating that a task has been assigned to them.
-8. The assignees will also see their tasks in the "My Tasks" section of infoRouter.
+| Scenario | Example |
+|----------|---------|
+| :material-file-document-edit: **Document approval** | Authors submitting documents for manager approval |
+| :material-invoice-check: **Invoice processing** | Scanned invoices submitted for payment approval |
+| :material-file-sign: **Contract review** | Legal documents requiring multiple signatures |
+| :material-file-certificate: **Policy approval** | New policies needing department head sign-off |
 
-Note:
+---
 
-In cases where multiple users that have been assigned the same task and only one of them is required to perform the task, infoRouter will automatically choose one of the users and assign the task only to that person. Previously the task was assigned to all the defined users in the step then subsequently dropped when one user performed the task.
+## How to Submit a Document for Review
+
+1. Navigate to the document location
+2. Select the document by clicking the checkbox next to it
+3. From the **Tools** menu, choose **Send to Workflow**
+4. The "Send to Workflow" window appears with available workflows
+5. Select the appropriate workflow
+6. Click **OK**
+
+---
+
+## What Happens Next
+
+| Step | Action |
+|------|--------|
+| 1 | Tasks are created for all users defined in the first workflow step |
+| 2 | Assignees receive email notifications about their new tasks |
+| 3 | Tasks appear in assignees' **My Tasks** section |
+| 4 | Workflow progresses as tasks are completed |
+
+---
+
+## Task Assignment Behavior
+
+!!! info "Single-User Assignment"
+    When multiple users are assigned to the same task but only one is required to complete it, infoRouter automatically selects one user and assigns the task only to that person. This prevents duplicate work and confusion.
+
+---
+
+## See Also
+
+- [Workflows Introduction](WorkflowsIntro.md)
+- [How to Create Tasks](HowtoCreateTasks.md)
+- [How to Complete Tasks](HowtoCompleteTasks.md)
+- [My Tasks](MyTasks.md)
+- [Task Notifications](TaskNotifications.md)

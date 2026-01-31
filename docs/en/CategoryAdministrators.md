@@ -1,23 +1,58 @@
-# Categories / Category Administrators
+# Category Administrators
 
-The system administrator can designate infoRouter users as "Search and Category Administrators".
+Category Administrators are users with special privileges to manage document categories and saved searches across the system.
 
-Search and Category Administrators are ordinary infoRouter users with special privileges that allow them to Create, Edit and Delete Document Categories and Saved Searches.
+---
 
-The classification of documents based on categories allows users to quickly search for and retrieve documents from the infoRouter document library.
+## What Are Category Administrators?
 
-To designate "Search and Category Administrators", perform the following:
+Category Administrators (also called Search and Category Administrators) are regular infoRouter users who have been granted additional privileges by the System Administrator.
 
-1. Navigate to the "Control Panel"
-2. Click on the "Search and Category Administrators" link
-3. Click on the "Add Administrator" button
-4. Select user(s) from the User list that appears
-5. Click "OK"
+---
 
-See also:
+## Category Administrator Capabilities
 
-[Creating Categories](CreatingCategories.md)
+| Function | Description |
+|----------|-------------|
+| :material-folder-plus: **Create Categories** | Define new document categories |
+| :material-folder-edit: **Edit Categories** | Modify existing category settings and search criteria |
+| :material-folder-remove: **Delete Categories** | Remove categories no longer needed |
+| :material-magnify-plus: **Manage Saved Searches** | Create and maintain saved searches |
 
-[Editing Categories](EditingCategories.md)
+---
 
-[Deleting Categories](DeletingCategories.md)
+## Benefits of Categories
+
+!!! info "Quick Document Access"
+    Document classification through categories allows users to quickly search for and retrieve documents without entering complex search criteria.
+
+---
+
+## Assigning Category Administrators
+
+Only the System Administrator can designate Category Administrators:
+
+1. Navigate to the **Control Panel**
+2. Click **Search and Category Administrators**
+3. Click **Add Administrator**
+4. Select user(s) from the list
+5. Click **OK**
+
+---
+
+## Removing Category Administrators
+
+1. Navigate to the **Control Panel**
+2. Click **Search and Category Administrators**
+3. Select the administrator to remove
+4. Click **Remove Administrator**
+
+---
+
+## See Also
+
+- [Categories](Categories.md)
+- [Creating Categories](CreatingCategories.md)
+- [Editing Categories](EditingCategories.md)
+- [Deleting Categories](DeletingCategories.md)
+- [Creating Saved Searches](CreatingSavedSearches.md)
