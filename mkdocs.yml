@@ -1,7 +1,7 @@
 site_name: infoRouter Help
 site_description: infoRouter Document Management System Help Documentation
 site_author: infoRouter
-site_url: https://help.inforouter.com/
+site_url: https://orhanyorukoglu.github.io/inforouter-help/
 
 theme:
   name: material
