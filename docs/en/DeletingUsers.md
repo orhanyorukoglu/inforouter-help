@@ -1,36 +1,81 @@
-# Users and User Management / Deleting Users
+# Deleting Users
 
-The System Administrator or members of the User Managers user group may have to delete an infoRouter user.
+Remove user accounts when they are no longer needed, such as when employees leave the organization.
 
-To delete a user perform the following:
+---
 
-1. Click on the "Control Panel" link.
-2. Click on the "Manage Users" link located in the infoRouter Control Panel.
-3. In the list that appears, select the user you wish to delete.
-4. Click "Delete" link located in the left sidebar.
+## Who Can Delete Users?
 
-Under certain circumstances infoRouter may prevent you from deleting users.
+| Role | Can Delete |
+|------|------------|
+| System Administrator | :material-check: Yes |
+| User Managers group | :material-check: Yes |
 
-Examples of when deleting a user is not possible:
+---
 
-* User has checked out documents
-* User has active tasks
+## How to Delete a User
 
-If the user has active tasks, you must first transfer these tasks to other users before deleting the user.
+1. Click **Control Panel**
+2. Click **Manage Users**
+3. Select the user you want to delete
+4. Click **Delete** in the left sidebar
+5. Confirm the deletion
 
-To find out if the user owns documents and folders, or which documents he/she may have checked out, perform the following:
+---
 
-* Navigate to the infoRouter control panel
-* Click on the "Manage Users" link
-* Select the user from the list of users
-* Click on the "properties" link located in the left sidebar to launch the "user properties" window.
+## When Deletion is Blocked
 
-User Properties window
+!!! warning "Deletion Not Allowed"
+    infoRouter may prevent user deletion in certain circumstances:
 
-Notice that the user properties window contains many links to describe the selected user. For information on these sidebar items refer to the [User Profile](UserProfile.md) help.
+    | Condition | Resolution |
+    |-----------|------------|
+    | User has checked out documents | Force check-in or wait for user to check in |
+    | User has active tasks | Transfer tasks to other users first |
 
-Note:
+---
 
-If the user owns folders or documents, infoRouter will warn you and still allow the deletion of the user. The documents and folders for deleted users are kept intact.
+## Checking User Activity
 
-You may consider transferring the users documents and folders to another infoRouter user before deleting the user. For more information on this topic refer to [Transferring ownership](TransferOwnership.md).
+Before deleting a user, verify their activity:
+
+1. Navigate to **Control Panel**
+2. Click **Manage Users**
+3. Select the user
+4. Click **Properties** in the left sidebar
+5. Review the sidebar links for:
+    - Documents and folders owned
+    - Checked out documents
+    - Active tasks
+    - Subscriptions
+
+:material-arrow-right: Learn more: [User Profile](UserProfile.md)
+
+---
+
+## What Happens to User Content?
+
+!!! info "Content Preservation"
+    When you delete a user who owns documents or folders:
+
+    - infoRouter warns you about owned content
+    - Deletion is still allowed
+    - Documents and folders are **kept intact**
+
+---
+
+## Best Practices
+
+!!! tip "Before Deleting"
+    Consider transferring the user's documents and folders to another user before deletion.
+
+    :material-arrow-right: [Transferring Ownership](TransferOwnership.md)
+
+---
+
+## See Also
+
+- [Users](Users.md)
+- [Adding Users](AddingUsers.md)
+- [User Profile](UserProfile.md)
+- [Transferring Ownership](TransferOwnership.md)
