@@ -7,35 +7,55 @@ theme:
   name: material
   logo: images/inforouter-logo.png
   favicon: images/favicon.ico
+
+  # Color palette with toggle
   palette:
     - scheme: default
-      primary: blue
-      accent: blue
+      primary: indigo
+      accent: teal
       toggle:
-        icon: material/brightness-7
+        icon: material/weather-sunny
         name: Switch to dark mode
     - scheme: slate
-      primary: blue
-      accent: blue
+      primary: indigo
+      accent: teal
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-night
         name: Switch to light mode
+
+  # Custom fonts
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  # Icons
+  icon:
+    repo: fontawesome/brands/github
+
+  # Features
   features:
     - navigation.instant
+    - navigation.instant.progress
     - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
     - navigation.path
+    - navigation.top
+    - navigation.footer
     - toc.follow
     - search.suggest
     - search.highlight
+    - search.share
     - content.tabs.link
+    - content.code.copy
+    - content.code.annotate
 
 plugins:
   - search:
       lang: en
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
 
 markdown_extensions:
   - admonition
@@ -43,11 +63,26 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.mark
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.tilde
   - toc:
       permalink: true
+      toc_depth: 3
   - tables
   - attr_list
   - md_in_html
+  - def_list
+  - footnotes
+  - abbr
 
 nav:
   - Home: index.md
@@ -212,12 +247,22 @@ extra:
   social:
     - icon: fontawesome/brands/facebook
       link: https://www.facebook.com/infoRouter
+      name: infoRouter on Facebook
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/infoRouter
+      name: infoRouter on Twitter
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/inforouter
+      name: infoRouter on LinkedIn
   analytics:
     provider: google
     property: G-XXXXXXXXXX  # Replace with your Google Analytics ID
+  # Uncomment below to add an announcement bar
+  # announce:
+  #   dismiss: true
+  #   content: "Welcome to the new infoRouter Help Documentation!"
+
+extra_css:
+  - stylesheets/extra.css
 
 copyright: Copyright &copy; 2026 infoRouter. All rights reserved.

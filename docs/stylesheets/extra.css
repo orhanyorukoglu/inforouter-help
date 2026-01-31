@@ -1,0 +1,80 @@
+/* Custom styles for infoRouter Help */
+
+/* Slightly larger body text for readability */
+.md-typeset {
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+/* Header styling */
+.md-header {
+  box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.1), 0 0.2rem 0.4rem rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation tabs hover effect */
+.md-tabs__link:hover {
+  opacity: 1;
+}
+
+/* Sidebar navigation styling */
+.md-nav__link {
+  transition: color 0.2s;
+}
+
+/* Content area max width for better readability */
+.md-content {
+  max-width: 1200px;
+}
+
+/* Code blocks styling */
+.highlight code {
+  border-radius: 4px;
+}
+
+/* Admonition styling - make them stand out more */
+.md-typeset .admonition {
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styling */
+.md-typeset table:not([class]) {
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+
+/* Back to top button styling */
+.md-top {
+  border-radius: 50%;
+}
+
+/* Search highlighting */
+.md-search-result__article--document mark {
+  background-color: rgba(255, 235, 59, 0.5);
+  padding: 0.1em 0.2em;
+  border-radius: 2px;
+}
+
+/* Footer styling */
+.md-footer {
+  margin-top: 2rem;
+}
+
+/* Print styles */
+@media print {
+  .md-header,
+  .md-tabs,
+  .md-sidebar,
+  .md-footer {
+    display: none;
+  }
+
+  .md-content {
+    max-width: 100%;
+  }
+}
