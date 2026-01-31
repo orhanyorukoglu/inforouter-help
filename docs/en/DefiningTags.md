@@ -1,12 +1,65 @@
-# Administrative Functions / Defining and managing document tags
+# Defining Document Tags
 
-Tagging allows you to mark documents as they are in a particular point in time. When you choose to tag a document or multiple documents, the current version of the document at that time is marked with a special tag and a datetime stamp. This allows you to determine at a later point in time the state of the document at the time it was tagged.
+Document tags mark documents at a specific point in time, capturing their version state for future reference.
 
-The system administrator can define tags by editing a special configuration file located in the config directory of the infoRouter application path. The file that must be edited is called tagdefs.xml
+---
 
-To create or edit tags, perform the following:
+## What Are Document Tags?
 
-1. Navigate to the infoRouter installation path. Example: c:\infoRouter\config.
-2. Edit the document called tagdefs.xml with notepad.
-3. Add or edit the existing tags and save the file.
-4. Navigate to the infoRouter Control Panel and click on the link labeled "Flush Application Cache and Settings". This will force infoRouter to reload the system settings. The newly defined tag structure will now be in effect.
+Tags are markers that record the state of a document at a particular moment. When you tag a document:
+
+- The **current version** is marked
+- A **timestamp** is recorded
+- You can later identify what the document looked like at that time
+
+!!! info "Version Snapshots"
+    Tags act like version snapshots, allowing you to track document states across time—useful for releases, milestones, or audits.
+
+---
+
+## Common Tag Uses
+
+| Tag Type | Purpose |
+|----------|---------|
+| Release | Mark documents for a product release |
+| Approved | Tag approved document versions |
+| Milestone | Mark project milestone documents |
+| Audit | Tag documents at audit checkpoints |
+| Archive | Mark versions before archiving |
+
+---
+
+## Managing Tags
+
+Tags are defined by editing a configuration file on the server.
+
+### How to Create or Edit Tags
+
+1. Navigate to the infoRouter installation path
+   Example: `C:\infoRouter\config`
+2. Open `tagdefs.xml` in a text editor (Notepad)
+3. Add or modify tag definitions
+4. Save the file
+5. Go to **Control Panel** → **Flush Application Cache and Settings**
+
+!!! warning "Server Access Required"
+    Modifying tag definitions requires access to the server file system. Only System Administrators should perform this task.
+
+---
+
+## Applying Tags
+
+After tags are defined, users can apply them to documents:
+
+1. Select one or more documents
+2. From the **Tools** menu, select **Tag**
+3. Choose the appropriate tag
+4. Confirm the operation
+
+---
+
+## See Also
+
+- [Document Versions](DocumentVersions.md)
+- [Document Properties](DocumentProperties.md)
+- [Administrative Functions](AdminFunctions.md)

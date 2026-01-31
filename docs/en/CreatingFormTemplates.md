@@ -1,44 +1,72 @@
-# Form Templates / Creating Form Templates
+# Creating Form Templates
 
-infoRouter form templates feature allows you to create standard (with a few special extras) HTML forms using your favorite HTML
-editor such as Visual Studio, Dreamweaver, SublimeText etc. and use them inside of infoRouter.
+Create HTML forms that users can fill out directly within infoRouter to generate documents.
 
-Any HTML Form uploaded into a specific area in infoRouter automatically appears as an option when the New / Document from Template menu
-option is chosen.
+---
 
-This eliminates the need to create a document outside infoRouter and upload it into infoRouter. Using form templates, you can create
-documents directly inside of infoRouter.
+## What Are Form Templates?
 
-When a document is created using one of these templates, infoRouter automatically separates the contents from the visual elements of the form and saves the form content in XML format.
+Form templates are HTML forms that allow users to create documents directly inside infoRouter without external applications. Data entered is saved in XML format for easy editing and searching.
 
-This XML format is used for various purposes, the most important being for future editing.
+---
 
-Documents created using such templates can be edited using the same template.
+## Benefits of Form Templates
 
-Another advantage packed in to this feature is that a document created in one Form Template can be rendered using another Form Template. For more information on this topic, refer to [Document Rendering Options](RenderingOptions.md).
+| Benefit | Description |
+|---------|-------------|
+| :material-file-document-plus: **Direct creation** | Create documents inside infoRouter |
+| :material-xml: **XML storage** | Form data saved in searchable XML format |
+| :material-pencil: **Easy editing** | Edit documents using the same template |
+| :material-swap-horizontal: **Flexible rendering** | Display documents using different templates |
 
-To create a new Form Template:
+---
 
-1. Create your HTML Form using your favorite HTML editing tool.
-2. Navigate to the library called "Form Templates" in infoRouter.
-3. Click on the "NEW" menu item and select "Upload"
-4. Upload your HTML form into this folder.
+## How to Create a Form Template
 
-Now that you have uploaded your form template, this form template will automatically appear in a list of templates that can be used when
-the "New Document" from "Template" menu is chosen.
+1. Create your HTML form using any HTML editor (Visual Studio, Dreamweaver, SublimeText, etc.)
+2. Navigate to the **Form Templates** library in infoRouter
+3. Click **New** → **Upload**
+4. Upload your HTML form file
 
-Important technical considerations & warnings:
+!!! success "Automatic Availability"
+    Once uploaded, your form template automatically appears in the template list when users select **New** → **Document from Template**.
 
-1. Do not use the radio button control in your forms because they are not supported. Use drop down combo controls instead.
-2. Make sure that your form includes the proper begin FORM and end FORM tags.
-3. Check your form to make sure that the names used for the controls on your form are unique.
-4. Test your form prior to uploading it into infoRouter.
-5. Look at the built-in form templates for hints.
+---
 
-Technical Reference Guide:
+## Technical Requirements
 
-[Form Template Admin's Guide](https://www.inforouter.com/downloads/V80/Form-Template-Admins-Guide-V80.pdf)
+!!! warning "Important Considerations"
+    Follow these guidelines to ensure your form works correctly:
 
-See also:
+| Requirement | Details |
+|-------------|---------|
+| :material-close-circle: **No radio buttons** | Use dropdown/combo controls instead |
+| :material-tag: **Form tags required** | Include proper `<form>` and `</form>` tags |
+| :material-identifier: **Unique names** | All form control names must be unique |
+| :material-test-tube: **Test first** | Verify form works before uploading |
 
-[Form Template Scenarios](FormTemplateScenarios.md)
+---
+
+## Best Practices
+
+!!! tip "Getting Started"
+    - Review the built-in form templates for examples
+    - Keep forms simple and user-friendly
+    - Use clear field labels
+    - Test thoroughly before deployment
+
+---
+
+## Documentation
+
+| Resource | Description |
+|----------|-------------|
+| :material-download: [Form Template Admin's Guide (PDF)](https://www.inforouter.com/downloads/V80/Form-Template-Admins-Guide-V80.pdf) | Complete technical reference |
+
+---
+
+## See Also
+
+- [Form Templates Overview](FormTemplates.md)
+- [Form Template Fields](FormTemplateFields.md)
+- [Form Template Validation](FormTemplateValidation.md)

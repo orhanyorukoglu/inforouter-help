@@ -1,16 +1,78 @@
 # Document Disposition
 
-Document and records disposition allows organizations to dispose of records that are no longer needed. It generally takes place after a document or record has been retained for a period of time and it has outlived its usefulness.
+Disposition is the process of handling documents that have reached the end of their retention period.
 
-Disposed records may be destroyed or sent off to archives.
+---
 
-Document and folder disposition in infoRouter is defined in Retention and Disposition schedules.
+## What Is Disposition?
 
-When the retention period of a folder or document has been reached, an optional disposition task may kick in. If the disposition
-option has been selected, the disposition task will be automatically assigned to the user defined in the Retention and Disposition schedule.
+Disposition occurs when documents have been retained for their required period and are no longer needed for active business purposes. The disposition process determines what happens to these documents.
 
-The task is performed manually by the assigned user.
+---
 
-See also:
+## Disposition Options
 
-[Document Retention](DocumentRetention.md).
+| Option | Description |
+|--------|-------------|
+| :material-delete: **Destroy** | Permanently delete the document |
+| :material-archive: **Archive** | Move to long-term storage |
+| :material-eye-check: **Review** | Manual review before action |
+| :material-transfer: **Transfer** | Move to another system or location |
+
+---
+
+## How Disposition Works
+
+```mermaid
+flowchart LR
+    A[Document Created] --> B[Retention Period]
+    B --> C{Retention End}
+    C --> D[Disposition Task Created]
+    D --> E[Assigned User Reviews]
+    E --> F[Disposition Action Taken]
+```
+
+1. Document is created with a retention schedule
+2. Retention period elapses
+3. Disposition task is automatically created (if configured)
+4. Task is assigned to the user defined in the schedule
+5. Assigned user performs the disposition action manually
+
+---
+
+## Disposition Schedules
+
+Disposition settings are configured in Retention and Disposition schedules:
+
+| Setting | Description |
+|---------|-------------|
+| **Trigger** | When retention period ends |
+| **Assignee** | User responsible for disposition |
+| **Action** | What to do with the document |
+| **Notification** | Alert sent to assignee |
+
+---
+
+## Manual Disposition
+
+!!! info "Human Review"
+    Disposition tasks are performed **manually** by the assigned user. This ensures proper review before permanent actions are taken on documents.
+
+---
+
+## Best Practices
+
+!!! tip "Effective Disposition"
+    - Define clear retention schedules
+    - Assign disposition responsibility to appropriate users
+    - Document disposition decisions for audit purposes
+    - Consider legal holds before disposing documents
+
+---
+
+## See Also
+
+- [Document Retention](DocumentRetention.md)
+- [Retention Schedules](Retention.md)
+- [Folder Retention](FolderRetention.md)
+- [Archiving Introduction](ArchiveIntro.md)

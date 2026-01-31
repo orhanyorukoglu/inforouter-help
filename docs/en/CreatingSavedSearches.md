@@ -1,27 +1,72 @@
-# Administrative Functions / Creating Saved Searches
+# Creating Saved Searches
 
-Saved Searches allow you to create a pre-defined search page designed specifically to search for specific types of documents. Better yet, you can design saved search screen for specific users or departments within your organization.
+Create simplified search pages tailored for specific document types, users, or departments.
 
-By creating a saved search screen, you eliminate the need to start your search from a complicated search screen (advanced search screen) that tries to cover all possibilities. Instead, you can define just a few prompts, so the user can enter just enough information to get quick results.
+---
 
-As you define the search screen, you can also enter default values for the search criteria which will allow the user to (in most cases)
-simply click on "Search" to get the results.
+## What Are Saved Searches?
 
-Example:
+Saved Searches are pre-configured search pages with simplified interfaces. Instead of using the full Advanced Search screen, users see only the relevant fields with optional default values.
 
-Simply entering a search criteria for the "Look in" prompt, will narrow the search scope, helping the user achieve a much shorter list of documents to go through.
+---
 
-The System Administrator and designated ["Search and Category Administrators"](CategoryAdministrators.md) can create "Saved Searches"
+## Benefits of Saved Searches
 
-To create a saved search, perform the following:
+| Benefit | Description |
+|---------|-------------|
+| :material-filter: **Simplified interface** | Show only relevant search fields |
+| :material-form-textbox: **Default values** | Pre-fill common search criteria |
+| :material-target: **Focused results** | Narrow search scope automatically |
+| :material-account-group: **User-specific** | Design for specific departments or roles |
 
-1. Navigate to the "Search" Tab to display the advanced search screen.
-2. Click on the "New search page" button on the bottom right corner of the screen.
-3. Notice that infoRouter will re-display the search page with additional options.
-4. Enter the search criteria
-5. In the additional section (displayed below the search screen), assign a Name to this search page
-6. Assign a Description to this search page
-7. Select from the list of search fields by clicking on the check boxes. Selected fields will be visible in the new search page.
-8. Click on "Save" to save this search.
+!!! example "Example"
+    A saved search for invoices might only show **Customer Name**, **Date Range**, and **Amount** fields, with the library location pre-filled.
 
-This saved search will now appear in the "Search pages" located on the left sidebar.
+---
+
+## Who Can Create Saved Searches?
+
+| Role | Can Create |
+|------|------------|
+| System Administrator | :material-check: Yes |
+| Category & Search Administrators | :material-check: Yes |
+| Regular Users | :material-close: No |
+
+---
+
+## How to Create a Saved Search
+
+1. Navigate to the **Search** tab
+2. Click **New search page** (bottom right corner)
+3. The search page reloads with additional options
+4. Enter your search criteria (these become default values)
+5. Enter a **Name** for the search page
+6. Enter a **Description**
+7. Select which search fields to display by clicking checkboxes
+8. Click **Save**
+
+---
+
+## Saved Search Settings
+
+| Setting | Description |
+|---------|-------------|
+| **Name** | Display name shown in the sidebar |
+| **Description** | Brief explanation of the search purpose |
+| **Visible Fields** | Which search criteria users can modify |
+| **Default Values** | Pre-filled search criteria |
+
+---
+
+## Accessing Saved Searches
+
+Saved searches appear in the **Search pages** section on the left sidebar. Users simply click the saved search name and optionally modify the visible criteria before searching.
+
+---
+
+## See Also
+
+- [Advanced Search](AdvancedSearch.md)
+- [Categories](Categories.md)
+- [Category Administrators](CategoryAdministrators.md)
+- [Search Introduction](SearchIntro.md)

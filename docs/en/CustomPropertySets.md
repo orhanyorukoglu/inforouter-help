@@ -1,31 +1,91 @@
-# Custom Property Sets / Examples and Usage Scenarios
+# Custom Property Sets Examples
 
-Custom Property Sets in Action:
+See how Custom Property Sets enable powerful document organization and search capabilities.
 
-Example 1:
+---
 
-Let's assume, you create multiple documents under multiple projects that are specific to customers. In this case, your custom property name might be called "Project" and it might contain fields like "Project Name", "Customer Name", "Section", "Country", "Contract Date", etc.
+## Example 1: Project Documents
 
-As documents are created, you would assign the "Project" Custom Property information by filling out the defined fields.
+### Scenario
 
-Now, using the Advanced Search page, you can search for documents by specifying the "Project" custom property and specify values for these custom fields. infoRouter would be able to quickly return all documents related to this customer by narrowing down the search results.
+You manage documents for multiple customer projects and need to find documents by project details.
 
-Example 2:
+### Custom Property Set: "Project"
 
-Let's assume that you manage invoice documents in various folders in infoRouter. In this case, you would create a custom property called "Invoice".
+| Field | Type | Example Value |
+|-------|------|---------------|
+| Project Name | Text | Website Redesign |
+| Customer Name | Text | ACME Corporation |
+| Section | Dropdown | Design, Development, Testing |
+| Country | Text | United States |
+| Contract Date | Date | 2024-01-15 |
 
-This custom property would contain fields like "Invoice amount", "Invoice Date", "Customer Name" etc.
+### Searching
 
-Using the advanced search screen, you could specify that you are looking for documents that have an "Invoice" property set attached, and , you are looking for an invoice that you issued to ACME Inc. You also remember that the invoice amount was more than $1,300.00.
+Using Advanced Search, specify the "Project" custom property and enter values:
 
-This search would only return those documents that fit the custom property criteria, giving you a much shorter list of documents to go through.
+- **Customer Name**: `ACME Corporation`
+- **Section**: `Development`
 
-Custom Property Sets can be assigned to documents and folders in their respective "Properties" window.
+infoRouter returns only documents matching these criteria.
 
-You may also enter or alter data for the custom property by clicking on the "Edit" button in the "Properties" window.
+---
 
-Notice that the Advanced Search window also includes a field where you can choose a custom property set. When selected, the window will expand so that all the custom property set information is available. You may specify a value for any of these prompts and search for documents and folders that fit the specified query.
+## Example 2: Invoice Management
 
-See Also:
+### Scenario
 
-[How to Create Custom Property Sets](HowtoCreateCustomPropertySets.md).
+You manage invoices across multiple folders and need to find specific invoices quickly.
+
+### Custom Property Set: "Invoice"
+
+| Field | Type | Example Value |
+|-------|------|---------------|
+| Invoice Number | Text | INV-2024-0542 |
+| Invoice Amount | Number | 1,500.00 |
+| Invoice Date | Date | 2024-03-15 |
+| Customer Name | Text | ACME Inc. |
+| Payment Status | Dropdown | Pending, Paid, Overdue |
+
+### Searching
+
+Search for invoices where:
+
+- **Customer Name**: `ACME Inc.`
+- **Invoice Amount**: Greater than `$1,300.00`
+
+Only documents matching these criteria are returned.
+
+---
+
+## Assigning Custom Properties
+
+Custom Property Sets can be assigned to documents and folders:
+
+1. Open the document or folder **Properties**
+2. Select the Custom Property Set to apply
+3. Fill in the property fields
+4. Click **OK** to save
+
+!!! tip "Editing Properties"
+    Click the **Edit** button in the Properties window to modify custom property values at any time.
+
+---
+
+## Searching with Custom Properties
+
+1. Open **Advanced Search**
+2. Select a Custom Property Set from the dropdown
+3. The window expands to show all property fields
+4. Enter values for any fields you want to search by
+5. Click **Search**
+
+---
+
+## See Also
+
+- [Custom Properties Introduction](CustomPropertyIntro.md)
+- [How to Create Custom Property Sets](HowtoCreateCustomPropertySets.md)
+- [Applying Custom Property Sets](ApplyingCustomPropertySets.md)
+- [Editing Custom Property Sets](EditingCustomPropertySets.md)
+- [Advanced Search](AdvancedSearch.md)
