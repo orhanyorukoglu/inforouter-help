@@ -34,6 +34,18 @@
         'periodicreviews': 'PeriodicReviews'
     };
 
+    // Handle specific special pages first
+    if (path.match(/\/en\/index\.htm$/i) || path.match(/\/en\/?$/)) {
+        window.location.replace('/');
+        return;
+    }
+
+    if (path.match(/\/en\/popup\.htm$/i)) {
+        window.location.replace('/en/DocumentVersions/');
+        return;
+    }
+
+    // Handle general /en/PageName.aspx or /en/PageName.htm patterns
     var match = path.match(/\/en\/([^\/]+)\.(aspx|htm)$/i);
     if (match) {
         var pageName = match[1];
@@ -45,21 +57,6 @@
         }
 
         window.location.replace('/en/' + pageName + '/');
-        return;
-    }
-
-    if (path.match(/\/en\/?$/)) {
-        window.location.replace('/');
-        return;
-    }
-
-    if (path.match(/\/en\/index\.htm$/i)) {
-        window.location.replace('/');
-        return;
-    }
-
-    if (path.match(/\/en\/popup\.htm$/i)) {
-        window.location.replace('/en/DocumentVersions/');
         return;
     }
 })();
