@@ -6,7 +6,7 @@ site_url: https://orhanyorukoglu.github.io/inforouter-help/
 theme:
   name: material
   logo: images/InfoRouterLogoFinalSmall.jpg
-  # favicon: images/favicon.ico  # Add favicon.ico to enable
+  favicon: favicon.ico
 
   # Color palette with toggle
   palette:
