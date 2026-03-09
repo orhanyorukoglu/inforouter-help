@@ -1,19 +1,14 @@
----
-template: 404.html
-title: Page Not Found
----
+{% extends "main.html" %}
 
-# Page Not Found
-
-The page you are looking for may have moved. You will be redirected automatically.
-
-If not, [go to the home page](/).
+{% block content %}
+<h1>Page Not Found</h1>
+<p>The page you are looking for may have moved. You will be redirected automatically.</p>
+<p>If not, <a href="/">go to the home page</a>.</p>
 
 <script>
 (function() {
     var path = window.location.pathname;
 
-    // Map of old page names (lowercase) to new page names
     var nameMap = {
         'accessinginforouter': 'AccessingInfoRouter',
         'howtocreatecustompropertysets': 'HowtoCreateCustomPropertySets',
@@ -39,7 +34,6 @@ If not, [go to the home page](/).
         'periodicreviews': 'PeriodicReviews'
     };
 
-    // Match /en/PageName.aspx or /en/PageName.htm patterns
     var match = path.match(/\/en\/([^\/]+)\.(aspx|htm)$/i);
     if (match) {
         var pageName = match[1];
@@ -54,22 +48,20 @@ If not, [go to the home page](/).
         return;
     }
 
-    // Match /en/ or /en (old directory index)
     if (path.match(/\/en\/?$/)) {
         window.location.replace('/');
         return;
     }
 
-    // Match /en/index.htm
     if (path.match(/\/en\/index\.htm$/i)) {
         window.location.replace('/');
         return;
     }
 
-    // Match /en/popup.htm
     if (path.match(/\/en\/popup\.htm$/i)) {
         window.location.replace('/en/DocumentVersions/');
         return;
     }
 })();
 </script>
+{% endblock %}

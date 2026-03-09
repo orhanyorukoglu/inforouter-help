@@ -5,6 +5,7 @@ site_url: https://help.inforouter.com/
 
 theme:
   name: material
+  custom_dir: overrides
   logo: images/InfoRouterLogoFinalSmall.jpg
   favicon: favicon.ico
 
