@@ -264,7 +264,7 @@ extra:
       name: infoRouter on LinkedIn
   analytics:
     provider: google
-    property: G-XXXXXXXXXX  # Replace with your Google Analytics ID
+    property: G-WK3Z1R1T05
 
 extra_javascript:
   - javascripts/redirects.js
