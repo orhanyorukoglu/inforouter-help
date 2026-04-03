@@ -28,6 +28,14 @@
         'viewfolder': 'FolderProperties',
         'usingsavedsearches': 'CreatingSavedSearches',
 
+        // Pages where old name doesn't exist on new site (GSC 404s, Apr 2026)
+        'folderprompts': 'FolderProperties',
+        'howtocreatedocuments': 'UploadingDocuments',
+        'thumbnails': 'Documents',
+        'completingdocuments': 'Documents',
+        'folders': 'CreatingFolders',
+        'sendto': 'Documents',
+
         // Discovered from GSC referring pages (not in original CSV)
         'deletedocument': 'DeletingDocuments',
         'deletedocuments': 'DeletingDocuments',
