@@ -1,0 +1,22 @@
+# Do not let Prettier touch the docs. It breaks the rendered site.
+#
+# mkdocs.yml enables admonition, pymdownx.details, superfences and tabbed —
+# all of which mark block content by 4-space indentation that CommonMark does
+# not recognise. Prettier strips that indent, so an admonition body escapes
+# its block:
+#
+#     !!! info "Why Authentication Matters"
+#         Your account identifies you in the infoRouter system.   <- indent removed
+#
+# mkdocs-material then renders an empty callout followed by loose text. The
+# markdown still parses, so nothing errors — it just looks wrong on the live
+# site. Measured 2026-07-28: Prettier 3.7.4 on defaults would rewrite 151 of
+# 152 markdown files and de-indent admonition bodies in 127 of them.
+#
+# Trigger is editor format-on-save (Cursor + esbenp.prettier-vscode), which
+# honours this file.
+*.md
+
+# Google site-verification file — byte-exact by convention, and Prettier keeps
+# adding a trailing newline that shows up as a spurious working-tree change.
+docs/google9a1b488dd3e533ee.html
